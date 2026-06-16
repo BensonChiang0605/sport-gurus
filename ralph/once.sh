@@ -1,4 +1,5 @@
 #!/bin/bash
+set -eo pipefail
 
 # Summarise a single episode in a Claude or GPT session (one iteration of
 # the ralph loop). Use ralph/afk.sh to batch many.

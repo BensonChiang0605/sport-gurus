@@ -56,10 +56,9 @@ run_llm() {
             ;;
         gpt)
             codex exec \
-                --model "${RALPH_GPT_MODEL:-gpt-5}" \
+                --model "${RALPH_GPT_MODEL:-gpt-5.4}" \
                 --cd . \
                 --sandbox workspace-write \
-                --ask-for-approval never \
                 "$prompt"
             ;;
     esac
