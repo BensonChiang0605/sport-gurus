@@ -1,19 +1,19 @@
 [
   {
     "date": "2026-04-14",
-    "winner": "POR",
-    "loser": "PHX",
-    "win_score": 114,
-    "lose_score": 110,
+    "winner": "CHA",
+    "loser": "MIA",
+    "win_score": 127,
+    "lose_score": 126,
     "season": "2025-26",
     "season_type": "playin"
   },
   {
     "date": "2026-04-14",
-    "winner": "CHA",
-    "loser": "MIA",
-    "win_score": 127,
-    "lose_score": 126,
+    "winner": "POR",
+    "loser": "PHX",
+    "win_score": 114,
+    "lose_score": 110,
     "season": "2025-26",
     "season_type": "playin"
   },
@@ -37,15 +37,6 @@
   },
   {
     "date": "2026-04-17",
-    "winner": "PHX",
-    "loser": "GSW",
-    "win_score": 111,
-    "lose_score": 96,
-    "season": "2025-26",
-    "season_type": "playin"
-  },
-  {
-    "date": "2026-04-17",
     "winner": "ORL",
     "loser": "CHA",
     "win_score": 121,
@@ -54,13 +45,13 @@
     "season_type": "playin"
   },
   {
-    "date": "2026-04-18",
-    "winner": "NYK",
-    "loser": "ATL",
-    "win_score": 113,
-    "lose_score": 102,
+    "date": "2026-04-17",
+    "winner": "PHX",
+    "loser": "GSW",
+    "win_score": 111,
+    "lose_score": 96,
     "season": "2025-26",
-    "season_type": "playoff"
+    "season_type": "playin"
   },
   {
     "date": "2026-04-18",
@@ -68,6 +59,15 @@
     "loser": "TOR",
     "win_score": 126,
     "lose_score": 113,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-04-18",
+    "winner": "DEN",
+    "loser": "MIN",
+    "win_score": 116,
+    "lose_score": 105,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -82,28 +82,19 @@
   },
   {
     "date": "2026-04-18",
-    "winner": "DEN",
-    "loser": "MIN",
-    "win_score": 116,
-    "lose_score": 105,
+    "winner": "NYK",
+    "loser": "ATL",
+    "win_score": 113,
+    "lose_score": 102,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-04-19",
-    "winner": "OKC",
-    "loser": "PHX",
-    "win_score": 119,
-    "lose_score": 84,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
-    "date": "2026-04-19",
-    "winner": "BOS",
-    "loser": "PHI",
-    "win_score": 123,
-    "lose_score": 91,
+    "winner": "ORL",
+    "loser": "DET",
+    "win_score": 112,
+    "lose_score": 101,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -118,10 +109,19 @@
   },
   {
     "date": "2026-04-19",
-    "winner": "ORL",
-    "loser": "DET",
-    "win_score": 112,
-    "lose_score": 101,
+    "winner": "BOS",
+    "loser": "PHI",
+    "win_score": 123,
+    "lose_score": 91,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-04-19",
+    "winner": "OKC",
+    "loser": "PHX",
+    "win_score": 119,
+    "lose_score": 84,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -154,19 +154,19 @@
   },
   {
     "date": "2026-04-21",
-    "winner": "POR",
-    "loser": "SAS",
-    "win_score": 106,
-    "lose_score": 103,
+    "winner": "PHI",
+    "loser": "BOS",
+    "win_score": 111,
+    "lose_score": 97,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-04-21",
-    "winner": "PHI",
-    "loser": "BOS",
-    "win_score": 111,
-    "lose_score": 97,
+    "winner": "POR",
+    "loser": "SAS",
+    "win_score": 106,
+    "lose_score": 103,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -199,10 +199,10 @@
   },
   {
     "date": "2026-04-23",
-    "winner": "TOR",
-    "loser": "CLE",
-    "win_score": 126,
-    "lose_score": 104,
+    "winner": "MIN",
+    "loser": "DEN",
+    "win_score": 113,
+    "lose_score": 96,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -217,10 +217,10 @@
   },
   {
     "date": "2026-04-23",
-    "winner": "MIN",
-    "loser": "DEN",
-    "win_score": 113,
-    "lose_score": 96,
+    "winner": "TOR",
+    "loser": "CLE",
+    "win_score": 126,
+    "lose_score": 104,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -253,19 +253,19 @@
   },
   {
     "date": "2026-04-25",
-    "winner": "ORL",
-    "loser": "DET",
-    "win_score": 113,
-    "lose_score": 105,
+    "winner": "OKC",
+    "loser": "PHX",
+    "win_score": 121,
+    "lose_score": 109,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-04-25",
-    "winner": "NYK",
-    "loser": "ATL",
-    "win_score": 114,
-    "lose_score": 98,
+    "winner": "ORL",
+    "loser": "DET",
+    "win_score": 113,
+    "lose_score": 105,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -280,28 +280,19 @@
   },
   {
     "date": "2026-04-25",
-    "winner": "OKC",
-    "loser": "PHX",
-    "win_score": 121,
-    "lose_score": 109,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
-    "date": "2026-04-26",
-    "winner": "SAS",
-    "loser": "POR",
+    "winner": "NYK",
+    "loser": "ATL",
     "win_score": 114,
-    "lose_score": 93,
+    "lose_score": 98,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-04-26",
-    "winner": "HOU",
-    "loser": "LAL",
-    "win_score": 115,
-    "lose_score": 96,
+    "winner": "TOR",
+    "loser": "CLE",
+    "win_score": 93,
+    "lose_score": 89,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -316,19 +307,19 @@
   },
   {
     "date": "2026-04-26",
-    "winner": "TOR",
-    "loser": "CLE",
-    "win_score": 93,
-    "lose_score": 89,
+    "winner": "HOU",
+    "loser": "LAL",
+    "win_score": 115,
+    "lose_score": 96,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
-    "date": "2026-04-27",
-    "winner": "ORL",
-    "loser": "DET",
-    "win_score": 94,
-    "lose_score": 88,
+    "date": "2026-04-26",
+    "winner": "SAS",
+    "loser": "POR",
+    "win_score": 114,
+    "lose_score": 93,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -343,10 +334,28 @@
   },
   {
     "date": "2026-04-27",
+    "winner": "ORL",
+    "loser": "DET",
+    "win_score": 94,
+    "lose_score": 88,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-04-27",
     "winner": "OKC",
     "loser": "PHX",
     "win_score": 131,
     "lose_score": 122,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-04-28",
+    "winner": "SAS",
+    "loser": "POR",
+    "win_score": 114,
+    "lose_score": 95,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -369,11 +378,11 @@
     "season_type": "playoff"
   },
   {
-    "date": "2026-04-28",
-    "winner": "SAS",
-    "loser": "POR",
-    "win_score": 114,
-    "lose_score": 95,
+    "date": "2026-04-29",
+    "winner": "CLE",
+    "loser": "TOR",
+    "win_score": 125,
+    "lose_score": 120,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -388,19 +397,19 @@
   },
   {
     "date": "2026-04-29",
-    "winner": "CLE",
-    "loser": "TOR",
-    "win_score": 125,
-    "lose_score": 120,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
-    "date": "2026-04-29",
     "winner": "DET",
     "loser": "ORL",
     "win_score": 116,
     "lose_score": 109,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-04-30",
+    "winner": "MIN",
+    "loser": "DEN",
+    "win_score": 110,
+    "lose_score": 98,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -423,24 +432,6 @@
     "season_type": "playoff"
   },
   {
-    "date": "2026-04-30",
-    "winner": "MIN",
-    "loser": "DEN",
-    "win_score": 110,
-    "lose_score": 98,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
-    "date": "2026-05-01",
-    "winner": "TOR",
-    "loser": "CLE",
-    "win_score": 112,
-    "lose_score": 110,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
     "date": "2026-05-01",
     "winner": "DET",
     "loser": "ORL",
@@ -459,6 +450,15 @@
     "season_type": "playoff"
   },
   {
+    "date": "2026-05-01",
+    "winner": "TOR",
+    "loser": "CLE",
+    "win_score": 112,
+    "lose_score": 110,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
     "date": "2026-05-02",
     "winner": "PHI",
     "loser": "BOS",
@@ -469,19 +469,19 @@
   },
   {
     "date": "2026-05-03",
-    "winner": "DET",
-    "loser": "ORL",
-    "win_score": 116,
-    "lose_score": 94,
+    "winner": "CLE",
+    "loser": "TOR",
+    "win_score": 114,
+    "lose_score": 102,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-05-03",
-    "winner": "CLE",
-    "loser": "TOR",
-    "win_score": 114,
-    "lose_score": 102,
+    "winner": "DET",
+    "loser": "ORL",
+    "win_score": 116,
+    "lose_score": 94,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -505,19 +505,19 @@
   },
   {
     "date": "2026-05-05",
-    "winner": "DET",
-    "loser": "CLE",
-    "win_score": 111,
-    "lose_score": 101,
+    "winner": "OKC",
+    "loser": "LAL",
+    "win_score": 108,
+    "lose_score": 90,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-05-05",
-    "winner": "OKC",
-    "loser": "LAL",
-    "win_score": 108,
-    "lose_score": 90,
+    "winner": "DET",
+    "loser": "CLE",
+    "win_score": 111,
+    "lose_score": 101,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -541,15 +541,6 @@
   },
   {
     "date": "2026-05-07",
-    "winner": "OKC",
-    "loser": "LAL",
-    "win_score": 125,
-    "lose_score": 107,
-    "season": "2025-26",
-    "season_type": "playoff"
-  },
-  {
-    "date": "2026-05-07",
     "winner": "DET",
     "loser": "CLE",
     "win_score": 107,
@@ -558,11 +549,11 @@
     "season_type": "playoff"
   },
   {
-    "date": "2026-05-08",
-    "winner": "SAS",
-    "loser": "MIN",
-    "win_score": 115,
-    "lose_score": 108,
+    "date": "2026-05-07",
+    "winner": "OKC",
+    "loser": "LAL",
+    "win_score": 125,
+    "lose_score": 107,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -572,6 +563,15 @@
     "loser": "PHI",
     "win_score": 108,
     "lose_score": 94,
+    "season": "2025-26",
+    "season_type": "playoff"
+  },
+  {
+    "date": "2026-05-08",
+    "winner": "SAS",
+    "loser": "MIN",
+    "win_score": 115,
+    "lose_score": 108,
     "season": "2025-26",
     "season_type": "playoff"
   },
@@ -595,19 +595,19 @@
   },
   {
     "date": "2026-05-10",
-    "winner": "MIN",
-    "loser": "SAS",
-    "win_score": 114,
-    "lose_score": 109,
+    "winner": "NYK",
+    "loser": "PHI",
+    "win_score": 144,
+    "lose_score": 114,
     "season": "2025-26",
     "season_type": "playoff"
   },
   {
     "date": "2026-05-10",
-    "winner": "NYK",
-    "loser": "PHI",
-    "win_score": 144,
-    "lose_score": 114,
+    "winner": "MIN",
+    "loser": "SAS",
+    "win_score": 114,
+    "lose_score": 109,
     "season": "2025-26",
     "season_type": "playoff"
   },
