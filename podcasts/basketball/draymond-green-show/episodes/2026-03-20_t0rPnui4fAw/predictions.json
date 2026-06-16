@@ -8,7 +8,8 @@
     "prediction_text": "Hofstra will upset Alabama in the NCAA Tournament (Friday, March 21).",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "undetermined",
+    "grade_note": "The provided facts contain only NBA results and no game involving Alabama or Hofstra, so this prediction cannot be decided from the scoped facts.",
     "argument": "Key absence: Alabama's second leading scorer Aaron Estrada is out, removing their elite guard play; Tournament principle: guard play is the most critical factor in March and losing Estrada is devastating; Distraction factor: off-court distractions make it harder to compete in the tournament."
   },
   {
