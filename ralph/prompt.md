@@ -48,7 +48,7 @@ verifiable prediction, using exactly these keys:
     "category": "<game | series | award | season>",
     "verifiable": "<auto | manual>",
     "status": "pending",
-    "argument": ""
+    "argument": "<Label: one-sentence rationale; Label2: one-sentence rationale>"
   }
 ]
 ```
@@ -57,7 +57,10 @@ verifiable prediction, using exactly these keys:
 - `verifiable`: `auto` if checkable from NBA game records; `manual` if objective but
   needs another source (awards, signings, stat lines).
 - `status`: always `"pending"`.
-- `argument`: always `""`.
+- `argument`: Populate from the reason sub-bullets written for this prediction in
+  `summary.md`. Format as `"Label: short rationale; Label2: short rationale"` — use
+  the same labels, one sentence per clause. Use `""` only if the speaker gave no
+  rationale.
 
 **Only log claims that can be objectively settled true/false.** Discard subjective takes,
 opinions, and vibes. If there are no verifiable predictions, write `[]`.

@@ -1,0 +1,50 @@
+[
+  {
+    "prediction_id": "GmAgCC4Wm8c-01",
+    "podcast": "draymond-green-show",
+    "video_id": "GmAgCC4Wm8c",
+    "episode_date": "2026-04-20",
+    "speaker": "Draymond Green",
+    "prediction_text": "Steve Kerr will not return as Warriors head coach next season",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Farewell felt final: the post-game moment shared with Steph and Steve felt like a goodbye; Surrounding talk: all the discourse circulating about Steve's future pointed toward him not coming back"
+  },
+  {
+    "prediction_id": "GmAgCC4Wm8c-02",
+    "podcast": "draymond-green-show",
+    "video_id": "GmAgCC4Wm8c",
+    "episode_date": "2026-04-20",
+    "speaker": "Draymond Green",
+    "prediction_text": "Jimmy Butler will miss a considerable portion of next season, not returning until late February or March at earliest",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Injury timeline: Jimmy hurt in January, surgery ~6 weeks later, 12-month recovery puts return around late Feb/March of next season; Ramp-up needed: even after return he'll need time to get comfortable and overcome fear of contact"
+  },
+  {
+    "prediction_id": "GmAgCC4Wm8c-03",
+    "podcast": "draymond-green-show",
+    "video_id": "GmAgCC4Wm8c",
+    "episode_date": "2026-04-20",
+    "speaker": "Draymond Green",
+    "prediction_text": "Moses (Moody) will miss a good portion of next season due to injury",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Grouped with Butler: Draymond listed Moses alongside Jimmy as players who will probably be out for a good amount of next year when sizing up the Warriors' outlook"
+  },
+  {
+    "prediction_id": "GmAgCC4Wm8c-04",
+    "podcast": "draymond-green-show",
+    "video_id": "GmAgCC4Wm8c",
+    "episode_date": "2026-04-20",
+    "speaker": "Draymond Green",
+    "prediction_text": "Draymond Green has approximately 3 more years remaining in his NBA career",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Physical condition: finished the season healthy with no significant injuries, body felt great; Motivation: wants minimal time off and sees room to keep improving his game"
+  }
+]
