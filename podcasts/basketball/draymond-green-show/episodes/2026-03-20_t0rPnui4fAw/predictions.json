@@ -34,7 +34,8 @@
     "prediction_text": "Santa Clara will upset Kentucky in the NCAA Tournament (Friday, March 21).",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "undetermined",
+    "grade_note": "The provided facts contain only NBA results and no game involving Santa Clara or Kentucky, so this prediction cannot be decided from the scoped facts.",
     "argument": "Kentucky skepticism: Draymond has not been fond of Kentucky's season at all and does not view them as a strong team entering the tournament."
   },
   {
