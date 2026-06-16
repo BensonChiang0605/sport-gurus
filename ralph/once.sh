@@ -34,8 +34,17 @@ episode_path="$podcast_path/episodes/$next_episode"
 commits=$(git log -n 5 --format="%H%n%ad%n%B---" --date=short 2>/dev/null || echo "No commits found")
 prompt=$(cat ralph/prompt.md)
 
-claude --model claude-sonnet-4-6 --permission-mode bypassPermissions \
-  "Previous commits: $commits Episode to process: $episode_path $prompt"
+stream_text='select(.type == "assistant").message.content[]? | select(.type == "text").text // empty'
+
+claude \
+    --model claude-sonnet-4-6 \
+    --permission-mode bypassPermissions \
+    --verbose \
+    --print \
+    --output-format stream-json \
+    "Previous commits: $commits Episode to process: $episode_path $prompt" \
+| grep --line-buffered '^{' \
+| jq --unbuffered -rj "$stream_text"
 
 python3 ralph/sync.py
 git add -A
