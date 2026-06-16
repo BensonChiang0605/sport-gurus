@@ -1,0 +1,10 @@
+[project]
+name = "sport-gurus"
+version = "0.1.0"
+description = "Analyse the prediction accuracy of sports podcasts"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "nba-api>=1.11.4",
+    "yt-dlp>=2026.6.9",
+]

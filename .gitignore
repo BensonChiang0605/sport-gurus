@@ -1,0 +1,15 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+env/
+nba_env/
+
+# Cached YouTube upload-date metadata (re-derivable; episodes/ are source of truth)
+.video_meta.json
