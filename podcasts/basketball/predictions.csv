@@ -1,1 +1,11 @@
 prediction_id,podcast,video_id,episode_date,speaker,prediction_text,category,verifiable,resolve_after,status,evidence
+xYr2pyJfcdY-01,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Thunder beat Suns in the first-round series,series,auto,2026-04-30,pending,
+xYr2pyJfcdY-02,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Nuggets come back to beat the Timberwolves in the first-round series,series,auto,2026-05-05,pending,
+xYr2pyJfcdY-03,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Nuggets vs Timberwolves first-round series goes 7 games,series,auto,2026-05-05,pending,
+xYr2pyJfcdY-04,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Pistons win Game 5 vs the Magic to tie the series 2-2,game,auto,2026-04-30,pending,
+xYr2pyJfcdY-05,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Lakers beat the Rockets in 5 games,series,auto,2026-04-30,pending,
+xYr2pyJfcdY-06,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Spurs beat the Trail Blazers in 5 games,series,auto,2026-04-30,pending,
+xYr2pyJfcdY-07,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Cavaliers win Game 5 vs the Raptors,game,auto,2026-04-30,pending,
+xYr2pyJfcdY-08,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Knicks beat the Hawks in the first-round series,series,auto,2026-05-05,pending,
+xYr2pyJfcdY-09,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Celtics beat the 76ers in 5 games,series,auto,2026-04-30,pending,
+xYr2pyJfcdY-10,draymond-green-show,xYr2pyJfcdY,2026-04-28,Draymond Green,Stephon Castle makes an All-NBA team next season,award,manual,2027-05-01,pending,
