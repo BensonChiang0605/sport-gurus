@@ -13,6 +13,7 @@ set -eo pipefail
 
 usage() {
     echo "Usage: $0 [--llm claude|gpt] <iterations> <podcast-path> [start-episode] [end-episode]"
+    echo "       $0 [--llm claude|gpt] <podcast-path> <start-episode> <end-episode>"
 }
 
 source "$(dirname "$0")/llm.sh"
@@ -26,15 +27,16 @@ if [ "${RALPH_LLM_ARGC:-0}" -gt 0 ]; then
     shift "$RALPH_LLM_ARGC"
 fi
 
-if [ -z "$1" ] || [ -z "$2" ]; then
+if [[ "$1" =~ ^[0-9]+$ ]]; then
+    iterations="$1"; podcast_path="$2"; start_episode="${3:-}"; end_episode="${4:-}"
+elif [ -n "$1" ] && [ -n "$2" ] && [ -n "$3" ]; then
+    iterations=9999; podcast_path="$1"; start_episode="$2"; end_episode="$3"
+else
     usage
     exit 1
 fi
 
-podcast_path="$2"
-start_episode="${3:-}"
-end_episode="${4:-}"
-for ((i=1; i<=$1; i++)); do
+for ((i=1; i<=iterations; i++)); do
     # Find oldest episode with transcript.txt but no summary.md, at or after start_episode
     next_episode=$(find "$podcast_path/episodes" -mindepth 1 -maxdepth 1 -type d \
         | while IFS= read -r dir; do
