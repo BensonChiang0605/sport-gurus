@@ -44,7 +44,7 @@ for ((i=1; i<=iterations; i++)); do
           done \
         | sort \
         | awk -v start="$start_episode" -v end="$end_episode" '(!start || $0 >= start) && (!end || $0 <= end)' \
-        | head -1)
+        | head -1 || true)
 
     if [ -z "$next_episode" ]; then
         echo "No more tasks after $((i-1)) iterations."
