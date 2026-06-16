@@ -10,12 +10,15 @@ DB = pathlib.Path("predictions.db")
 COLS = [
     "prediction_id", "podcast", "video_id", "episode_date", "speaker",
     "prediction_text", "category", "verifiable", "status", "argument",
-    "grade_note",
+    "grade_note", "status_general", "grade_note_general",
 ]
 
 db = sqlite3.connect(DB)
+# Drop & recreate so the schema always matches COLS (e.g. when columns are added).
+# Safe because every row is re-inserted from the CSV + JSON source files below.
+db.execute("DROP TABLE IF EXISTS predictions")
 db.execute(f"""
-    CREATE TABLE IF NOT EXISTS predictions (
+    CREATE TABLE predictions (
         {', '.join(c + ' TEXT' for c in COLS)},
         PRIMARY KEY (prediction_id)
     )

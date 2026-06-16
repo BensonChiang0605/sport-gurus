@@ -35,15 +35,35 @@ in any `grade_note` you write, so they always match the facts.
      Game 5 but the series became 3-2, not 2-2).
    - `undetermined` — the outcome is not decidable from the facts (the series/game isn't
      in the data yet, or the claim isn't expressible from results). **Do not guess.**
-2. **Find the source file:** the prediction lives in the `predictions.json` whose episode
+   This is the **exact** grade — the full claim exactly as stated, including any game count.
+2. **For `series` predictions, also decide the general grade.** A series prediction often
+   carries a less-specific sub-claim: *which team wins the series*, ignoring the game count.
+   Grade that separately:
+   - If the prediction **specifies a game count** (e.g. "in 5 games", "in six", "goes the
+     distance to 7"), grade the general claim — *did the named team win the series at all?* —
+     independently of the count. So "BOS win vs PHI in 5" is exact-`incorrect` but
+     general-`correct` if BOS won the series in 6.
+   - If the prediction **specifies no game count** (e.g. "BOS win vs PHI"), it is already
+     general: set the general grade equal to the exact grade.
+   - If the series is not complete or not in the facts, **both** the exact and general
+     grades are `undetermined`.
+   This whole step is **`series`-only**. For a `game` prediction, do not produce a general
+   grade — leave the general fields out.
+3. **Find the source file:** the prediction lives in the `predictions.json` whose episode
    folder name contains its `video_id` (under `podcasts/`). Locate that file and the
    object whose `prediction_id` matches.
-3. **Edit that object in place:**
-   - Set `"status"` to `correct` / `incorrect` / `undetermined`.
-   - Set `"grade_note"` to one sentence justifying the call against the facts, citing the
-     concrete result (e.g. `"PHI beat BOS 4-3, so the Celtics did not win the series."`).
+4. **Edit that object in place:**
+   - Set `"status"` to the exact grade: `correct` / `incorrect` / `undetermined`.
+   - Set `"grade_note"` to one sentence justifying the exact call against the facts, citing
+     the concrete result (e.g. `"PHI beat BOS 4-3, so the Celtics did not win the series."`).
+   - **For `series` predictions only**, also set:
+     - `"status_general"` to the general grade: `correct` / `incorrect` / `undetermined`.
+     - `"grade_note_general"` to one sentence justifying the general call (e.g.
+       `"BOS beat PHI 4-2, so the Celtics did win the series even though not in 5."`). When
+       the prediction had no game count, mirror `grade_note` here.
    Change nothing else in the file — leave other predictions and fields untouched. If a
-   prediction object has no `grade_note` key yet, add it.
+   prediction object is missing the `grade_note`, `status_general`, or `grade_note_general`
+   keys, add the ones that apply.
 
 Do not touch `predictions.db`, do not run sync, do not commit — the shell does that.
 Grade this prediction, then stop.

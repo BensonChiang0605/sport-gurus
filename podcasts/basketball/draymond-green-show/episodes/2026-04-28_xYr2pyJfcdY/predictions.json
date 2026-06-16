@@ -8,9 +8,11 @@
     "prediction_text": "OKC sweep PHX (win series 4-0); PHX do not win another game",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "correct",
+    "status_general": "correct",
     "argument": "Series competitiveness: the games haven't been competitive even without the controversial foul calls, showing the gap is real; Defensive strategy: the only way Suns stay close is to pack the paint and force perimeter threes, which Draymond doesn't think they can execute.",
-    "grade_note": ""
+    "grade_note": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game.",
+    "grade_note_general": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game."
   },
   {
     "prediction_id": "xYr2pyJfcdY-02",
@@ -21,9 +23,11 @@
     "prediction_text": "DEN come back from 3-1 down to win the series vs MIN in 7 games",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "incorrect",
+    "status_general": "incorrect",
     "argument": "Injuries: T-Wolves lost their entire starting backcourt (Ant-Man out for the series, DiVincenzo torn Achilles), making it very hard to protect a 3-1 lead; Joker resilience: Rudy's length bothers Jokic but Jokic can still go for 40 any night and the Nuggets have won every subsequent series since their 2020 loss.",
-    "grade_note": ""
+    "grade_note": "MIN beat DEN 4-2; DEN was down 3-1 but never came back, as MIN closed the series in Game 6.",
+    "grade_note_general": "MIN beat DEN 4-2, so DEN did not win the series."
   },
   {
     "prediction_id": "xYr2pyJfcdY-03",
@@ -34,9 +38,9 @@
     "prediction_text": "DET win Game 4 to tie the series 2-2 vs ORL",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "incorrect",
     "argument": "Cade's resurgence: Cade Cunningham came alive last game and needs to stay foot on the gas as the only reliable offensive engine; Duren must step up: Jalen Duren has the talent to flip the script and play with the physicality he showed all year; Discipline: Pistons need to stop chasing over screens and eliminate reaching fouls that put them in the penalty early.",
-    "grade_note": ""
+    "grade_note": "ORL won Game 4 94-88, putting the series at ORL 3-1; DET did not win Game 4 and the series was never tied 2-2."
   },
   {
     "prediction_id": "xYr2pyJfcdY-04",
@@ -47,9 +51,11 @@
     "prediction_text": "LAL win the series vs HOU in 5 games",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "incorrect",
+    "status_general": "correct",
     "argument": "LeBron's chess match: LeBron has been methodically walking up the court and getting any shot he wants, and the Rockets have nobody capable of matching his chess-level IQ; KD unavailable: Kevin Durant is out with knee and ankle injuries and without him Houston cannot generate enough to extend the series.",
-    "grade_note": ""
+    "grade_note": "LAL beat HOU 4-2 in 6 games, not 5 as predicted.",
+    "grade_note_general": "LAL did win the series vs HOU 4-2, even though it took 6 games rather than 5."
   },
   {
     "prediction_id": "xYr2pyJfcdY-05",
@@ -60,9 +66,11 @@
     "prediction_text": "SAS win the series vs POR in 5 games",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "correct",
+    "status_general": "correct",
     "argument": "Blown leads: Blazers built big leads in two straight games and squandered both, showing they can't close at the playoff level; No go-to scorer: Portland has no proven playoff bucket-getter like Dame to stop runs, and Deni Avdija hasn't proven that ability yet; Stephon Castle: Castle has been the most impactful player for the Spurs and is carrying the team.",
-    "grade_note": ""
+    "grade_note": "SAS beat POR 4-1, winning the series in exactly 5 games as predicted.",
+    "grade_note_general": "SAS beat POR 4-1, winning the series as predicted."
   },
   {
     "prediction_id": "xYr2pyJfcdY-06",
@@ -73,9 +81,9 @@
     "prediction_text": "CLE win Game 5 vs TOR (series tied 2-2, game in Cleveland)",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "correct",
     "argument": "Home-court advantage: Cavs return home where role players perform better; Cavs in control: Toronto has to prove they can win on the road before the series balance shifts, and Draymond sees no evidence they can do that yet.",
-    "grade_note": ""
+    "grade_note": "CLE won Game 5 on 2026-04-29 (125-120) with the series tied 2-2 going into that game, exactly as predicted."
   },
   {
     "prediction_id": "xYr2pyJfcdY-07",
@@ -86,9 +94,11 @@
     "prediction_text": "NYK win the series vs ATL",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "correct",
+    "status_general": "correct",
     "argument": "Experience gap: the Knicks have more playoff experience and the Hawks, despite their athleticism and length, still have more growing to do; Atlanta's offensive dysfunction: the Hawks are too CJ-dependent and their rotation (Dyson Daniels limiting offense, Kispert unprepared) is stifling their ability to generate downhill attacks.",
-    "grade_note": ""
+    "grade_note": "NYK beat ATL 4-2, winning the series as predicted.",
+    "grade_note_general": "NYK beat ATL 4-2, winning the series as predicted."
   },
   {
     "prediction_id": "xYr2pyJfcdY-08",
@@ -99,8 +109,10 @@
     "prediction_text": "BOS win the series vs PHI in 5 games",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "incorrect",
+    "status_general": "incorrect",
     "argument": "Celtics know Embiid: Boston has had Philly's number for years and incorporating Joel back into the starting lineup after only ~25-30 games just gives them a familiar defensive assignment; No continuity: the starting unit has had almost no reps with Embiid all season, so there is no offensive chemistry to unlock.",
-    "grade_note": ""
+    "grade_note": "PHI beat BOS 4-3 in 7 games, so BOS did not win the series.",
+    "grade_note_general": "PHI beat BOS 4-3, so BOS did not win the series."
   }
 ]

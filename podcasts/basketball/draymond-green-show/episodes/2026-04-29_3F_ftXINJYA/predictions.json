@@ -8,8 +8,11 @@
     "prediction_text": "SAS and OKC will face off in the Western Conference Finals",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Spurs' playoff readiness: Wembanyama, Castle, and Fox look like seasoned playoff players despite the Spurs' youth; Spurs' chemistry: San Antonio does not care who scores and lets whoever has it going lead, which Draymond calls their secret sauce; Thunder's injury concern: OKC can survive the next round without Jalen Williams, but Draymond thinks a Spurs matchup becomes much tougher if Williams is still out."
+    "status": "correct",
+    "status_general": "correct",
+    "argument": "Spurs' playoff readiness: Wembanyama, Castle, and Fox look like seasoned playoff players despite the Spurs' youth; Spurs' chemistry: San Antonio does not care who scores and lets whoever has it going lead, which Draymond calls their secret sauce; Thunder's injury concern: OKC can survive the next round without Jalen Williams, but Draymond thinks a Spurs matchup becomes much tougher if Williams is still out.",
+    "grade_note": "SAS and OKC did face off in the Western Conference Finals, with SAS winning 4-3.",
+    "grade_note_general": "SAS and OKC did face off in the Western Conference Finals, with SAS winning 4-3."
   },
   {
     "prediction_id": "3F_ftXINJYA-02",
@@ -20,7 +23,8 @@
     "prediction_text": "MIN will not close out DEN in Game 6",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Missing star offense: Anthony Edwards being out leaves Minnesota without enough offense and without anyone to pressure Jokic on the other end; Defensive drop-off: when Minnesota cannot score, its belief, body language, and connected defense fall off, which also weakens Rudy Gobert's impact; Jokic matchup outlook: Draymond says another dominant Jokic game would not surprise him because Minnesota's offense is making its defense easier to break down."
+    "status": "incorrect",
+    "argument": "Missing star offense: Anthony Edwards being out leaves Minnesota without enough offense and without anyone to pressure Jokic on the other end; Defensive drop-off: when Minnesota cannot score, its belief, body language, and connected defense fall off, which also weakens Rudy Gobert's impact; Jokic matchup outlook: Draymond says another dominant Jokic game would not surprise him because Minnesota's offense is making its defense easier to break down.",
+    "grade_note": "MIN won Game 6 on 2026-04-30 (110-98), closing out DEN 4-2; MIN did close out DEN in Game 6, contradicting the prediction."
   }
 ]
