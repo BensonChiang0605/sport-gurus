@@ -1,26 +1,32 @@
-# TASK: Grade pending NBA predictions against game results
+# TASK: Grade a pending NBA prediction against game results
 
-You verify whether `game` and `series` predictions came true, using **only** the NBA
-results you are given. The deterministic work is already done for you: a fact bundle and
-the list of predictions to grade are passed in your instructions. Make the judgement
-call, write it back to each prediction's source file, then stop.
+You verify whether a single `game` or `series` prediction came true, using **only** the NBA
+results you are given. The deterministic work is already done for you: a fact bundle scoped
+to this prediction's teams, and the prediction to grade, are passed in your instructions.
+Make the judgement call, write it back to the prediction's source file, then stop.
 
 ## Inputs (passed in your instructions)
 
-- **"Facts:"** — JSON with three keys:
+- **"Facts (scoped to this prediction's teams):"** — JSON with three keys:
   - `series` — derived playoff series: `teams`, `winner`, `loser`, `length` (number of
     games), `result` (e.g. `"PHI beat BOS 4-3"`), and per-game `games` with `game_no`,
     `winner`, `score`, and `series_after` (the running series record after that game).
   - `playin` — single play-in games: `date`, `winner`, `loser`, `score`.
-  - `games` — every raw game (`date`, `winner`, `loser`, `season_type`) for resolving
-    individual-game or regular-season claims directly.
-- **"Predictions to grade:"** — TSV rows of `prediction_id`, `video_id`,
-  `prediction_text`, `category`. Each is currently `status='pending'`.
+  - `games` — raw games involving the relevant teams (`date`, `winner`, `loser`, `season_type`).
 
-Team names in the facts are 3-letter abbreviations (e.g. `BOS`, `PHI`, `GSW`). Map names
-in the prediction text to abbreviations yourself (Celtics→BOS, 76ers→PHI, etc.).
+  These facts are pre-filtered to the teams named in this prediction — treat them as the
+  complete relevant record. If the specific series or game needed to decide the claim is
+  genuinely absent (not yet played or not in the cache), return `undetermined`.
 
-## What to do for each prediction
+- **"Prediction to grade:"** — one TSV row: `prediction_id`, `video_id`, `category`,
+  `prediction_text`. Currently `status='pending'`.
+
+Team names in the facts are 3-letter abbreviations (e.g. `BOS`, `PHI`, `GSW`). To map a
+team name in the prediction text to its abbreviation, use the canonical codes in
+`docs/team-abbreviations.md` verbatim — never guess an abbreviation. Use those same codes
+in any `grade_note` you write, so they always match the facts.
+
+## What to do for this prediction
 
 1. **Decide the outcome from the facts:**
    - `correct` — the claim is fully borne out by the facts.
@@ -40,4 +46,4 @@ in the prediction text to abbreviations yourself (Celtics→BOS, 76ers→PHI, et
    prediction object has no `grade_note` key yet, add it.
 
 Do not touch `predictions.db`, do not run sync, do not commit — the shell does that.
-Grade every prediction you were given, then stop.
+Grade this prediction, then stop.

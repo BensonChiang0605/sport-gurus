@@ -5,22 +5,39 @@ set -eo pipefail
 # Deterministic work lives here; only the true/false judgement lives in the LLM.
 #
 #   1. refresh the game cache from nba_api
-#   2. build the deterministic fact bundle (series + play-in + raw games)
-#   3. pull the pending auto game/series predictions from predictions.db
-#   4. hand facts + predictions to Claude, which edits each predictions.json status
-#   5. re-sync the DB and commit
+#   2. pull the pending auto game/series predictions from predictions.db
+#   3. for each prediction: build scoped facts + call Claude/GPT to edit its predictions.json
+#   4. re-sync the DB and commit
 #
-# Usage: ./ralph/grade.sh
+# Usage: ./ralph/grade.sh [--llm claude|gpt]
+# e.g.   ./ralph/grade.sh --llm gpt
 
-# 1. Refresh the committed games cache.
+usage() {
+    echo "Usage: $0 [--llm claude|gpt]"
+}
+
+source "$(dirname "$0")/llm.sh"
+
+if ! parse_llm_flag "$@"; then
+    usage
+    exit 1
+fi
+
+if [ "${RALPH_LLM_ARGC:-0}" -gt 0 ]; then
+    shift "$RALPH_LLM_ARGC"
+fi
+
+if [ -n "${1:-}" ]; then
+    usage
+    exit 1
+fi
+
+# 1. Refresh the committed games cache once.
 uv run scripts/nba_games.py --write
 
-# 2. Deterministic facts the LLM judges against.
-facts=$(uv run scripts/nba_games.py --facts)
-
-# 3. Pending predictions to grade (easy/fast query surface).
+# 2. Pending predictions to grade — prediction_text last so stray tabs don't shift fields.
 predictions=$(sqlite3 -separator $'\t' predictions.db \
-    "SELECT prediction_id, video_id, prediction_text, category
+    "SELECT prediction_id, video_id, category, prediction_text
      FROM predictions
      WHERE status='pending' AND verifiable='auto' AND category IN ('game','series')")
 
@@ -30,24 +47,26 @@ if [ -z "$predictions" ]; then
 fi
 
 prompt=$(cat ralph/grade-prompt.md)
-stream_text='select(.type == "assistant").message.content[]? | select(.type == "text").text // empty'
 
-claude \
-    --model claude-sonnet-4-6 \
-    --permission-mode bypassPermissions \
-    --verbose \
-    --print \
-    --output-format stream-json \
-    "Facts: $facts
+# 3. Grade one prediction at a time, each with facts scoped to its teams.
+while IFS=$'\t' read -r pid vid category ptext; do
+    [ -z "$pid" ] && continue
+    echo "Grading $pid ..."
 
-Predictions to grade (TSV: prediction_id, video_id, prediction_text, category):
-$predictions
+    # Deterministic scoped facts — reads from cache (no network), offline and fast.
+    facts=$(uv run scripts/nba_games.py --facts-for-text "$ptext")
+
+    run_llm "Facts (scoped to this prediction's teams): $facts
+
+Prediction to grade (TSV: prediction_id, video_id, category, prediction_text):
+$pid	$vid	$category	$ptext
 
 $prompt" \
-| grep --line-buffered '^{' \
-| jq --unbuffered -rj "$stream_text"
+    || true
+    echo
+done <<< "$predictions"
 
-# 5. Re-sync the DB from the edited predictions.json files and commit.
+# 4. Re-sync the DB from the edited predictions.json files and commit.
 python3 ralph/sync.py
 git add -A
 git commit -m "grade pending game/series predictions"

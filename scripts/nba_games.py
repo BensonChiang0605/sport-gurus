@@ -9,18 +9,20 @@ Three layers:
   * fetch + cache   — get_games(), refresh_cache(), load_cache()
   * query helpers   — games_between, result_on, season_series (any season type)
                       did_win_series, series_length, game_by_number (playoffs only)
-  * grading facts   — build_facts() emits the compact JSON the grader consumes
+  * grading facts   — build_facts() / facts_for_teams() emit the compact JSON the grader consumes
 
 CLI:
-    uv run scripts/nba_games.py                 # print postseason game list (default)
-    uv run scripts/nba_games.py --write         # refresh game-data/nba-games.json
-    uv run scripts/nba_games.py --facts         # print grading facts as JSON
+    uv run scripts/nba_games.py                          # print postseason game list (default)
+    uv run scripts/nba_games.py --write                  # refresh game-data/nba-games.json
+    uv run scripts/nba_games.py --facts                  # print grading facts as JSON
+    uv run scripts/nba_games.py --facts-for-text "<text>"# print facts scoped to teams named in text
     uv run scripts/nba_games.py --season-types "Regular Season"
 """
 
 import argparse
 import json
 import pathlib
+import re
 
 import pandas as pd
 from nba_api.stats.endpoints import leaguegamefinder
@@ -57,6 +59,30 @@ _NAME_INDEX = _build_name_index()
 def to_abbrev(name: str) -> str:
     """Normalise a team reference ('Celtics', 'Boston Celtics', 'BOS') to its abbrev."""
     return _NAME_INDEX.get(name.strip().lower(), name.strip().upper())
+
+
+# Sorted longest-first so multi-word names ("golden state warriors") match before
+# shorter fragments ("warriors", "golden state") and don't get shadowed.
+_NAME_PATTERNS: list[tuple[re.Pattern, str]] = sorted(
+    ((re.compile(r"\b" + re.escape(k) + r"\b", re.IGNORECASE), v)
+     for k, v in _NAME_INDEX.items()),
+    key=lambda pair: -len(pair[0].pattern),
+)
+
+
+def teams_in_text(text: str) -> set[str]:
+    """Extract the set of team abbreviations mentioned in free-text prediction.
+
+    Matches against every key in _NAME_INDEX (full_name, nickname, city, abbreviation)
+    using word-boundary regexes. Returns only abbreviations from a real index hit —
+    never guesses. Recall-biased by design: over-matching a common-word nickname
+    ("Heat", "Magic") only widens the fact scope; missing a team hides its games.
+    """
+    found: set[str] = set()
+    for pattern, abbrev in _NAME_PATTERNS:
+        if pattern.search(text):
+            found.add(abbrev)
+    return found
 
 
 # --- fetch + cache ----------------------------------------------------------
@@ -238,6 +264,25 @@ def build_facts(games: list[dict]) -> dict:
     }
 
 
+def facts_for_teams(team_abbrevs: set[str], games: list[dict]) -> dict:
+    """build_facts() filtered to entries involving any team in team_abbrevs.
+
+    Same {series, playin, games} shape. Scoping to 'any game involving a matched team'
+    is a safe superset — it covers both head-to-head claims and single-team run claims.
+    Falls back to the full league-wide facts when team_abbrevs is empty.
+    """
+    if not team_abbrevs:
+        return build_facts(games)
+    full = build_facts(games)
+    return {
+        "series": [s for s in full["series"] if set(s["teams"]) & team_abbrevs],
+        "playin": [g for g in full["playin"]
+                   if g["winner"] in team_abbrevs or g["loser"] in team_abbrevs],
+        "games": [g for g in full["games"]
+                  if g["winner"] in team_abbrevs or g["loser"] in team_abbrevs],
+    }
+
+
 # --- CLI --------------------------------------------------------------------
 
 def main() -> None:
@@ -250,12 +295,20 @@ def main() -> None:
                         help=f"refresh the cache at {CACHE_PATH}")
     parser.add_argument("--facts", action="store_true",
                         help="print grading facts (series/playin/games) as JSON")
+    parser.add_argument("--facts-for-text", metavar="TEXT",
+                        help="print grading facts scoped to the teams named in TEXT (reads cache)")
     args = parser.parse_args()
     season_types = tuple(args.season_types)
 
     if args.write:
         games = refresh_cache(seasons=(args.season,), season_types=season_types)
         print(f"Wrote {len(games)} games to {CACHE_PATH}")
+        return
+
+    if args.facts_for_text:
+        games = load_cache()
+        abbrevs = teams_in_text(args.facts_for_text)
+        print(json.dumps(facts_for_teams(abbrevs, games), indent=2))
         return
 
     games = get_games(args.season, season_types)

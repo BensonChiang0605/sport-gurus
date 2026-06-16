@@ -1,14 +1,30 @@
 #!/bin/bash
 
-# Summarise a single episode in an interactive Claude session (one iteration of
+# Summarise a single episode in a Claude or GPT session (one iteration of
 # the ralph loop). Use ralph/afk.sh to batch many.
 #
-# Usage: ./ralph/once.sh <podcast-path> [episode-name]
+# Usage: ./ralph/once.sh [--llm claude|gpt] <podcast-path> [episode-name]
 # e.g.   ./ralph/once.sh podcasts/basketball/draymond-green-show
+#        ./ralph/once.sh --llm gpt podcasts/basketball/draymond-green-show
 #        ./ralph/once.sh podcasts/basketball/draymond-green-show 2026-05-10-some-episode
 
+usage() {
+    echo "Usage: $0 [--llm claude|gpt] <podcast-path> [episode-name]"
+}
+
+source "$(dirname "$0")/llm.sh"
+
+if ! parse_llm_flag "$@"; then
+    usage
+    exit 1
+fi
+
+if [ "${RALPH_LLM_ARGC:-0}" -gt 0 ]; then
+    shift "$RALPH_LLM_ARGC"
+fi
+
 if [ -z "$1" ]; then
-    echo "Usage: $0 <podcast-path> [episode-name]"
+    usage
     exit 1
 fi
 
@@ -34,17 +50,7 @@ episode_path="$podcast_path/episodes/$next_episode"
 commits=$(git log -n 5 --format="%H%n%ad%n%B---" --date=short 2>/dev/null || echo "No commits found")
 prompt=$(cat ralph/prompt.md)
 
-stream_text='select(.type == "assistant").message.content[]? | select(.type == "text").text // empty'
-
-claude \
-    --model claude-sonnet-4-6 \
-    --permission-mode bypassPermissions \
-    --verbose \
-    --print \
-    --output-format stream-json \
-    "Previous commits: $commits Episode to process: $episode_path $prompt" \
-| grep --line-buffered '^{' \
-| jq --unbuffered -rj "$stream_text"
+run_llm "Previous commits: $commits Episode to process: $episode_path $prompt"
 
 python3 ralph/sync.py
 git add -A

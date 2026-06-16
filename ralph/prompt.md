@@ -64,3 +64,7 @@ verifiable prediction, using exactly these keys:
 
 **Only log claims that can be objectively settled true/false.** Discard subjective takes,
 opinions, and vibes. If there are no verifiable predictions, write `[]`.
+
+**Team abbreviations:** whenever you refer to a team by a 3-letter abbreviation (in any
+field), use the canonical code from `docs/team-abbreviations.md` verbatim — never invent
+one. Full team names in prose (`prediction_text`, `argument`) are fine for readability.
