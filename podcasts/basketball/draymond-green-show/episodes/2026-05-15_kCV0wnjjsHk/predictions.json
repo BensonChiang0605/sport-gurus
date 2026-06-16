@@ -8,7 +8,10 @@
     "prediction_text": "The San Antonio Spurs will win their playoff series against the Minnesota Timberwolves.",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Closing experience: San Antonio's inexperience means Minnesota's chance is to pressure a team that does not fully know how to close yet; Fox factor: De'Aaron Fox is the Spur most equipped to take over late because he has been in playoff-closing situations before."
+    "status": "correct",
+    "argument": "Closing experience: San Antonio's inexperience means Minnesota's chance is to pressure a team that does not fully know how to close yet; Fox factor: De'Aaron Fox is the Spur most equipped to take over late because he has been in playoff-closing situations before.",
+    "grade_note": "SAS beat MIN 4-2, so San Antonio did win the playoff series.",
+    "status_general": "correct",
+    "grade_note_general": "SAS beat MIN 4-2, so San Antonio did win the playoff series."
   }
 ]
