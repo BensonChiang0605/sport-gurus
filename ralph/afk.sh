@@ -59,5 +59,5 @@ for ((i=1; i<=iterations; i++)); do
 
     python3 ralph/sync.py
     git add -A
-    git commit -m "summarise $next_episode"
+    git diff --staged --quiet || git commit -m "summarise $next_episode"
 done
