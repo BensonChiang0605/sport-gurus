@@ -1,0 +1,26 @@
+[
+  {
+    "prediction_id": "XNRehBD4ZGI-01",
+    "podcast": "draymond-green-show",
+    "video_id": "XNRehBD4ZGI",
+    "episode_date": "2026-06-07",
+    "speaker": "Draymond Green",
+    "prediction_text": "Darius Acuff Jr. will be the first point guard selected in the 2026 NBA Draft.",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Class evaluation: Green said he did not see another point guard in Acuff's class and said he watches and analyzes the game; Player quality: Green said Acuff was special and the best point guard in the country."
+  },
+  {
+    "prediction_id": "XNRehBD4ZGI-02",
+    "podcast": "draymond-green-show",
+    "video_id": "XNRehBD4ZGI",
+    "episode_date": "2026-06-07",
+    "speaker": "Draymond Green",
+    "prediction_text": "Darius Acuff Jr. will be selected in the top five of the 2026 NBA Draft.",
+    "category": "season",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": "Class evaluation: Green repeated that he did not see another point guard in the class above Acuff; Player quality: Green said Acuff was special and expected him to become a star in the NBA."
+  }
+]
