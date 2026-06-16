@@ -10,6 +10,7 @@ DB = pathlib.Path("predictions.db")
 COLS = [
     "prediction_id", "podcast", "video_id", "episode_date", "speaker",
     "prediction_text", "category", "verifiable", "status", "argument",
+    "grade_note",
 ]
 
 db = sqlite3.connect(DB)

@@ -8,7 +8,8 @@
     "prediction_text": "Boston Celtics will beat the Philadelphia 76ers in the first round of the 2026 NBA Playoffs",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": ""
+    "status": "incorrect",
+    "argument": "",
+    "grade_note": "PHI beat BOS 4-3 in seven games; the Celtics did not win the series."
   }
 ]

@@ -8,8 +8,9 @@
     "prediction_text": "Warriors beat the Clippers in the NBA Play-In game",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": ""
+    "status": "correct",
+    "argument": "",
+    "grade_note": "GSW beat LAC 126-121 in the play-in game on 2026-04-15."
   },
   {
     "prediction_id": "foRJR0lrMxE-02",
