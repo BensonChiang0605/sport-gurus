@@ -21,7 +21,8 @@
     "prediction_text": "Miami (OH) will upset Tennessee in the NCAA Tournament (Friday, March 21).",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
+    "status": "undetermined",
+    "grade_note": "The provided facts contain only NBA results involving MIA and CHA and no NCAA game involving Miami (OH) or Tennessee, so this prediction cannot be decided from the scoped facts.",
     "argument": "Momentum and chip: Miami (OH) is riding high after winning their play-in by 10 and are motivated to prove themselves after Bruce Pearl dismissed them; Tennessee skepticism: Draymond is not a strong believer in Tennessee's team this season."
   },
   {
