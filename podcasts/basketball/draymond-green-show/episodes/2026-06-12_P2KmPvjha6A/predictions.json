@@ -1,0 +1,26 @@
+[
+  {
+    "prediction_id": "P2KmPvjha6A-01",
+    "podcast": "draymond-green-show",
+    "video_id": "P2KmPvjha6A",
+    "episode_date": "2026-06-12",
+    "speaker": "Draymond Green",
+    "prediction_text": "Jalen Brunson and the New York Knicks will win the NBA Finals.",
+    "category": "series",
+    "verifiable": "auto",
+    "status": "pending",
+    "argument": "Series position: Brunson had just taken a 3-1 lead, which Draymond said put the Knicks on their way to a championship; Brunson reassessment: Draymond said he had been too critical of Brunson and now expected him to become a champion."
+  },
+  {
+    "prediction_id": "P2KmPvjha6A-02",
+    "podcast": "draymond-green-show",
+    "video_id": "P2KmPvjha6A",
+    "episode_date": "2026-06-12",
+    "speaker": "Draymond Green",
+    "prediction_text": "The New York Knicks will beat the San Antonio Spurs in Game 5 of the NBA Finals.",
+    "category": "game",
+    "verifiable": "auto",
+    "status": "pending",
+    "argument": "Spurs mentality: Draymond said San Antonio would have a hard time getting itself back up after blowing a 29-point lead in Game 4; Collapse aftermath: He said it would be tough for the Spurs to get off the canvas after a collapse that severe."
+  }
+]
