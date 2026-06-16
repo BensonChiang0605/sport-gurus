@@ -30,14 +30,17 @@ def upsert(rows):
         [[r.get(c, '') for c in COLS] for r in rows],
     )
 
-# Primary source: predictions.json files written by the LLM
-for f in sorted(pathlib.Path("podcasts").rglob("predictions.json")):
-    upsert(json.loads(f.read_text()))
-
-# Migration: predictions.csv files for episodes that predate predictions.json
+# Legacy: predictions.csv files for episodes that predate predictions.json.
+# Loaded FIRST so that predictions.json (the source of truth) overrides any stale
+# duplicate rows via INSERT OR REPLACE — e.g. once an episode is migrated to JSON
+# and graded, its JSON grades must win over the original pending CSV rows.
 for f in sorted(pathlib.Path("podcasts").rglob("predictions.csv")):
     with open(f, newline='') as fh:
         upsert(list(csv.DictReader(fh)))
+
+# Primary source: predictions.json files written by the LLM (override legacy CSV)
+for f in sorted(pathlib.Path("podcasts").rglob("predictions.json")):
+    upsert(json.loads(f.read_text()))
 
 db.commit()
 count = db.execute("SELECT COUNT(*) FROM predictions").fetchone()[0]
