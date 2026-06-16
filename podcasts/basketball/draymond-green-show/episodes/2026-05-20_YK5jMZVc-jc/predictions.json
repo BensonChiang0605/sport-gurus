@@ -8,7 +8,10 @@
     "prediction_text": "The Oklahoma City Thunder will win their playoff series against the San Antonio Spurs.",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Championship trust: He said he was not going against the defending champions; Adjustment path: He argued Oklahoma City could fix the matchup with more shooting, more two-big lineups, and a stronger Holmgren-Wembanyama response."
+    "status": "incorrect",
+    "argument": "Championship trust: He said he was not going against the defending champions; Adjustment path: He argued Oklahoma City could fix the matchup with more shooting, more two-big lineups, and a stronger Holmgren-Wembanyama response.",
+    "grade_note": "SAS beat OKC 4-3, so the Thunder did not win the playoff series.",
+    "status_general": "incorrect",
+    "grade_note_general": "SAS beat OKC 4-3, so the Thunder did not win the playoff series."
   }
 ]

@@ -8,8 +8,11 @@
     "prediction_text": "Jalen Brunson and the New York Knicks will win the NBA Finals.",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Series position: Brunson had just taken a 3-1 lead, which Draymond said put the Knicks on their way to a championship; Brunson reassessment: Draymond said he had been too critical of Brunson and now expected him to become a champion."
+    "status": "correct",
+    "argument": "Series position: Brunson had just taken a 3-1 lead, which Draymond said put the Knicks on their way to a championship; Brunson reassessment: Draymond said he had been too critical of Brunson and now expected him to become a champion.",
+    "grade_note": "NYK beat SAS 4-1, so Brunson and the Knicks won the NBA Finals.",
+    "status_general": "correct",
+    "grade_note_general": "NYK beat SAS 4-1, so Brunson and the Knicks won the NBA Finals."
   },
   {
     "prediction_id": "P2KmPvjha6A-02",
@@ -20,7 +23,8 @@
     "prediction_text": "The New York Knicks will beat the San Antonio Spurs in Game 5 of the NBA Finals.",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Spurs mentality: Draymond said San Antonio would have a hard time getting itself back up after blowing a 29-point lead in Game 4; Collapse aftermath: He said it would be tough for the Spurs to get off the canvas after a collapse that severe."
+    "status": "correct",
+    "argument": "Spurs mentality: Draymond said San Antonio would have a hard time getting itself back up after blowing a 29-point lead in Game 4; Collapse aftermath: He said it would be tough for the Spurs to get off the canvas after a collapse that severe.",
+    "grade_note": "NYK beat SAS 94-90 in Game 5 of the NBA Finals."
   }
 ]

@@ -8,7 +8,10 @@
     "prediction_text": "Oklahoma City Thunder beat the San Antonio Spurs in Game 7 and win the series.",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Championship pedigree: Draymond will keep picking the defending champions until someone actually beats them; Home-court edge: He says OKC's role players have been much better at home and Game 7 is in Oklahoma City; Depth advantage: He argues the Thunder's bench and depth have outperformed San Antonio's across the series; Physicality edge: He believes a physical whistle favors OKC because the Thunder have made SAS struggle with that style."
+    "status": "incorrect",
+    "argument": "Championship pedigree: Draymond will keep picking the defending champions until someone actually beats them; Home-court edge: He says OKC's role players have been much better at home and Game 7 is in Oklahoma City; Depth advantage: He argues the Thunder's bench and depth have outperformed San Antonio's across the series; Physicality edge: He believes a physical whistle favors OKC because the Thunder have made SAS struggle with that style.",
+    "grade_note": "SAS beat OKC 111-103 in Game 7 and won the series 4-3, so OKC did not win Game 7 or the series.",
+    "status_general": "incorrect",
+    "grade_note_general": "SAS beat OKC 4-3, so OKC did not win the series."
   }
 ]

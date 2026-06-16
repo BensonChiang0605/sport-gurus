@@ -8,8 +8,9 @@
     "prediction_text": "Jalen Brunson will dominate Game 2 of the NBA Finals.",
     "category": "game",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Rhythm: Green says Brunson did not have a good Game 1 overall but found his rhythm; Read: Green says Brunson saw some things in Game 1 that should help him in Game 2"
+    "status": "undetermined",
+    "argument": "Rhythm: Green says Brunson did not have a good Game 1 overall but found his rhythm; Read: Green says Brunson saw some things in Game 1 that should help him in Game 2",
+    "grade_note": "The results only show that NYK beat SAS 105-104 in Game 2, which does not determine whether Brunson 'dominated.'"
   },
   {
     "prediction_id": "1NoDFpPgvs4-02",

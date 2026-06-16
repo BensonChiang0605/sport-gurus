@@ -8,7 +8,10 @@
     "prediction_text": "The New York Knicks will defeat the San Antonio Spurs and win the NBA Finals.",
     "category": "series",
     "verifiable": "auto",
-    "status": "pending",
-    "argument": "Series deficit: He said San Antonio was down 3-1 and that the only hope left was that someone had come back from 3-1 before; Overall read: He told the Spurs fan asking the question that more than likely the series was over."
+    "status": "correct",
+    "argument": "Series deficit: He said San Antonio was down 3-1 and that the only hope left was that someone had come back from 3-1 before; Overall read: He told the Spurs fan asking the question that more than likely the series was over.",
+    "grade_note": "NYK beat SAS 4-1, so the Knicks won the NBA Finals.",
+    "status_general": "correct",
+    "grade_note_general": "NYK beat SAS 4-1, so the Knicks won the NBA Finals."
   }
 ]
