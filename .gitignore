@@ -13,3 +13,6 @@ nba_env/
 
 # Cached YouTube upload-date metadata (re-derivable; episodes/ are source of truth)
 .video_meta.json
+
+# SQLite prediction database (derived from predictions.json; rebuilt by ralph/sync.py)
+predictions.db

@@ -1,0 +1,98 @@
+[
+  {
+    "prediction_id": "foRJR0lrMxE-01",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Warriors beat the Clippers in the NBA Play-In game",
+    "category": "game",
+    "verifiable": "auto",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-02",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Shai Gilgeous-Alexander wins back-to-back NBA MVP",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-03",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Victor Wembanyama wins Defensive Player of the Year, likely unanimously",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-04",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Khanon Kupple wins NBA Rookie of the Year over Cooper Flagg",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-05",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Mitch Johnson wins NBA Coach of the Year",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-06",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Keldon Johnson wins NBA Sixth Man of the Year",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-07",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Nickeil Alexander-Walker wins NBA Most Improved Player",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  },
+  {
+    "prediction_id": "foRJR0lrMxE-08",
+    "podcast": "draymond-green-show",
+    "video_id": "foRJR0lrMxE",
+    "episode_date": "2026-04-15",
+    "speaker": "Draymond Green",
+    "prediction_text": "Shai Gilgeous-Alexander wins Clutch Player of the Year",
+    "category": "award",
+    "verifiable": "manual",
+    "status": "pending",
+    "argument": ""
+  }
+]
