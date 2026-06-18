@@ -13,6 +13,12 @@
     "grade_note": "SAS beat OKC 4-3, so the Thunder did not win the playoff series.",
     "status_general": "incorrect",
     "grade_note_general": "SAS beat OKC 4-3, so the Thunder did not win the playoff series.",
-    "episode_datetime": "2026-05-21T04:00:15+08:00"
+    "episode_datetime": "2026-05-21T04:00:15+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   }
 ]

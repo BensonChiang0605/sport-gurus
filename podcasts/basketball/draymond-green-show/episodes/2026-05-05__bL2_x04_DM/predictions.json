@@ -14,9 +14,12 @@
     "grade_note": "NYK beat PHI 4-0 in 4 games, not 6 as predicted.",
     "grade_note_general": "NYK did win the series vs PHI 4-0, though in 4 games rather than 6.",
     "episode_datetime": "2026-05-05T07:42:52+08:00",
-    "market_prob": "0.695",
-    "market_favorite": "NYK",
-    "market_source": "nba-playoffs-who-will-win-series-knicks-vs-76ers,nba-playoffs-knicks-vs-76ers-total-games-ou-5pt5"
+    "market_prob": "0.725",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-knicks-vs-76ers-total-games-ou-5pt5",
+    "market_prob_general": "0.695",
+    "market_favorite_general": "NYK",
+    "market_source_general": "nba-playoffs-who-will-win-series-knicks-vs-76ers"
   },
   {
     "prediction_id": "_bL2_x04_DM-02",
@@ -33,9 +36,12 @@
     "grade_note": "SAS beat MIN 4-2 in exactly 6 games as predicted.",
     "grade_note_general": "SAS did win the series vs MIN 4-2.",
     "episode_datetime": "2026-05-05T07:42:52+08:00",
-    "market_prob": "0.825",
-    "market_favorite": "SAS",
-    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves,nba-playoffs-spurs-vs-timberwolves-total-games-ou-5pt5"
+    "market_prob": "0.635",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-spurs-vs-timberwolves-total-games-ou-5pt5",
+    "market_prob_general": "0.825",
+    "market_favorite_general": "SAS",
+    "market_source_general": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves"
   },
   {
     "prediction_id": "_bL2_x04_DM-03",
@@ -52,9 +58,12 @@
     "grade_note": "CLE beat DET 4-3 in 7 games; DET did not win the series.",
     "grade_note_general": "CLE beat DET 4-3; DET did not win the series.",
     "episode_datetime": "2026-05-05T07:42:52+08:00",
-    "market_prob": "0.525",
-    "market_favorite": "DET",
-    "market_source": "nba-playoffs-who-will-win-series-cavaliers-vs-pistons,nba-playoffs-cavaliers-vs-pistons-total-games-ou-5pt5"
+    "market_prob": "0.715",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-cavaliers-vs-pistons-total-games-ou-5pt5",
+    "market_prob_general": "0.525",
+    "market_favorite_general": "DET",
+    "market_source_general": "nba-playoffs-who-will-win-series-cavaliers-vs-pistons"
   },
   {
     "prediction_id": "_bL2_x04_DM-04",
@@ -71,8 +80,11 @@
     "grade_note": "OKC swept LAL 4-0 (within 5 games) and advanced to the Western Conference Finals.",
     "grade_note_general": "OKC swept LAL 4-0 and did return to the conference finals.",
     "episode_datetime": "2026-05-05T07:42:52+08:00",
-    "market_prob": "0.925",
-    "market_favorite": "OKC",
-    "market_source": "nba-playoffs-who-will-win-series-thunder-vs-lakers,nba-playoffs-thunder-vs-lakers-total-games-ou-5pt5"
+    "market_prob": "0.715",
+    "market_favorite": "under",
+    "market_source": "nba-playoffs-thunder-vs-lakers-total-games-ou-5pt5",
+    "market_prob_general": "0.925",
+    "market_favorite_general": "OKC",
+    "market_source_general": "nba-playoffs-who-will-win-series-thunder-vs-lakers"
   }
 ]

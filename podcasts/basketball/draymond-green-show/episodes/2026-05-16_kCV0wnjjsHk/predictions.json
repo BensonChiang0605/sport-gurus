@@ -16,6 +16,9 @@
     "episode_datetime": "2026-05-16T03:45:04+08:00",
     "market_prob": "0.825",
     "market_favorite": "SAS",
-    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves,nba-playoffs-spurs-vs-timberwolves-total-games-ou-5pt5"
+    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves",
+    "market_prob_general": "0.825",
+    "market_favorite_general": "SAS",
+    "market_source_general": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves"
   }
 ]

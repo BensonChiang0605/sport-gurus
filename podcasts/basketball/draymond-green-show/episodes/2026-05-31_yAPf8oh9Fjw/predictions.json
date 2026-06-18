@@ -13,6 +13,12 @@
     "grade_note": "SAS beat OKC 111-103 in Game 7 and won the series 4-3, so OKC did not win Game 7 or the series.",
     "status_general": "incorrect",
     "grade_note_general": "SAS beat OKC 4-3, so OKC did not win the series.",
-    "episode_datetime": "2026-05-31T00:00:51+08:00"
+    "episode_datetime": "2026-05-31T00:00:51+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   }
 ]

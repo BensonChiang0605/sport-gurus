@@ -16,7 +16,10 @@
     "episode_datetime": "2026-05-09T23:30:29+08:00",
     "market_prob": "0.525",
     "market_favorite": "DET",
-    "market_source": "nba-playoffs-who-will-win-series-cavaliers-vs-pistons,nba-playoffs-cavaliers-vs-pistons-total-games-ou-5pt5"
+    "market_source": "nba-playoffs-who-will-win-series-cavaliers-vs-pistons",
+    "market_prob_general": "0.525",
+    "market_favorite_general": "DET",
+    "market_source_general": "nba-playoffs-who-will-win-series-cavaliers-vs-pistons"
   },
   {
     "prediction_id": "s0Xa2ffsQPg-02",
@@ -33,9 +36,12 @@
     "grade_note_general": "OKC beat LAL 4-0, so the Thunder did win the series even though the 'first-round' label was wrong.",
     "argument": "Series momentum: OKC leads 2-0 and Draymond would be surprised if it goes five games; A.J. Mitchell: Mitchell is shooting 50% from the field and averaging 19 points, capably filling the Jalen Williams void as he has all season; Lakers' ceiling: LeBron could theoretically steal one game but Draymond doesn't expect LAL to tie the series.",
     "episode_datetime": "2026-05-09T23:30:29+08:00",
-    "market_prob": "0.925",
-    "market_favorite": "OKC",
-    "market_source": "nba-playoffs-who-will-win-series-thunder-vs-lakers,nba-playoffs-thunder-vs-lakers-total-games-ou-5pt5"
+    "market_prob": "0.715",
+    "market_favorite": "under",
+    "market_source": "nba-playoffs-thunder-vs-lakers-total-games-ou-5pt5",
+    "market_prob_general": "0.925",
+    "market_favorite_general": "OKC",
+    "market_source_general": "nba-playoffs-who-will-win-series-thunder-vs-lakers"
   },
   {
     "prediction_id": "s0Xa2ffsQPg-03",
@@ -52,8 +58,11 @@
     "grade_note_general": "NYK beat PHI 4-0, so the Knicks did sweep the 76ers and advance to the ECF.",
     "argument": "No comeback: Philadelphia came back from 3-1 last series but will not come back from 3-0 this time; NYK rhythm: New York is playing as hot as any team with Brunson (33 pts), Bridges (23 pts), and Hart (12 pts/11 reb) all contributing in Game 3; Embiid disruption: When Embiid plays he monopolises shot attempts, squeezing Maxey (only 12 FGA in Game 3) and others out of their offensive rhythm.",
     "episode_datetime": "2026-05-09T23:30:29+08:00",
-    "market_prob": "0.695",
-    "market_favorite": "NYK",
-    "market_source": "nba-playoffs-who-will-win-series-knicks-vs-76ers,nba-playoffs-knicks-vs-76ers-total-games-ou-5pt5"
+    "market_prob": "0.275",
+    "market_favorite": "under",
+    "market_source": "nba-playoffs-knicks-vs-76ers-total-games-ou-5pt5",
+    "market_prob_general": "0.695",
+    "market_favorite_general": "NYK",
+    "market_source_general": "nba-playoffs-who-will-win-series-knicks-vs-76ers"
   }
 ]

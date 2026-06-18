@@ -14,9 +14,12 @@
     "grade_note": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game.",
     "grade_note_general": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game.",
     "episode_datetime": "2026-04-28T08:21:23+08:00",
-    "market_prob": "0.978",
-    "market_favorite": "OKC",
-    "market_source": "nba-playoffs-who-will-win-series-suns-vs-thunder"
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "0.978",
+    "market_favorite_general": "OKC",
+    "market_source_general": "nba-playoffs-who-will-win-series-suns-vs-thunder"
   },
   {
     "prediction_id": "xYr2pyJfcdY-02",
@@ -33,9 +36,12 @@
     "grade_note": "MIN beat DEN 4-2; DEN was down 3-1 but never came back, as MIN closed the series in Game 6.",
     "grade_note_general": "MIN beat DEN 4-2, so DEN did not win the series.",
     "episode_datetime": "2026-04-28T08:21:23+08:00",
-    "market_prob": "0.84",
-    "market_favorite": "DEN",
-    "market_source": "nba-playoffs-who-will-win-series-timberwolves-vs-nuggets,nba-playoffs-timberwolves-vs-nuggets-total-games-ou-5pt5"
+    "market_prob": "0.565",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-timberwolves-vs-nuggets-total-games-ou-5pt5",
+    "market_prob_general": "0.84",
+    "market_favorite_general": "DEN",
+    "market_source_general": "nba-playoffs-who-will-win-series-timberwolves-vs-nuggets"
   },
   {
     "prediction_id": "xYr2pyJfcdY-03",
@@ -49,7 +55,13 @@
     "status": "incorrect",
     "argument": "Cade's resurgence: Cade Cunningham came alive last game and needs to stay foot on the gas as the only reliable offensive engine; Duren must step up: Jalen Duren has the talent to flip the script and play with the physicality he showed all year; Discipline: Pistons need to stop chasing over screens and eliminate reaching fouls that put them in the penalty early.",
     "grade_note": "ORL won Game 4 94-88, putting the series at ORL 3-1; DET did not win Game 4 and the series was never tied 2-2.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   },
   {
     "prediction_id": "xYr2pyJfcdY-04",
@@ -66,9 +78,12 @@
     "grade_note": "LAL beat HOU 4-2 in 6 games, not 5 as predicted.",
     "grade_note_general": "LAL did win the series vs HOU 4-2, even though it took 6 games rather than 5.",
     "episode_datetime": "2026-04-28T08:21:23+08:00",
-    "market_prob": "0.195",
-    "market_favorite": "HOU",
-    "market_source": "nba-playoffs-who-will-win-series-lakers-vs-rockets,nba-playoffs-rockets-vs-lakers-total-games-ou-5pt5"
+    "market_prob": "0.48",
+    "market_favorite": "under",
+    "market_source": "nba-playoffs-rockets-vs-lakers-total-games-ou-5pt5",
+    "market_prob_general": "0.195",
+    "market_favorite_general": "HOU",
+    "market_source_general": "nba-playoffs-who-will-win-series-lakers-vs-rockets"
   },
   {
     "prediction_id": "xYr2pyJfcdY-05",
@@ -85,9 +100,12 @@
     "grade_note": "SAS beat POR 4-1, winning the series in exactly 5 games as predicted.",
     "grade_note_general": "SAS beat POR 4-1, winning the series as predicted.",
     "episode_datetime": "2026-04-28T08:21:23+08:00",
-    "market_prob": "0.945",
-    "market_favorite": "SAS",
-    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-trail-blazers,nba-playoffs-trail-blazers-vs-spurs-total-games-ou-4pt5"
+    "market_prob": "0.69",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-trail-blazers-vs-spurs-total-games-ou-4pt5",
+    "market_prob_general": "0.945",
+    "market_favorite_general": "SAS",
+    "market_source_general": "nba-playoffs-who-will-win-series-spurs-vs-trail-blazers"
   },
   {
     "prediction_id": "xYr2pyJfcdY-06",
@@ -101,7 +119,13 @@
     "status": "correct",
     "argument": "Home-court advantage: Cavs return home where role players perform better; Cavs in control: Toronto has to prove they can win on the road before the series balance shifts, and Draymond sees no evidence they can do that yet.",
     "grade_note": "CLE won Game 5 on 2026-04-29 (125-120) with the series tied 2-2 going into that game, exactly as predicted.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   },
   {
     "prediction_id": "xYr2pyJfcdY-07",
@@ -120,7 +144,10 @@
     "episode_datetime": "2026-04-28T08:21:23+08:00",
     "market_prob": "0.77",
     "market_favorite": "NYK",
-    "market_source": "nba-playoffs-who-will-win-series-knicks-vs-hawks,nba-playoffs-hawks-vs-knicks-total-games-ou-5pt5"
+    "market_source": "nba-playoffs-who-will-win-series-knicks-vs-hawks",
+    "market_prob_general": "0.77",
+    "market_favorite_general": "NYK",
+    "market_source_general": "nba-playoffs-who-will-win-series-knicks-vs-hawks"
   },
   {
     "prediction_id": "xYr2pyJfcdY-08",
@@ -137,8 +164,11 @@
     "grade_note": "PHI beat BOS 4-3 in 7 games, so BOS did not win the series.",
     "grade_note_general": "PHI beat BOS 4-3, so BOS did not win the series.",
     "episode_datetime": "2026-04-28T08:21:23+08:00",
-    "market_prob": "0.945",
-    "market_favorite": "BOS",
-    "market_source": "nba-playoffs-who-will-win-series-76ers-vs-celtics,nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5"
+    "market_prob": "0.68",
+    "market_favorite": "over",
+    "market_source": "nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5",
+    "market_prob_general": "0.945",
+    "market_favorite_general": "BOS",
+    "market_source_general": "nba-playoffs-who-will-win-series-76ers-vs-celtics"
   }
 ]

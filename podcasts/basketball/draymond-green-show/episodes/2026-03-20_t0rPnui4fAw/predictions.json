@@ -11,7 +11,13 @@
     "status": "undetermined",
     "grade_note": "The provided facts contain only NBA results and no game involving Alabama or Hofstra, so this prediction cannot be decided from the scoped facts.",
     "argument": "Key absence: Alabama's second leading scorer Aaron Estrada is out, removing their elite guard play; Tournament principle: guard play is the most critical factor in March and losing Estrada is devastating; Distraction factor: off-court distractions make it harder to compete in the tournament.",
-    "episode_datetime": "2026-03-20T22:30:55+08:00"
+    "episode_datetime": "2026-03-20T22:30:55+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   },
   {
     "prediction_id": "t0rPnui4fAw-02",
@@ -25,7 +31,13 @@
     "status": "undetermined",
     "grade_note": "The provided facts contain only NBA results involving MIA and CHA and no NCAA game involving Miami (OH) or Tennessee, so this prediction cannot be decided from the scoped facts.",
     "argument": "Momentum and chip: Miami (OH) is riding high after winning their play-in by 10 and are motivated to prove themselves after Bruce Pearl dismissed them; Tennessee skepticism: Draymond is not a strong believer in Tennessee's team this season.",
-    "episode_datetime": "2026-03-20T22:30:55+08:00"
+    "episode_datetime": "2026-03-20T22:30:55+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   },
   {
     "prediction_id": "t0rPnui4fAw-03",
@@ -39,7 +51,13 @@
     "status": "undetermined",
     "grade_note": "The provided facts contain only NBA results and no game involving Santa Clara or Kentucky, so this prediction cannot be decided from the scoped facts.",
     "argument": "Kentucky skepticism: Draymond has not been fond of Kentucky's season at all and does not view them as a strong team entering the tournament.",
-    "episode_datetime": "2026-03-20T22:30:55+08:00"
+    "episode_datetime": "2026-03-20T22:30:55+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   },
   {
     "prediction_id": "t0rPnui4fAw-04",
@@ -52,6 +70,12 @@
     "verifiable": "auto",
     "status": "pending",
     "argument": "Key absence: Texas Tech is missing their best player, which Draymond says will be impossible to overcome; Scouting advantage: Akron has already played games without their own star, so Texas Tech has something concrete to scout and prepare for.",
-    "episode_datetime": "2026-03-20T22:30:55+08:00"
+    "episode_datetime": "2026-03-20T22:30:55+08:00",
+    "market_prob": "",
+    "market_favorite": "",
+    "market_source": "",
+    "market_prob_general": "",
+    "market_favorite_general": "",
+    "market_source_general": ""
   }
 ]

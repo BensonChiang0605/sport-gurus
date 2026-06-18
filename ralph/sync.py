@@ -12,6 +12,7 @@ COLS = [
     "prediction_text", "category", "verifiable", "status", "argument",
     "grade_note", "status_general", "grade_note_general",
     "market_prob", "market_favorite", "market_source",
+    "market_prob_general", "market_favorite_general", "market_source_general",
 ]
 
 db = sqlite3.connect(DB)

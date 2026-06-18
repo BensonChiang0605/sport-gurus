@@ -14,6 +14,9 @@
     "episode_datetime": "2026-04-17T22:45:03+08:00",
     "market_prob": "0.945",
     "market_favorite": "BOS",
-    "market_source": "nba-playoffs-who-will-win-series-76ers-vs-celtics,nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5"
+    "market_source": "nba-playoffs-who-will-win-series-76ers-vs-celtics",
+    "market_prob_general": "0.945",
+    "market_favorite_general": "BOS",
+    "market_source_general": "nba-playoffs-who-will-win-series-76ers-vs-celtics"
   }
 ]

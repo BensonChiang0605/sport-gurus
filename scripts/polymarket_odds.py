@@ -338,8 +338,8 @@ def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = 
     """Who-wins-series + total-games O/U odds for a matchup, cache-first.
 
     Returns {winner:{probs:{A,B}, favored, source_slug},
-             total_games:{line, over_prob, source_slug}, captured_ts} or {} when no
-    market matches / the series can't be pinned to a start yet.
+             total_games:{line, over_prob, under_prob, source_slug}, captured_ts} or {}
+    when no market matches / the series can't be pinned to a start yet.
     """
     a, b = to_abbrev(team_a), to_abbrev(team_b)
     games = load_cache() if games is None else games
@@ -389,6 +389,7 @@ def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = 
         if tot_entry:
             result["total_games"] = {"line": tot_entry["line"],
                                      "over_prob": tot_entry["over_prob"],
+                                     "under_prob": round(1 - tot_entry["over_prob"], 4),
                                      "source_slug": tot["slug"]}
     return result
 

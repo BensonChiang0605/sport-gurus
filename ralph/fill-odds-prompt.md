@@ -11,7 +11,9 @@ which team the prediction backs, so you can copy the number for that side.
   probability *at the start of the game/series*, already fetched for you (deterministic).
   Shapes:
   - `game` → `{probs: {ABBR: p, ABBR: p}, favored, source_slug, ...}`.
-  - `series` → `{winner: {probs: {ABBR: p, ...}, favored, source_slug}, total_games: {...}, ...}`.
+  - `series` → `{winner: {probs: {ABBR: p, ...}, favored, source_slug},
+    total_games: {line, over_prob, under_prob, source_slug}, ...}`. The `total_games`
+    block is **optional** — it may be absent even when `winner` is present.
   It is `{}` when no market matched (pre-coverage, an un-listed regular-season game, or a
   game that can't be pinned to one date).
 
@@ -32,21 +34,38 @@ team name in the prediction text to its abbreviation, use the canonical codes in
    will win the game / win the series. (For a negated or compound claim, this is still the
    team the claim is *about winning*, e.g. "OKC sweep PHX 4-0" backs OKC.)
 
-3. **Copy the market benchmark into three fields — no judgement on the number.** These come
-   **straight from the provided "Market odds" JSON**; you only route an already-computed
-   number to the team the prediction backs. Set on the matched object:
-   - `"market_prob"` — the implied start probability the market gave the **outcome the
-     prediction backed**: for a `game`, `probs[<team predicted to win>]`; for a `series`,
-     `winner.probs[<team predicted to win the series>]`. Copy the number verbatim.
-   - `"market_favorite"` — the abbrev the market favored at start: `favored` for a `game`,
-     `winner.favored` for a `series`.
-   - `"market_source"` — the `source_slug`(s) used (for a `series`, the winner's
-     `source_slug`; include the total-games slug too if present).
-   **If the "Market odds" JSON is `{}`, set all three fields to `""`.** Do not invent or
-   estimate a probability.
+3. **Route the market benchmark into the fields — no judgement on any number.** Every number
+   comes **straight from the provided "Market odds" JSON**; you never invent or estimate one.
+   There are two parallel triples, mirroring the two series grades (`status` exact vs
+   `status_general`): an **exact** triple (`market_prob` / `market_favorite` / `market_source`)
+   and a **general** triple (`market_prob_general` / `market_favorite_general` /
+   `market_source_general`). You do **no arithmetic** — `under_prob` is precomputed for you.
+
+   **If the "Market odds" JSON is `{}`, set all six fields to `""`** and stop.
+
+   **General triple — series-winner odds (who wins the series, ignoring game count):**
+   - For a `game`: leave all three `*_general` fields `""`.
+   - For a `series`: `market_prob_general = winner.probs[<team predicted to win the series>]`,
+     `market_favorite_general = winner.favored`, `market_source_general = winner.source_slug`.
+
+   **Exact triple — the full claim as stated:**
+   - For a `game`: `market_prob = probs[<team predicted to win>]`,
+     `market_favorite = favored`, `market_source = source_slug` (unchanged behaviour).
+   - For a `series` **with a game count** (e.g. "in 5 games", "in six", "goes to 7"), use the
+     `total_games` block. Read the count `n` from `prediction_text` and compare it to
+     `total_games.line` (always an `X.5`):
+     - `n < line` → `market_prob = total_games.under_prob`, `market_favorite = "under"`.
+     - `n > line` → `market_prob = total_games.over_prob`,  `market_favorite = "over"`.
+     - Set `market_source = total_games.source_slug`.
+     - **If there is no `total_games` block**, leave the exact triple `""` (the general triple
+       is still filled). The count claim has no market benchmark here.
+   - For a `series` with **no game count** (e.g. "BOS win vs PHI"), the exact claim *is* the
+     winner claim: mirror the exact triple from the general triple — copy
+     `market_prob = market_prob_general`, `market_favorite = market_favorite_general`,
+     `market_source = market_source_general`.
 
 **Change nothing else in the file.** Never touch `status`, `grade_note`, `status_general`,
 `grade_note_general`, or any other field, and leave every other prediction untouched.
 
 Do not touch `predictions.db`, do not run sync, do not commit — the shell does that.
-Fill the three market fields for this prediction, then stop.
+Fill the market fields for this prediction, then stop.
