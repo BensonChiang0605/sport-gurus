@@ -1,0 +1,29 @@
+[
+  {
+    "prediction_id": "1NoDFpPgvs4-01",
+    "podcast": "draymond-green-show",
+    "video_id": "1NoDFpPgvs4",
+    "episode_date": "2026-06-06",
+    "speaker": "Draymond Green",
+    "prediction_text": "Jalen Brunson will dominate Game 2 of the NBA Finals.",
+    "category": "game",
+    "verifiable": "auto",
+    "status": "undetermined",
+    "argument": "Rhythm: Green says Brunson did not have a good Game 1 overall but found his rhythm; Read: Green says Brunson saw some things in Game 1 that should help him in Game 2",
+    "grade_note": "The results only show that NYK beat SAS 105-104 in Game 2, which does not determine whether Brunson 'dominated.'",
+    "episode_datetime": "2026-06-06T01:29:15+08:00"
+  },
+  {
+    "prediction_id": "1NoDFpPgvs4-02",
+    "podcast": "draymond-green-show",
+    "video_id": "1NoDFpPgvs4",
+    "episode_date": "2026-06-06",
+    "speaker": "Draymond Green",
+    "prediction_text": "Shai Gilgeous-Alexander will average more than 30 points per game next season.",
+    "category": "season",
+    "verifiable": "auto",
+    "status": "pending",
+    "argument": "Ability: Green says Gilgeous-Alexander is great",
+    "episode_datetime": "2026-06-06T01:29:15+08:00"
+  }
+]

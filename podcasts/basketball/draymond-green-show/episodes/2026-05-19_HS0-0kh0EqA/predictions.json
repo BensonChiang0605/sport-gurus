@@ -1,0 +1,34 @@
+[
+  {
+    "prediction_id": "HS0-0kh0EqA-01",
+    "podcast": "draymond-green-show",
+    "video_id": "HS0-0kh0EqA",
+    "episode_date": "2026-05-19",
+    "speaker": "Draymond Green",
+    "prediction_text": "The New York Knicks will beat the Cleveland Cavaliers in six games in the conference finals.",
+    "category": "series",
+    "verifiable": "auto",
+    "status": "incorrect",
+    "argument": "Matchup fit: New York is built to defend and attack Cleveland with multiple perimeter options; Big-man spacing: Karl-Anthony Towns can pull Jarrett Allen and Evan Mobley away from the rim and open the floor; Momentum: The Knicks have found a strong playoff rhythm and are playing incredible basketball.",
+    "grade_note": "NYK beat CLE 4-0, so the Knicks did not beat the Cavaliers in six games.",
+    "status_general": "correct",
+    "grade_note_general": "NYK beat CLE 4-0, so the Knicks did win the conference finals series.",
+    "episode_datetime": "2026-05-19T06:30:03+08:00"
+  },
+  {
+    "prediction_id": "HS0-0kh0EqA-02",
+    "podcast": "draymond-green-show",
+    "video_id": "HS0-0kh0EqA",
+    "episode_date": "2026-05-19",
+    "speaker": "Draymond Green",
+    "prediction_text": "The Oklahoma City Thunder will beat the San Antonio Spurs in the conference finals.",
+    "category": "series",
+    "verifiable": "auto",
+    "status": "incorrect",
+    "argument": "Championship edge: Oklahoma City being the champs makes the regular-season matchup less decisive once the playoffs start; Jalen Williams return: Getting J-Dub back gives the Thunder the secondary downhill creator they need against Victor Wembanyama; Defensive versatility: J-Dub gives Oklahoma City another smaller option to defend Wembanyama if needed.",
+    "grade_note": "SAS beat OKC 4-3, so the Thunder did not win the conference finals series.",
+    "status_general": "incorrect",
+    "grade_note_general": "SAS beat OKC 4-3, so the Thunder did not win the conference finals series.",
+    "episode_datetime": "2026-05-19T06:30:03+08:00"
+  }
+]
