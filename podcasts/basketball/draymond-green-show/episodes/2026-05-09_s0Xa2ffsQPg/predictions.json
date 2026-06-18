@@ -12,7 +12,8 @@
     "grade_note": "CLE beat DET 4-3, so the Pistons did not win the series.",
     "status_general": "incorrect",
     "grade_note_general": "CLE beat DET 4-3, so the Pistons did not win the series.",
-    "argument": "Physicality: Detroit is simply too physical for Cleveland, with Jared Allen and Evan Mobley visibly struggling against that contact; Size mismatch: Detroit's lineup of Duren, Ausar Thompson, and Tobias Harris creates an overwhelming size and athleticism problem for CLE; Shooting woes: Cleveland went 0-for-11 from three in Q4 and 7-for-32 overall in Game 2, making road wins very difficult; Key matchup: Dennis Jenkins has won the backup-PG matchup against Dennis Schroder in both games, helping DET close both contests."
+    "argument": "Physicality: Detroit is simply too physical for Cleveland, with Jared Allen and Evan Mobley visibly struggling against that contact; Size mismatch: Detroit's lineup of Duren, Ausar Thompson, and Tobias Harris creates an overwhelming size and athleticism problem for CLE; Shooting woes: Cleveland went 0-for-11 from three in Q4 and 7-for-32 overall in Game 2, making road wins very difficult; Key matchup: Dennis Jenkins has won the backup-PG matchup against Dennis Schroder in both games, helping DET close both contests.",
+    "episode_datetime": "2026-05-09T23:30:29+08:00"
   },
   {
     "prediction_id": "s0Xa2ffsQPg-02",
@@ -27,7 +28,8 @@
     "grade_note": "OKC vs LAL was a second-round series (Conference Semifinals), not a first-round series; OKC's first-round opponent was PHX.",
     "status_general": "correct",
     "grade_note_general": "OKC beat LAL 4-0, so the Thunder did win the series even though the 'first-round' label was wrong.",
-    "argument": "Series momentum: OKC leads 2-0 and Draymond would be surprised if it goes five games; A.J. Mitchell: Mitchell is shooting 50% from the field and averaging 19 points, capably filling the Jalen Williams void as he has all season; Lakers' ceiling: LeBron could theoretically steal one game but Draymond doesn't expect LAL to tie the series."
+    "argument": "Series momentum: OKC leads 2-0 and Draymond would be surprised if it goes five games; A.J. Mitchell: Mitchell is shooting 50% from the field and averaging 19 points, capably filling the Jalen Williams void as he has all season; Lakers' ceiling: LeBron could theoretically steal one game but Draymond doesn't expect LAL to tie the series.",
+    "episode_datetime": "2026-05-09T23:30:29+08:00"
   },
   {
     "prediction_id": "s0Xa2ffsQPg-03",
@@ -42,6 +44,7 @@
     "grade_note": "NYK beat PHI 4-0 (sweep) and advanced to the ECF where they beat CLE 4-0.",
     "status_general": "correct",
     "grade_note_general": "NYK beat PHI 4-0, so the Knicks did sweep the 76ers and advance to the ECF.",
-    "argument": "No comeback: Philadelphia came back from 3-1 last series but will not come back from 3-0 this time; NYK rhythm: New York is playing as hot as any team with Brunson (33 pts), Bridges (23 pts), and Hart (12 pts/11 reb) all contributing in Game 3; Embiid disruption: When Embiid plays he monopolises shot attempts, squeezing Maxey (only 12 FGA in Game 3) and others out of their offensive rhythm."
+    "argument": "No comeback: Philadelphia came back from 3-1 last series but will not come back from 3-0 this time; NYK rhythm: New York is playing as hot as any team with Brunson (33 pts), Bridges (23 pts), and Hart (12 pts/11 reb) all contributing in Game 3; Embiid disruption: When Embiid plays he monopolises shot attempts, squeezing Maxey (only 12 FGA in Game 3) and others out of their offensive rhythm.",
+    "episode_datetime": "2026-05-09T23:30:29+08:00"
   }
 ]

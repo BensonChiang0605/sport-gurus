@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: SgP74xvYDHw
 episode_date: 2026-03-13
+episode_datetime: 2026-03-13T23:15:03+08:00
 title: BAM ADEBAYO Scores 83 POINTS! 😱 Is SGA the MVP? Wemby 2-Way GOAT Debate
 url: https://www.youtube.com/watch?v=SgP74xvYDHw
 ---

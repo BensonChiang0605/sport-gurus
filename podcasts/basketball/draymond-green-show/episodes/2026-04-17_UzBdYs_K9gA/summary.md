@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: UzBdYs_K9gA
 episode_date: 2026-04-17
+episode_datetime: 2026-04-17T22:45:03+08:00
 title: Draymond Green CLAMPS Kawhi Leonard, Warriors vs. Suns Preview & LaMelo/Bam Tripping Controversy
 url: https://www.youtube.com/watch?v=UzBdYs_K9gA
 ---

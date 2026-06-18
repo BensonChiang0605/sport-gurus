@@ -12,7 +12,8 @@
     "argument": "Series position: Brunson had just taken a 3-1 lead, which Draymond said put the Knicks on their way to a championship; Brunson reassessment: Draymond said he had been too critical of Brunson and now expected him to become a champion.",
     "grade_note": "NYK beat SAS 4-1, so Brunson and the Knicks won the NBA Finals.",
     "status_general": "correct",
-    "grade_note_general": "NYK beat SAS 4-1, so Brunson and the Knicks won the NBA Finals."
+    "grade_note_general": "NYK beat SAS 4-1, so Brunson and the Knicks won the NBA Finals.",
+    "episode_datetime": "2026-06-12T23:30:01+08:00"
   },
   {
     "prediction_id": "P2KmPvjha6A-02",
@@ -25,6 +26,7 @@
     "verifiable": "auto",
     "status": "correct",
     "argument": "Spurs mentality: Draymond said San Antonio would have a hard time getting itself back up after blowing a 29-point lead in Game 4; Collapse aftermath: He said it would be tough for the Spurs to get off the canvas after a collapse that severe.",
-    "grade_note": "NYK beat SAS 94-90 in Game 5 of the NBA Finals."
+    "grade_note": "NYK beat SAS 94-90 in Game 5 of the NBA Finals.",
+    "episode_datetime": "2026-06-12T23:30:01+08:00"
   }
 ]

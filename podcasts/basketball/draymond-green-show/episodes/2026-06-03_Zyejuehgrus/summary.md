@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: Zyejuehgrus
 episode_date: 2026-06-03
+episode_datetime: 2026-06-03T22:30:25+08:00
 title: Draymond Green on Keys To Knicks vs Spurs NBA Finals Matchup & Steph Curry's Li-Ning Shoe Deal!
 url: https://www.youtube.com/watch?v=Zyejuehgrus
 ---

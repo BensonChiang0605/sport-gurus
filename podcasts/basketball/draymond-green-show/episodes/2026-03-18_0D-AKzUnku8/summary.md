@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: 0D-AKzUnku8
 episode_date: 2026-03-18
+episode_datetime: 2026-03-18T23:45:32+08:00
 title: Seattle and Vegas are Getting NBA Teams! + Wemby Challenges for MVP & Kawhi Leonard is Must-See-TV!
 url: https://www.youtube.com/watch?v=0D-AKzUnku8
 ---

@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: RGqrpfCJ4zA
 episode_date: 2026-03-10
+episode_datetime: 2026-03-10T23:00:46+08:00
 title: "Jayson Tatum RETURNS! Draymond vs SGA & KD + Daryl Morey's Hot Take"
 url: https://www.youtube.com/watch?v=RGqrpfCJ4zA
 ---

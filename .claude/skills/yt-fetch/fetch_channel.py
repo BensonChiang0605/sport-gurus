@@ -1,6 +1,9 @@
 import argparse
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import yt_dlp
+
+TAIPEI = ZoneInfo("Asia/Taipei")
 
 
 def fetch_channel(channel_handle: str, max_results: int = 5) -> list[dict]:
@@ -18,12 +21,20 @@ def fetch_channel(channel_handle: str, max_results: int = 5) -> list[dict]:
         for entry in info.get("entries", []):
             if entry is None:
                 continue
-            upload_date = entry.get("upload_date")
+            timestamp = entry.get("timestamp")
+            upload_date_str = entry.get("upload_date")
             results.append({
                 "title": entry.get("title"),
                 "upload_date": (
-                    datetime.strptime(upload_date, "%Y%m%d").strftime("%Y-%m-%d")
-                    if upload_date
+                    datetime.fromtimestamp(timestamp, tz=TAIPEI).strftime("%Y-%m-%d")
+                    if timestamp
+                    else datetime.strptime(upload_date_str, "%Y%m%d").strftime("%Y-%m-%d")
+                    if upload_date_str
+                    else None
+                ),
+                "upload_datetime": (
+                    datetime.fromtimestamp(timestamp, tz=TAIPEI).isoformat()
+                    if timestamp
                     else None
                 ),
                 "url": entry.get("webpage_url") or f"https://youtube.com/watch?v={entry.get('id')}",

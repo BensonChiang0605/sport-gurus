@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: dleMluhq6q0
 episode_date: 2026-05-31
+episode_datetime: 2026-05-31T22:03:49+08:00
 title: Draymond Green Reflects on Knicks Takes, Jalen Brunson Versus Steph Curry & NBA Foul-Baiting
 url: https://www.youtube.com/watch?v=dleMluhq6q0
 ---

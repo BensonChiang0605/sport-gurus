@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: P2KmPvjha6A
 episode_date: 2026-06-12
+episode_datetime: 2026-06-12T23:30:01+08:00
 title: "\"Greatest Game Ever?!\" Draymond Green Reacts to Knicks vs Spurs Finals Game 4 Comeback"
 url: https://www.youtube.com/watch?v=P2KmPvjha6A
 ---

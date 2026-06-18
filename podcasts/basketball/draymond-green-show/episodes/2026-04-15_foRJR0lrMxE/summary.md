@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: foRJR0lrMxE
 episode_date: 2026-04-15
+episode_datetime: 2026-04-15T23:17:48+08:00
 title: Warriors vs. Clippers NBA Play-In Preview & Draymond's NBA Awards
 url: https://www.youtube.com/watch?v=foRJR0lrMxE
 ---

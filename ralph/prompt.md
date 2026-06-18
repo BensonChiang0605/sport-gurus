@@ -7,7 +7,7 @@ instructions. Process exactly that episode, then stop.
 ## 1. Read it
 
 Read that folder's `transcript.txt` (the full episode text) and `meta.json` (video_id,
-title, url, episode_date, podcast, sport).
+title, url, episode_date, episode_datetime, podcast, sport).
 
 ## 2. Write `summary.md` in that folder
 
@@ -20,6 +20,7 @@ the sub-bullet label. Include only rationale the speaker actually gave; don't in
 podcast: <podcast slug from meta.json>
 video_id: <video_id>
 episode_date: <episode_date>
+episode_datetime: <episode_datetime>
 title: <title>
 url: <url>
 ---
@@ -43,6 +44,7 @@ verifiable prediction, using exactly these keys:
     "podcast": "<podcast slug from meta.json>",
     "video_id": "<video_id>",
     "episode_date": "<episode_date>",
+    "episode_datetime": "<episode_datetime>",
     "speaker": "<who made the claim>",
     "prediction_text": "<concise paraphrase of the claim>",
     "category": "<game | series | award | season>",

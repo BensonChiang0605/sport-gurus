@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: t0rPnui4fAw
 episode_date: 2026-03-20
+episode_datetime: 2026-03-20T22:30:55+08:00
 title: Cade Cunningham Out Indefinitely, Giannis vs. Bucks Standoff, and WNBA's Historic New CBA
 url: https://www.youtube.com/watch?v=t0rPnui4fAw
 ---

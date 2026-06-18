@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: xYr2pyJfcdY
 episode_date: 2026-04-28
+episode_datetime: 2026-04-28T08:21:23+08:00
 title: NBA Playoffs First Round Series Breakdowns & Predictions With Draymond Green
 url: https://www.youtube.com/watch?v=xYr2pyJfcdY
 ---

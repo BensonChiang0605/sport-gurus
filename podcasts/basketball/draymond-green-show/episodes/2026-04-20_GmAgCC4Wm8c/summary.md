@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: GmAgCC4Wm8c
 episode_date: 2026-04-20
+episode_datetime: 2026-04-20T23:15:04+08:00
 title: Draymond Green Reflects on Warriors Season Ending, Devin Booker Altercation & Future in Golden State
 url: https://www.youtube.com/watch?v=GmAgCC4Wm8c
 ---

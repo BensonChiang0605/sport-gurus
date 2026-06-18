@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: s0Xa2ffsQPg
 episode_date: 2026-05-09
+episode_datetime: 2026-05-09T23:30:29+08:00
 title: Draymond Green Explains Viral Charles Barkley Interaction & Sitting Courtside For Pistons/Cavs Game
 url: https://www.youtube.com/watch?v=s0Xa2ffsQPg
 ---

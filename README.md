@@ -13,7 +13,7 @@ podcasts/
       episodes/
         <YYYY-MM-DD>_<video_id>/     # one folder per episode, sorts chronologically
           transcript.txt            # combined transcript, timestamps stripped
-          meta.json                 # video_id, title, url, episode_date, duration
+          meta.json                 # video_id, title, url, episode_date, episode_datetime, duration
           summary.md                # generated: summary + verifiable predictions
 scripts/
   ingest_channel.py                 # fetch transcripts + dates -> cleaned episodes/
@@ -30,7 +30,7 @@ within a sport, and a cross-sport roll-up is a trivial concat if ever needed. On
 
 ### `predictions.csv` columns
 
-`prediction_id, podcast, video_id, episode_date, speaker, prediction_text, category,
+`prediction_id, podcast, video_id, episode_date, episode_datetime, speaker, prediction_text, category,
 verifiable, resolve_after, status, evidence`
 
 - `category`: `game | series | award | season`

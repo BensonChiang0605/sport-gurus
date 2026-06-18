@@ -4,9 +4,6 @@ Analyses how accurate sports podcasts are at predicting outcomes — both as a l
 
 All predications are saved in `predictions.db`
 
-## The Ralph summarisation workflow
-
-"Ralph" is a loop that summarises episodes one at a time. The key principle:
 **deterministic work lives in shell/Python; only judgement lives in the LLM.**
 
 ## Conventions & gotchas

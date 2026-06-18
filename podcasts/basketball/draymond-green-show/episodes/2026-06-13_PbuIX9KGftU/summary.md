@@ -2,6 +2,7 @@
 podcast: draymond-green-show
 video_id: PbuIX9KGftU
 episode_date: 2026-06-13
+episode_datetime: 2026-06-13T22:00:07+08:00
 title: "Draymond Green Recreates 'Inside The NBA' + Knicks-Spurs Game 4 Fallout"
 url: https://www.youtube.com/watch?v=PbuIX9KGftU
 ---
