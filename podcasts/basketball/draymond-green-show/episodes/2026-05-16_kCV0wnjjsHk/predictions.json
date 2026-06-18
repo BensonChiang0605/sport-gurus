@@ -13,6 +13,9 @@
     "grade_note": "SAS beat MIN 4-2, so San Antonio did win the playoff series.",
     "status_general": "correct",
     "grade_note_general": "SAS beat MIN 4-2, so San Antonio did win the playoff series.",
-    "episode_datetime": "2026-05-16T03:45:04+08:00"
+    "episode_datetime": "2026-05-16T03:45:04+08:00",
+    "market_prob": "0.825",
+    "market_favorite": "SAS",
+    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-timberwolves,nba-playoffs-spurs-vs-timberwolves-total-games-ou-5pt5"
   }
 ]

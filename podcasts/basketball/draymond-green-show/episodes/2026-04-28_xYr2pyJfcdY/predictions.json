@@ -13,7 +13,10 @@
     "argument": "Series competitiveness: the games haven't been competitive even without the controversial foul calls, showing the gap is real; Defensive strategy: the only way Suns stay close is to pack the paint and force perimeter threes, which Draymond doesn't think they can execute.",
     "grade_note": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game.",
     "grade_note_general": "OKC beat PHX 4-0, sweeping the series and PHX did not win a single game.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.978",
+    "market_favorite": "OKC",
+    "market_source": "nba-playoffs-who-will-win-series-suns-vs-thunder"
   },
   {
     "prediction_id": "xYr2pyJfcdY-02",
@@ -29,7 +32,10 @@
     "argument": "Injuries: T-Wolves lost their entire starting backcourt (Ant-Man out for the series, DiVincenzo torn Achilles), making it very hard to protect a 3-1 lead; Joker resilience: Rudy's length bothers Jokic but Jokic can still go for 40 any night and the Nuggets have won every subsequent series since their 2020 loss.",
     "grade_note": "MIN beat DEN 4-2; DEN was down 3-1 but never came back, as MIN closed the series in Game 6.",
     "grade_note_general": "MIN beat DEN 4-2, so DEN did not win the series.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.84",
+    "market_favorite": "DEN",
+    "market_source": "nba-playoffs-who-will-win-series-timberwolves-vs-nuggets,nba-playoffs-timberwolves-vs-nuggets-total-games-ou-5pt5"
   },
   {
     "prediction_id": "xYr2pyJfcdY-03",
@@ -59,7 +65,10 @@
     "argument": "LeBron's chess match: LeBron has been methodically walking up the court and getting any shot he wants, and the Rockets have nobody capable of matching his chess-level IQ; KD unavailable: Kevin Durant is out with knee and ankle injuries and without him Houston cannot generate enough to extend the series.",
     "grade_note": "LAL beat HOU 4-2 in 6 games, not 5 as predicted.",
     "grade_note_general": "LAL did win the series vs HOU 4-2, even though it took 6 games rather than 5.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.195",
+    "market_favorite": "HOU",
+    "market_source": "nba-playoffs-who-will-win-series-lakers-vs-rockets,nba-playoffs-rockets-vs-lakers-total-games-ou-5pt5"
   },
   {
     "prediction_id": "xYr2pyJfcdY-05",
@@ -75,7 +84,10 @@
     "argument": "Blown leads: Blazers built big leads in two straight games and squandered both, showing they can't close at the playoff level; No go-to scorer: Portland has no proven playoff bucket-getter like Dame to stop runs, and Deni Avdija hasn't proven that ability yet; Stephon Castle: Castle has been the most impactful player for the Spurs and is carrying the team.",
     "grade_note": "SAS beat POR 4-1, winning the series in exactly 5 games as predicted.",
     "grade_note_general": "SAS beat POR 4-1, winning the series as predicted.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.945",
+    "market_favorite": "SAS",
+    "market_source": "nba-playoffs-who-will-win-series-spurs-vs-trail-blazers,nba-playoffs-trail-blazers-vs-spurs-total-games-ou-4pt5"
   },
   {
     "prediction_id": "xYr2pyJfcdY-06",
@@ -105,7 +117,10 @@
     "argument": "Experience gap: the Knicks have more playoff experience and the Hawks, despite their athleticism and length, still have more growing to do; Atlanta's offensive dysfunction: the Hawks are too CJ-dependent and their rotation (Dyson Daniels limiting offense, Kispert unprepared) is stifling their ability to generate downhill attacks.",
     "grade_note": "NYK beat ATL 4-2, winning the series as predicted.",
     "grade_note_general": "NYK beat ATL 4-2, winning the series as predicted.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.77",
+    "market_favorite": "NYK",
+    "market_source": "nba-playoffs-who-will-win-series-knicks-vs-hawks,nba-playoffs-hawks-vs-knicks-total-games-ou-5pt5"
   },
   {
     "prediction_id": "xYr2pyJfcdY-08",
@@ -121,6 +136,9 @@
     "argument": "Celtics know Embiid: Boston has had Philly's number for years and incorporating Joel back into the starting lineup after only ~25-30 games just gives them a familiar defensive assignment; No continuity: the starting unit has had almost no reps with Embiid all season, so there is no offensive chemistry to unlock.",
     "grade_note": "PHI beat BOS 4-3 in 7 games, so BOS did not win the series.",
     "grade_note_general": "PHI beat BOS 4-3, so BOS did not win the series.",
-    "episode_datetime": "2026-04-28T08:21:23+08:00"
+    "episode_datetime": "2026-04-28T08:21:23+08:00",
+    "market_prob": "0.945",
+    "market_favorite": "BOS",
+    "market_source": "nba-playoffs-who-will-win-series-76ers-vs-celtics,nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5"
   }
 ]

@@ -56,13 +56,7 @@ while IFS=$'\t' read -r pid vid category ptext; do
     # Deterministic scoped facts — reads from cache (no network), offline and fast.
     facts=$(uv run scripts/nba_games.py --facts-for-text "$ptext")
 
-    # Deterministic market benchmark — lazy Polymarket odds cache (fills on first use,
-    # fail-soft to {} so grading never blocks). The LLM only routes a number, see prompt.
-    odds=$(uv run scripts/polymarket_odds.py --odds-for-text "$ptext" --category "$category" || true)
-
     run_llm "Facts (scoped to this prediction's teams): $facts
-
-Market odds (Polymarket, pregame): $odds
 
 Prediction to grade (TSV: prediction_id, video_id, category, prediction_text):
 $pid	$vid	$category	$ptext

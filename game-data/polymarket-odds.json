@@ -15,6 +15,54 @@
     "line": 4.5,
     "over_prob": 0.68
   },
+  "nba-playoffs-cavaliers-vs-pistons-total-games-ou-5pt5": {
+    "captured_ts": "2026-05-05T23:20:05Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.715
+  },
+  "nba-playoffs-hawks-vs-knicks-total-games-ou-5pt5": {
+    "captured_ts": "2026-04-18T23:20:49Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.615
+  },
+  "nba-playoffs-knicks-vs-76ers-total-games-ou-5pt5": {
+    "captured_ts": "2026-05-04T23:20:08Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.725
+  },
+  "nba-playoffs-rockets-vs-lakers-total-games-ou-5pt5": {
+    "captured_ts": "2026-04-18T23:20:50Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.52
+  },
+  "nba-playoffs-spurs-vs-timberwolves-total-games-ou-5pt5": {
+    "captured_ts": "2026-05-04T23:20:07Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.635
+  },
+  "nba-playoffs-thunder-vs-lakers-total-games-ou-5pt5": {
+    "captured_ts": "2026-05-05T23:20:04Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.285
+  },
+  "nba-playoffs-timberwolves-vs-nuggets-total-games-ou-5pt5": {
+    "captured_ts": "2026-04-18T23:20:45Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.565
+  },
+  "nba-playoffs-trail-blazers-vs-spurs-total-games-ou-4pt5": {
+    "captured_ts": "2026-04-19T23:20:49Z",
+    "kind": "series-total-games",
+    "line": 4.5,
+    "over_prob": 0.69
+  },
   "nba-playoffs-who-will-win-series-76ers-vs-celtics": {
     "captured_ts": "2026-04-19T23:20:50Z",
     "favored": "BOS",
@@ -22,6 +70,87 @@
     "probs": {
       "BOS": 0.945,
       "PHI": 0.055
+    }
+  },
+  "nba-playoffs-who-will-win-series-cavaliers-vs-pistons": {
+    "captured_ts": "2026-05-05T23:20:05Z",
+    "favored": "DET",
+    "kind": "series-winner",
+    "probs": {
+      "CAVS": 0.475,
+      "DET": 0.525
+    }
+  },
+  "nba-playoffs-who-will-win-series-knicks-vs-76ers": {
+    "captured_ts": "2026-05-04T23:20:07Z",
+    "favored": "NYK",
+    "kind": "series-winner",
+    "probs": {
+      "NYK": 0.695,
+      "PHI": 0.305
+    }
+  },
+  "nba-playoffs-who-will-win-series-knicks-vs-hawks": {
+    "captured_ts": "2026-04-18T23:20:58Z",
+    "favored": "NYK",
+    "kind": "series-winner",
+    "probs": {
+      "ATL": 0.23,
+      "NYK": 0.77
+    }
+  },
+  "nba-playoffs-who-will-win-series-lakers-vs-rockets": {
+    "captured_ts": "2026-04-18T23:20:55Z",
+    "favored": "HOU",
+    "kind": "series-winner",
+    "probs": {
+      "HOU": 0.805,
+      "LAL": 0.195
+    }
+  },
+  "nba-playoffs-who-will-win-series-spurs-vs-timberwolves": {
+    "captured_ts": "2026-05-04T23:20:08Z",
+    "favored": "SAS",
+    "kind": "series-winner",
+    "probs": {
+      "SAS": 0.825,
+      "WOLVES": 0.175
+    }
+  },
+  "nba-playoffs-who-will-win-series-spurs-vs-trail-blazers": {
+    "captured_ts": "2026-04-19T23:20:50Z",
+    "favored": "SAS",
+    "kind": "series-winner",
+    "probs": {
+      "BLAZERS": 0.055,
+      "SAS": 0.945
+    }
+  },
+  "nba-playoffs-who-will-win-series-suns-vs-thunder": {
+    "captured_ts": "2026-04-19T23:20:53Z",
+    "favored": "OKC",
+    "kind": "series-winner",
+    "probs": {
+      "OKC": 0.978,
+      "PHX": 0.022
+    }
+  },
+  "nba-playoffs-who-will-win-series-thunder-vs-lakers": {
+    "captured_ts": "2026-05-05T23:20:04Z",
+    "favored": "OKC",
+    "kind": "series-winner",
+    "probs": {
+      "LAL": 0.075,
+      "OKC": 0.925
+    }
+  },
+  "nba-playoffs-who-will-win-series-timberwolves-vs-nuggets": {
+    "captured_ts": "2026-04-18T23:20:58Z",
+    "favored": "DEN",
+    "kind": "series-winner",
+    "probs": {
+      "DEN": 0.84,
+      "WOLVES": 0.16
     }
   },
   "nba-sas-nyk-2026-06-08": {

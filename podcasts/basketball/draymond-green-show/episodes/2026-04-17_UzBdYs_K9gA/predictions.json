@@ -11,6 +11,9 @@
     "status": "incorrect",
     "argument": "",
     "grade_note": "PHI beat BOS 4-3 in seven games; the Celtics did not win the series.",
-    "episode_datetime": "2026-04-17T22:45:03+08:00"
+    "episode_datetime": "2026-04-17T22:45:03+08:00",
+    "market_prob": "0.945",
+    "market_favorite": "BOS",
+    "market_source": "nba-playoffs-who-will-win-series-76ers-vs-celtics,nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5"
   }
 ]
