@@ -13,7 +13,7 @@ import sqlite3
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DB = ROOT / "predictions.db"
-REPORT = ROOT / "reports" / "draymond_value.html"
+REPORT = ROOT / "docs" / "draymond_value.html"
 
 GRADED = {"correct", "incorrect"}
 
