@@ -14,12 +14,12 @@
     "grade_note": "SAS and OKC did face off in the Western Conference Finals, with SAS winning 4-3.",
     "grade_note_general": "SAS and OKC did face off in the Western Conference Finals, with SAS winning 4-3.",
     "episode_datetime": "2026-04-30T06:00:03+08:00",
-    "market_prob": "",
-    "market_favorite": "",
-    "market_source": "",
-    "market_prob_general": "",
-    "market_favorite_general": "",
-    "market_source_general": ""
+    "market_prob": "0.6902",
+    "market_favorite": "OKC",
+    "market_source": "nba-playoffs-western-conference-champion",
+    "market_prob_general": "0.6902",
+    "market_favorite_general": "OKC",
+    "market_source_general": "nba-playoffs-western-conference-champion"
   },
   {
     "prediction_id": "3F_ftXINJYA-02",
@@ -34,9 +34,9 @@
     "argument": "Missing star offense: Anthony Edwards being out leaves Minnesota without enough offense and without anyone to pressure Jokic on the other end; Defensive drop-off: when Minnesota cannot score, its belief, body language, and connected defense fall off, which also weakens Rudy Gobert's impact; Jokic matchup outlook: Draymond says another dominant Jokic game would not surprise him because Minnesota's offense is making its defense easier to break down.",
     "grade_note": "MIN won Game 6 on 2026-04-30 (110-98), closing out DEN 4-2; MIN did close out DEN in Game 6, contradicting the prediction.",
     "episode_datetime": "2026-04-30T06:00:03+08:00",
-    "market_prob": "",
-    "market_favorite": "",
-    "market_source": "",
+    "market_prob": "0.275",
+    "market_favorite": "DEN",
+    "market_source": "nba-den-min-2026-04-30",
     "market_prob_general": "",
     "market_favorite_general": "",
     "market_source_general": ""

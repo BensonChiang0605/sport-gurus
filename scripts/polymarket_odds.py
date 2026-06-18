@@ -37,6 +37,7 @@ import argparse
 import datetime
 import json
 import pathlib
+import re
 import urllib.error
 import urllib.request
 
@@ -264,6 +265,63 @@ def _normalize_series_market(m: dict, pair_text: str) -> dict | None:
     }
 
 
+# Conference Finals / NBA Finals winner odds are not published as a per-matchup
+# "who-will-win-series-{a}-vs-{b}" market like rounds 1-2. Instead each round has one
+# event with a binary Yes/No market per team still alive. Tried in order; the first
+# event containing both teams wins.
+_ROUND_CHAMPION_EVENT_SLUGS = [
+    "nba-playoffs-eastern-conference-champion",
+    "nba-playoffs-western-conference-champion",
+]
+_CHAMPION_QUESTION_RE = re.compile(r"^Will the (.+?) win the", re.IGNORECASE)
+
+
+def _champion_event_team_tokens(slug: str) -> dict[str, str]:
+    """Champion-event slug -> {team abbrev: clob token id for its 'Yes' outcome}."""
+    data = _get_json(f"{GAMMA}/events?slug={slug}&closed=true")
+    if not data:
+        return {}
+    out: dict[str, str] = {}
+    for m in data[0].get("markets", []):
+        match = _CHAMPION_QUESTION_RE.match(m.get("question", ""))
+        if not match:
+            continue
+        abbrev = to_abbrev(match.group(1))
+        try:
+            tokens = json.loads(m.get("clobTokenIds", "[]"))
+            outcomes = json.loads(m.get("outcomes", "[]"))
+        except ValueError:
+            continue
+        yes_idx = next((i for i, o in enumerate(outcomes) if o.lower() == "yes"), None)
+        if yes_idx is None or yes_idx >= len(tokens):
+            continue
+        out[abbrev] = tokens[yes_idx]
+    return out
+
+
+def _round_winner_probs(team_a: str, team_b: str, snap: int, year: int) -> dict | None:
+    """Winner odds for a Conference Finals / NBA Finals matchup, or None if no event
+    has both teams (e.g. the matchup hasn't reached that round on Polymarket yet).
+
+    Each team's Yes-price is its own independent binary market, so the pair is
+    renormalized to sum to 1 rather than trusted as-is.
+    """
+    for slug in [*_ROUND_CHAMPION_EVENT_SLUGS, f"{year}-nba-champion"]:
+        tokens = _champion_event_team_tokens(slug)
+        if team_a not in tokens or team_b not in tokens:
+            continue
+        sp_a, sp_b = start_prob(tokens[team_a], snap), start_prob(tokens[team_b], snap)
+        if sp_a is None or sp_b is None:
+            return None
+        total = sp_a[0] + sp_b[0]
+        if total <= 0:
+            return None
+        probs = {team_a: round(sp_a[0] / total, 4), team_b: round(sp_b[0] / total, 4)}
+        return {"probs": probs, "favored": max(probs, key=probs.get),
+                "captured_ts": _iso(max(sp_a[1], sp_b[1])), "slug": slug}
+    return {}
+
+
 # --- cache ------------------------------------------------------------------
 
 def load_odds_cache(path: pathlib.Path = ODDS_CACHE_PATH) -> dict:
@@ -349,27 +407,40 @@ def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = 
 
     markets = fetch_series_markets(year)
     win = next((m for m in markets["winner"] if {a, b} == set(m["teams"])), None)
-    if not win:
-        return {}
 
-    # Winner market — cache by its slug.
     cache = load_odds_cache()
-    if win["slug"] in cache:
-        win_entry = cache[win["slug"]]
+    if win:
+        win_slug = win["slug"]
+        if win_slug in cache:
+            win_entry = cache[win_slug]
+        else:
+            probs, captured = {}, None
+            for outcome, token in win["tokens"].items():
+                sp = start_prob(token, snap)
+                if sp is None:
+                    return {}
+                probs[to_abbrev(outcome)], captured = round(sp[0], 4), sp[1]
+            win_entry = {"kind": "series-winner", "probs": probs,
+                         "favored": max(probs, key=probs.get), "captured_ts": _iso(captured)}
+            save_odds_entry(win_slug, win_entry)
     else:
-        probs, captured = {}, None
-        for outcome, token in win["tokens"].items():
-            sp = start_prob(token, snap)
-            if sp is None:
+        # Conference Finals / NBA Finals: no per-matchup slug, fall back to the
+        # round's multi-team champion event (see _round_winner_probs).
+        win_slug = next((s for s in [*_ROUND_CHAMPION_EVENT_SLUGS, f"{year}-nba-champion"]
+                         if s in cache and {a, b} <= set(cache[s].get("probs", {}))), None)
+        if win_slug:
+            win_entry = cache[win_slug]
+        else:
+            fallback = _round_winner_probs(a, b, snap, year)
+            if not fallback:
                 return {}
-            probs[to_abbrev(outcome)], captured = round(sp[0], 4), sp[1]
-        win_entry = {"kind": "series-winner", "probs": probs,
-                     "favored": max(probs, key=probs.get), "captured_ts": _iso(captured)}
-        save_odds_entry(win["slug"], win_entry)
+            win_slug = fallback.pop("slug")
+            win_entry = {"kind": "series-winner", **fallback}
+            save_odds_entry(win_slug, win_entry)
 
     result = {
         "winner": {"probs": win_entry["probs"], "favored": win_entry["favored"],
-                   "source_slug": win["slug"]},
+                   "source_slug": win_slug},
         "captured_ts": win_entry["captured_ts"],
     }
 
@@ -397,9 +468,11 @@ def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = 
 def odds_for_text(prediction_text: str, category: str, year: int | None = None) -> dict:
     """Grader entry point: market odds for the matchup named in a prediction's text.
 
-    `series` -> series_odds; `game` -> pin the concrete game date via nba-games.json
-    (unambiguous only when the two teams meet exactly once in the cache), then
-    odds_for_game. Returns {} when no market matches or the game can't be pinned.
+    `series` -> series_odds; `game` -> pin the concrete game date via nba-games.json,
+    then odds_for_game. Unambiguous when the two teams meet exactly once in the
+    cache, or when the text names a "Game N" (playoff series meet repeatedly, but
+    the claim names which game in chronological order). Returns {} when no market
+    matches or the game can't be pinned.
     """
     year = playoffs_year() if year is None else year
     abbrevs = teams_in_text(prediction_text)
@@ -412,7 +485,16 @@ def odds_for_text(prediction_text: str, category: str, year: int | None = None) 
 
     if category == "game":
         games = load_cache()
-        meetings = games_between(a, b, games)
+        meetings = sorted(games_between(a, b, games), key=lambda g: g["date"])
+        game_num_match = re.search(r"\bGame\s+(\d+)\b", prediction_text, re.IGNORECASE)
+        if game_num_match:
+            # Playoff series: teams meet multiple times, but the claim names which
+            # game in the series, so pin it by chronological order instead of
+            # requiring a single meeting.
+            n = int(game_num_match.group(1))
+            if n < 1 or n > len(meetings):
+                return {}
+            return odds_for_game(a, b, meetings[n - 1]["date"])
         if len(meetings) != 1:
             return {}  # can't pin a single game -> leave empty rather than guess
         return odds_for_game(a, b, meetings[0]["date"])
