@@ -10,7 +10,11 @@
     "verifiable": "auto",
     "status": "correct",
     "argument": "",
-    "grade_note": "GSW beat LAC 126-121 in the play-in game on 2026-04-15."
+    "grade_note": "GSW beat LAC 126-121 in the play-in game on 2026-04-15.",
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.335",
+    "market_favorite": "LAC",
+    "market_source": "nba-gsw-lac-2026-04-15"
   },
   {
     "prediction_id": "foRJR0lrMxE-02",
@@ -22,7 +26,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-03",
@@ -34,7 +39,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-04",
@@ -46,7 +52,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-05",
@@ -58,7 +65,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-06",
@@ -70,7 +78,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-07",
@@ -82,7 +91,8 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   },
   {
     "prediction_id": "foRJR0lrMxE-08",
@@ -94,6 +104,7 @@
     "category": "award",
     "verifiable": "manual",
     "status": "pending",
-    "argument": ""
+    "argument": "",
+    "episode_datetime": "2026-04-15T23:17:48+08:00"
   }
 ]

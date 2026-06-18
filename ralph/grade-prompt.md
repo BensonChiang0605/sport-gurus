@@ -18,6 +18,15 @@ Make the judgement call, write it back to the prediction's source file, then sto
   complete relevant record. If the specific series or game needed to decide the claim is
   genuinely absent (not yet played or not in the cache), return `undetermined`.
 
+- **"Market odds (Polymarket, pregame):"** — JSON with the prediction-market-implied
+  probability *at the start of the game/series*, already fetched for you (deterministic,
+  no judgement on your part). Shapes:
+  - `game` → `{probs: {ABBR: p, ABBR: p}, favored, source_slug, ...}`.
+  - `series` → `{winner: {probs: {ABBR: p, ...}, favored, source_slug}, total_games: {...}, ...}`.
+  It is `{}` when no market matched (pre-coverage, an un-listed regular-season game, or a
+  game that can't be pinned to one date). Use it **only** to fill the three market fields
+  in step 5 below — never let it influence the `correct`/`incorrect`/`undetermined` grade.
+
 - **"Prediction to grade:"** — one TSV row: `prediction_id`, `video_id`, `category`,
   `prediction_text`. Currently `status='pending'`.
 
@@ -64,6 +73,19 @@ in any `grade_note` you write, so they always match the facts.
    Change nothing else in the file — leave other predictions and fields untouched. If a
    prediction object is missing the `grade_note`, `status_general`, or `grade_note_general`
    keys, add the ones that apply.
+5. **Copy the market benchmark into three fields — no judgement.** These come **straight
+   from the provided "Market odds" JSON**; you only route an already-computed number to the
+   team the prediction backs. You already know which team the prediction backs (you used it
+   to grade above). Set on the same object:
+   - `"market_prob"` — the implied start probability the market gave the **outcome the
+     prediction backed**: for a `game`, `probs[<team predicted to win>]`; for a `series`,
+     `winner.probs[<team predicted to win the series>]`. Copy the number verbatim.
+   - `"market_favorite"` — the abbrev the market favored at start: `favored` for a `game`,
+     `winner.favored` for a `series`.
+   - `"market_source"` — the `source_slug`(s) used (for a `series`, the winner's
+     `source_slug`; include the total-games slug too if present).
+   **If the "Market odds" JSON is `{}`, leave all three fields empty (`""`).** Do not
+   invent or estimate a probability, and never let these fields change the grade above.
 
 Do not touch `predictions.db`, do not run sync, do not commit — the shell does that.
 Grade this prediction, then stop.

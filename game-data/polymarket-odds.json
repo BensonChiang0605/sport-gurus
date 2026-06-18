@@ -1,0 +1,37 @@
+{
+  "nba-gsw-lac-2026-04-15": {
+    "captured_ts": "2026-04-16T01:50:49Z",
+    "date": "2026-04-15",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.335,
+      "LAC": 0.665
+    }
+  },
+  "nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5": {
+    "captured_ts": "2026-04-19T23:20:46Z",
+    "kind": "series-total-games",
+    "line": 4.5,
+    "over_prob": 0.68
+  },
+  "nba-playoffs-who-will-win-series-76ers-vs-celtics": {
+    "captured_ts": "2026-04-19T23:20:50Z",
+    "favored": "BOS",
+    "kind": "series-winner",
+    "probs": {
+      "BOS": 0.945,
+      "PHI": 0.055
+    }
+  },
+  "nba-sas-nyk-2026-06-08": {
+    "captured_ts": "2026-06-09T00:20:03Z",
+    "date": "2026-06-08",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.535,
+      "SAS": 0.465
+    }
+  }
+}

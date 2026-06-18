@@ -8,9 +8,10 @@ import csv, json, pathlib, sqlite3
 
 DB = pathlib.Path("predictions.db")
 COLS = [
-    "prediction_id", "podcast", "video_id", "episode_date", "speaker",
+    "prediction_id", "podcast", "video_id", "episode_date", "episode_datetime", "speaker",
     "prediction_text", "category", "verifiable", "status", "argument",
     "grade_note", "status_general", "grade_note_general",
+    "market_prob", "market_favorite", "market_source",
 ]
 
 db = sqlite3.connect(DB)

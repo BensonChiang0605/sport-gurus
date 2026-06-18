@@ -1,0 +1,474 @@
+"""Polymarket pregame odds as a market benchmark for NBA predictions.
+
+For each `game`/`series` prediction we attach the prediction-market-implied
+probability *at the start of the game/series* — so the leaderboard can later ask
+"did the podcaster beat the market?" rather than just "were they right?". Fetching
+odds is pure data retrieval (no judgement), so it lives here in Python, per the repo
+rule that deterministic work lives in shell/Python.
+
+Two public, unauthenticated Polymarket hosts are used:
+  * Gamma  (gamma-api.polymarket.com)  — market/event discovery + metadata.
+  * CLOB   (clob.polymarket.com)       — price history (the pregame probability).
+
+Note: a *closed* market's `outcomePrices` is the resolved result (["1","0"]), NOT the
+pregame odds. The benchmark is read from the CLOB price trajectory: the last trade
+at-or-before the start instant.
+
+Cache model — lazy + immutable. Pregame odds for a finished game/series never change
+once it has tipped off, so the cache (game-data/polymarket-odds.json) is append-only:
+a cache hit returns with no network call; a cache miss fetches, writes, and returns.
+A not-yet-started market (no pre-start price) is returned empty and left *uncached* so
+a later run retries. There is therefore no refresh step in the grade loop; `--refresh`
+exists only to pre-warm or rebuild the cache and is not part of the automated loop.
+
+Three layers:
+  * fetch        — _get_json, fetch_game_markets, fetch_series_markets, start_prob
+  * cache        — load_odds_cache, save_odds_entry
+  * query        — odds_for_game, series_odds, odds_for_text (grader entry point)
+
+CLI:
+    uv run scripts/polymarket_odds.py --game "GSW LAC" --date 2026-04-15
+    uv run scripts/polymarket_odds.py --series "Knicks Spurs"
+    uv run scripts/polymarket_odds.py --odds-for-text "<text>" --category game
+    uv run scripts/polymarket_odds.py --refresh [--year 2026]   # OPTIONAL pre-warm
+"""
+
+import argparse
+import datetime
+import json
+import pathlib
+import urllib.error
+import urllib.request
+
+from nba_games import (
+    DEFAULT_SEASON,
+    games_between,
+    load_cache,
+    teams_in_text,
+    to_abbrev,
+)
+
+GAMMA = "https://gamma-api.polymarket.com"
+CLOB = "https://clob.polymarket.com"
+ODDS_CACHE_PATH = pathlib.Path("game-data/polymarket-odds.json")
+_USER_AGENT = "sport-gurus/1.0 (+https://github.com/; NBA prediction benchmark)"
+
+# Series who-wins / total-games slugs use fuller team forms (cavaliers, timberwolves,
+# trail-blazers) that to_abbrev() resolves once hyphens become spaces. This small map
+# is a fallback for the short nicknames that still miss the nba_api name index.
+_SLUG_ALIASES = {
+    "cavs": "CLE", "wolves": "MIN", "blazers": "POR", "sixers": "PHI",
+    "76ers": "PHI", "trail blazers": "POR", "knicks": "NYK",
+}
+
+
+def playoffs_year(season: str = DEFAULT_SEASON) -> int:
+    """Calendar year the playoffs fall in: '2025-26' -> 2026 (the tag slug's year)."""
+    start, end = season.split("-")
+    return int(start[:2] + end)
+
+
+# --- HTTP -------------------------------------------------------------------
+
+def _get_json(url: str):
+    """GET JSON with the required User-Agent. One retry, ~10s timeout, fail soft.
+
+    Polymarket returns HTTP 403 to requests with no User-Agent. On any network/parse
+    error this returns None so grading never blocks or crashes on the network.
+    """
+    req = urllib.request.Request(url, headers={"User-Agent": _USER_AGENT})
+    for attempt in range(2):
+        try:
+            with urllib.request.urlopen(req, timeout=10) as resp:
+                return json.loads(resp.read().decode())
+        except (urllib.error.URLError, TimeoutError, ValueError, OSError):
+            if attempt == 0:
+                continue
+            return None
+    return None
+
+
+def _slug_team(token: str) -> str:
+    """Resolve a team name parsed out of a slug to its canonical 3-letter abbrev."""
+    name = token.replace("-", " ").strip()
+    return _SLUG_ALIASES.get(name.lower(), to_abbrev(name))
+
+
+def _parse_start_ts(game_start_time: str) -> int | None:
+    """Parse Gamma's gameStartTime ('2026-06-09 00:30:00+00') to a UTC epoch."""
+    if not game_start_time:
+        return None
+    text = game_start_time.strip()
+    if text.endswith("+00"):
+        text = text[:-3] + "+0000"
+    try:
+        return int(datetime.datetime.strptime(text, "%Y-%m-%d %H:%M:%S%z").timestamp())
+    except ValueError:
+        return None
+
+
+def _iso(ts: int) -> str:
+    """UTC epoch seconds -> 'YYYY-MM-DDTHH:MM:SSZ'."""
+    return datetime.datetime.fromtimestamp(ts, datetime.timezone.utc).strftime(
+        "%Y-%m-%dT%H:%M:%SZ")
+
+
+def _us_date(start_ts: int) -> str:
+    """US calendar date of a tip-off, derived from its UTC start instant.
+
+    A US evening game rolls past midnight UTC, so subtract enough to land on the US
+    game day; using -1 day from the UTC instant and taking the date matches the date
+    used in nba-games.json and the game slug (nba-{away}-{home}-{YYYY-MM-DD}).
+    """
+    dt = datetime.datetime.fromtimestamp(start_ts, datetime.timezone.utc) - datetime.timedelta(days=1)
+    return dt.strftime("%Y-%m-%d")
+
+
+# --- fetch ------------------------------------------------------------------
+
+def start_prob(token_id: str, start_ts: int) -> tuple[float, int] | None:
+    """Implied probability at-or-before start_ts from the CLOB price history.
+
+    Returns (prob, captured_ts) for the last trade with t <= start_ts, or None if no
+    pre-start price exists yet (market not started — caller must not cache it).
+    """
+    if not token_id or not start_ts:
+        return None
+    lo = start_ts - 7 * 86400
+    url = f"{CLOB}/prices-history?market={token_id}&startTs={lo}&endTs={start_ts}&fidelity=10"
+    data = _get_json(url)
+    if not data:
+        return None
+    history = data.get("history", [])
+    pre = [p for p in history if p.get("t", 0) <= start_ts]
+    if not pre:
+        return None
+    last = pre[-1]
+    return float(last["p"]), int(last["t"])
+
+
+def _fetch_market_by_slug(slug: str) -> dict | None:
+    """Fetch a single closed Gamma market by exact slug, or None."""
+    data = _get_json(f"{GAMMA}/markets?slug={slug}&closed=true")
+    if data and isinstance(data, list):
+        return data[0]
+    return None
+
+
+def fetch_game_markets(year: int) -> list[dict]:
+    """All closed single-game moneyline markets for a playoffs year (paginated).
+
+    Each normalised to {slug, date, teams:[A,B], tokens:{A:tid,B:tid}, start_ts}.
+    Used by --refresh to pre-warm the cache; the lazy per-game path uses direct slug
+    lookup instead (see odds_for_game).
+    """
+    out: list[dict] = []
+    offset, limit = 0, 100
+    while True:
+        url = (f"{GAMMA}/markets?tag_id=745&sports_market_types=moneyline&closed=true"
+               f"&order=gameStartTime&ascending=false&limit={limit}&offset={offset}")
+        batch = _get_json(url)
+        if not batch:
+            break
+        for m in batch:
+            norm = _normalize_game_market(m)
+            if norm and norm["date"].startswith(str(year)):
+                out.append(norm)
+        if len(batch) < limit:
+            break
+        offset += limit
+    return out
+
+
+def _normalize_game_market(m: dict) -> dict | None:
+    """Gamma game market -> {slug, date, teams, tokens, start_ts}, or None if unusable."""
+    slug = m.get("slug", "")
+    parts = slug.split("-")
+    # nba-{away}-{home}-{YYYY}-{MM}-{DD}
+    if len(parts) < 6 or parts[0] != "nba":
+        return None
+    away, home = parts[1].upper(), parts[2].upper()
+    start_ts = _parse_start_ts(m.get("gameStartTime", ""))
+    if not start_ts:
+        return None
+    try:
+        tokens = json.loads(m.get("clobTokenIds", "[]"))
+        outcomes = json.loads(m.get("outcomes", "[]"))
+    except ValueError:
+        return None
+    if len(tokens) != 2 or len(outcomes) != 2:
+        return None
+    # outcomes are nicknames index-aligned with tokens; map each to an abbrev.
+    tok_by_abbrev = {to_abbrev(o): t for o, t in zip(outcomes, tokens)}
+    if away not in tok_by_abbrev or home not in tok_by_abbrev:
+        return None
+    return {
+        "slug": slug,
+        "date": _us_date(start_ts),
+        "teams": [away, home],
+        "tokens": tok_by_abbrev,
+        "start_ts": start_ts,
+    }
+
+
+def fetch_series_markets(year: int) -> dict:
+    """Closed playoffs events for a year, bucketed into who-wins-series + total-games.
+
+    Returns {"winner": [...], "total_games": [...]}, each entry normalised to
+    {slug, teams:[A,B], tokens:{...}, line (total_games only)}. Teams are parsed from
+    the slug (not `outcomes`), per the matching gotcha.
+    """
+    events = _get_json(f"{GAMMA}/events?tag_slug={year}-nba-playoffs&closed=true&limit=500&offset=0")
+    winner, total = [], []
+    if not events:
+        return {"winner": winner, "total_games": total}
+    win_prefix = "nba-playoffs-who-will-win-series-"
+    for e in events:
+        slug = e.get("slug", "")
+        markets = e.get("markets", [])
+        if not markets:
+            continue
+        if slug.startswith(win_prefix):
+            pair = slug[len(win_prefix):]
+            entry = _normalize_series_market(markets[0], pair)
+            if entry:
+                winner.append(entry)
+        elif slug.startswith("nba-playoffs-") and "-total-games-ou-" in slug:
+            body, ou = slug[len("nba-playoffs-"):].split("-total-games-ou-")
+            entry = _normalize_series_market(markets[0], body)
+            if entry:
+                entry["line"] = float(ou.replace("pt", "."))
+                total.append(entry)
+    return {"winner": winner, "total_games": total}
+
+
+def _normalize_series_market(m: dict, pair_text: str) -> dict | None:
+    """Series market + the '{a}-vs-{b}' slug body -> {slug, teams, tokens}, or None."""
+    if "-vs-" not in pair_text:
+        return None
+    a_raw, b_raw = pair_text.split("-vs-", 1)
+    a, b = _slug_team(a_raw), _slug_team(b_raw)
+    try:
+        tokens = json.loads(m.get("clobTokenIds", "[]"))
+        outcomes = json.loads(m.get("outcomes", "[]"))
+    except ValueError:
+        return None
+    if len(tokens) != 2 or len(outcomes) != 2:
+        return None
+    return {
+        "slug": m.get("slug", ""),
+        "teams": [a, b],
+        # outcomes index-aligned with tokens; for the winner market they are the two
+        # team nicknames, for total-games they are ["Over N", "Under N"].
+        "tokens": dict(zip(outcomes, tokens)),
+    }
+
+
+# --- cache ------------------------------------------------------------------
+
+def load_odds_cache(path: pathlib.Path = ODDS_CACHE_PATH) -> dict:
+    """Read the lazy odds cache (slug -> entry), or {} if absent."""
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text())
+
+
+def save_odds_entry(slug: str, entry: dict, path: pathlib.Path = ODDS_CACHE_PATH) -> None:
+    """Write one entry into the odds cache, keyed by its source slug."""
+    cache = load_odds_cache(path)
+    cache[slug] = entry
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(cache, indent=2, sort_keys=True) + "\n")
+
+
+# --- query ------------------------------------------------------------------
+
+def odds_for_game(team_a: str, team_b: str, date: str) -> dict:
+    """Market odds for a single game on a date (YYYY-MM-DD), cache-first.
+
+    Returns {kind, date, probs:{A,B}, favored, source_slug, captured_ts} or {} when no
+    market matches / no pre-start price exists yet. The pair is matched order-free by
+    trying both slug orderings (nba-{a}-{b}-{date} and nba-{b}-{a}-{date}).
+    """
+    a, b = to_abbrev(team_a), to_abbrev(team_b)
+    candidates = [f"nba-{a.lower()}-{b.lower()}-{date}", f"nba-{b.lower()}-{a.lower()}-{date}"]
+
+    cache = load_odds_cache()
+    for slug in candidates:
+        if slug in cache:
+            return {"source_slug": slug, **cache[slug]}
+
+    for slug in candidates:
+        market = _fetch_market_by_slug(slug)
+        if not market:
+            continue
+        norm = _normalize_game_market(market)
+        if not norm or {a, b} != set(norm["teams"]):
+            continue
+        probs, captured = {}, None
+        for team, token in norm["tokens"].items():
+            sp = start_prob(token, norm["start_ts"])
+            if sp is None:
+                return {}  # not started yet — leave uncached, retry later
+            probs[team], captured = round(sp[0], 4), sp[1]
+        favored = max(probs, key=probs.get)
+        entry = {"kind": "game", "date": norm["date"], "probs": probs,
+                 "favored": favored, "captured_ts": _iso(captured)}
+        save_odds_entry(slug, entry)
+        return {"source_slug": slug, **entry}
+    return {}
+
+
+def _series_snapshot_ts(team_a: str, team_b: str, games: list[dict]) -> int | None:
+    """Pre-tip instant of a series' first game (date 23:30 UTC), from nba-games.json.
+
+    Series markets have no gameStartTime, so the snapshot is pinned to just before the
+    first game; the series-winner price is flat in this pre-series window. Returns None
+    if the series isn't in the cache yet (so the caller leaves it uncached and retries).
+    """
+    pair_games = sorted((g for g in games_between(team_a, team_b, games)),
+                        key=lambda g: g["date"])
+    if not pair_games:
+        return None
+    d = datetime.datetime.strptime(pair_games[0]["date"], "%Y-%m-%d")
+    return int(d.replace(hour=23, minute=30, tzinfo=datetime.timezone.utc).timestamp())
+
+
+def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = None) -> dict:
+    """Who-wins-series + total-games O/U odds for a matchup, cache-first.
+
+    Returns {winner:{probs:{A,B}, favored, source_slug},
+             total_games:{line, over_prob, source_slug}, captured_ts} or {} when no
+    market matches / the series can't be pinned to a start yet.
+    """
+    a, b = to_abbrev(team_a), to_abbrev(team_b)
+    games = load_cache() if games is None else games
+    snap = _series_snapshot_ts(a, b, games)
+    if not snap:
+        return {}
+
+    markets = fetch_series_markets(year)
+    win = next((m for m in markets["winner"] if {a, b} == set(m["teams"])), None)
+    if not win:
+        return {}
+
+    # Winner market — cache by its slug.
+    cache = load_odds_cache()
+    if win["slug"] in cache:
+        win_entry = cache[win["slug"]]
+    else:
+        probs, captured = {}, None
+        for outcome, token in win["tokens"].items():
+            sp = start_prob(token, snap)
+            if sp is None:
+                return {}
+            probs[to_abbrev(outcome)], captured = round(sp[0], 4), sp[1]
+        win_entry = {"kind": "series-winner", "probs": probs,
+                     "favored": max(probs, key=probs.get), "captured_ts": _iso(captured)}
+        save_odds_entry(win["slug"], win_entry)
+
+    result = {
+        "winner": {"probs": win_entry["probs"], "favored": win_entry["favored"],
+                   "source_slug": win["slug"]},
+        "captured_ts": win_entry["captured_ts"],
+    }
+
+    # Total-games O/U market — optional; include if present.
+    tot = next((m for m in markets["total_games"] if {a, b} == set(m["teams"])), None)
+    if tot:
+        if tot["slug"] in cache:
+            tot_entry = cache[tot["slug"]]
+        else:
+            over_token = next((t for o, t in tot["tokens"].items() if o.lower().startswith("over")), None)
+            sp = start_prob(over_token, snap)
+            tot_entry = None
+            if sp is not None:
+                tot_entry = {"kind": "series-total-games", "line": tot["line"],
+                             "over_prob": round(sp[0], 4), "captured_ts": _iso(sp[1])}
+                save_odds_entry(tot["slug"], tot_entry)
+        if tot_entry:
+            result["total_games"] = {"line": tot_entry["line"],
+                                     "over_prob": tot_entry["over_prob"],
+                                     "source_slug": tot["slug"]}
+    return result
+
+
+def odds_for_text(prediction_text: str, category: str, year: int | None = None) -> dict:
+    """Grader entry point: market odds for the matchup named in a prediction's text.
+
+    `series` -> series_odds; `game` -> pin the concrete game date via nba-games.json
+    (unambiguous only when the two teams meet exactly once in the cache), then
+    odds_for_game. Returns {} when no market matches or the game can't be pinned.
+    """
+    year = playoffs_year() if year is None else year
+    abbrevs = teams_in_text(prediction_text)
+    if len(abbrevs) != 2:
+        return {}
+    a, b = sorted(abbrevs)
+
+    if category == "series":
+        return series_odds(a, b, year)
+
+    if category == "game":
+        games = load_cache()
+        meetings = games_between(a, b, games)
+        if len(meetings) != 1:
+            return {}  # can't pin a single game -> leave empty rather than guess
+        return odds_for_game(a, b, meetings[0]["date"])
+
+    return {}
+
+
+# --- CLI --------------------------------------------------------------------
+
+def _refresh(year: int) -> None:
+    """Pre-warm the whole season's cache. OPTIONAL — not part of the grade loop."""
+    games = load_cache()
+    n = 0
+    for m in fetch_game_markets(year):
+        if odds_for_game(m["teams"][0], m["teams"][1], m["date"]):
+            n += 1
+    series = fetch_series_markets(year)
+    for m in series["winner"]:
+        if series_odds(m["teams"][0], m["teams"][1], year, games):
+            n += 1
+    print(f"Pre-warmed {n} markets into {ODDS_CACHE_PATH}")
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--game", metavar='"A B"', help='two teams, e.g. "GSW LAC"')
+    parser.add_argument("--date", help="game date YYYY-MM-DD (required with --game)")
+    parser.add_argument("--series", metavar='"A B"', help='two teams, e.g. "Knicks Spurs"')
+    parser.add_argument("--odds-for-text", metavar="TEXT", help="prediction text (grader path)")
+    parser.add_argument("--category", choices=["game", "series"], help="with --odds-for-text")
+    parser.add_argument("--year", type=int, default=playoffs_year(),
+                        help="playoffs calendar year, e.g. 2026")
+    parser.add_argument("--refresh", action="store_true",
+                        help="OPTIONAL pre-warm the whole season's cache")
+    args = parser.parse_args()
+
+    if args.refresh:
+        _refresh(args.year)
+        return
+    if args.game:
+        if not args.date:
+            parser.error("--game requires --date")
+        a, b = args.game.split()
+        print(json.dumps(odds_for_game(a, b, args.date), indent=2))
+        return
+    if args.series:
+        a, b = args.series.split()
+        print(json.dumps(series_odds(a, b, args.year), indent=2))
+        return
+    if args.odds_for_text:
+        if not args.category:
+            parser.error("--odds-for-text requires --category")
+        print(json.dumps(odds_for_text(args.odds_for_text, args.category, args.year), indent=2))
+        return
+    parser.error("nothing to do — pass --game, --series, --odds-for-text, or --refresh")
+
+
+if __name__ == "__main__":
+    main()
