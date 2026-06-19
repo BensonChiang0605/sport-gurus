@@ -30,6 +30,7 @@ CLI:
     uv run scripts/polymarket_odds.py --game "GSW LAC" --date 2026-04-15
     uv run scripts/polymarket_odds.py --series "Knicks Spurs"
     uv run scripts/polymarket_odds.py --odds-for-text "<text>" --category game
+    uv run scripts/polymarket_odds.py --report                  # coverage audit (DB)
     uv run scripts/polymarket_odds.py --refresh [--year 2026]   # OPTIONAL pre-warm
 """
 
@@ -38,11 +39,13 @@ import datetime
 import json
 import pathlib
 import re
+import sqlite3
 import urllib.error
 import urllib.request
 
 from nba_games import (
     DEFAULT_SEASON,
+    build_series,
     games_between,
     load_cache,
     teams_in_text,
@@ -52,6 +55,11 @@ from nba_games import (
 GAMMA = "https://gamma-api.polymarket.com"
 CLOB = "https://clob.polymarket.com"
 ODDS_CACHE_PATH = pathlib.Path("game-data/polymarket-odds.json")
+PREDICTIONS_DB_PATH = pathlib.Path("predictions.db")
+
+# A point-margin claim ("win by 40 points") has no Polymarket benchmark — there is
+# no margin market — so it is expected to stay empty, not a coverage gap.
+_MARGIN_RE = re.compile(r"\bby\s+\d+\b", re.IGNORECASE)
 _USER_AGENT = "sport-gurus/1.0 (+https://github.com/; NBA prediction benchmark)"
 
 # Series who-wins / total-games slugs use fuller team forms (cavaliers, timberwolves,
@@ -465,26 +473,72 @@ def series_odds(team_a: str, team_b: str, year: int, games: list[dict] | None = 
     return result
 
 
+def _infer_opponent(team: str, prediction_text: str, games: list[dict]) -> str | None:
+    """Opponent for a prediction that names only `team`, derived from the playoff
+    bracket in nba-games.json, or None when it can't be pinned unambiguously.
+
+    Predictions like "the Knicks will win the NBA Finals" name only the subject team,
+    so the matchup must be recovered from the cache. Two safe cases:
+      * "Finals"/"championship" text (not "conference finals") -> the team's last
+        playoff series (the Finals is chronologically last for a finalist).
+      * the team has exactly one playoff series so far -> that one opponent.
+    Anything else is ambiguous (a team plays several series) -> None.
+    """
+    team = to_abbrev(team)
+    team_series = [s for s in build_series(games) if team in s["teams"]]
+    if not team_series:
+        return None
+    text = prediction_text.lower()
+    finals = ("final" in text or "championship" in text) and "conference" not in text
+    chosen = None
+    if finals:
+        chosen = team_series[-1]  # build_series is sorted by date; Finals is last
+    elif len(team_series) == 1:
+        chosen = team_series[0]
+    if not chosen:
+        return None
+    return next(t for t in chosen["teams"] if t != team)
+
+
+def _resolve_matchup(prediction_text: str, games: list[dict]) -> tuple[str, str] | None:
+    """The two-team matchup a prediction is about, or None when it can't be pinned.
+
+    Prefers the two teams named in the text; falls back to inferring the opponent
+    when only one team is named (see _infer_opponent).
+    """
+    abbrevs = teams_in_text(prediction_text)
+    if len(abbrevs) == 2:
+        a, b = sorted(abbrevs)
+        return a, b
+    if len(abbrevs) == 1:
+        team = next(iter(abbrevs))
+        opp = _infer_opponent(team, prediction_text, games)
+        if opp:
+            return tuple(sorted((team, opp)))
+    return None
+
+
 def odds_for_text(prediction_text: str, category: str, year: int | None = None) -> dict:
     """Grader entry point: market odds for the matchup named in a prediction's text.
 
     `series` -> series_odds; `game` -> pin the concrete game date via nba-games.json,
-    then odds_for_game. Unambiguous when the two teams meet exactly once in the
-    cache, or when the text names a "Game N" (playoff series meet repeatedly, but
-    the claim names which game in chronological order). Returns {} when no market
-    matches or the game can't be pinned.
+    then odds_for_game. The matchup is the two teams named in the text, or (when only
+    one is named) the subject team plus an inferred opponent (see _resolve_matchup).
+    A game is pinned when the teams meet once in the cache, or when the text names a
+    "Game N" (playoff series meet repeatedly, but the claim names which game in
+    chronological order). Returns {} when no market matches or it can't be pinned.
     """
     year = playoffs_year() if year is None else year
-    abbrevs = teams_in_text(prediction_text)
-    if len(abbrevs) != 2:
+    games = load_cache()
+    matchup = _resolve_matchup(prediction_text, games)
+    if not matchup:
         return {}
-    a, b = sorted(abbrevs)
+    a, b = matchup
 
     if category == "series":
-        return series_odds(a, b, year)
+        return series_odds(a, b, year, games)
 
     if category == "game":
-        games = load_cache()
         meetings = sorted(games_between(a, b, games), key=lambda g: g["date"])
         game_num_match = re.search(r"\bGame\s+(\d+)\b", prediction_text, re.IGNORECASE)
         if game_num_match:
@@ -500,6 +554,66 @@ def odds_for_text(prediction_text: str, category: str, year: int | None = None) 
         return odds_for_game(a, b, meetings[0]["date"])
 
     return {}
+
+
+# --- coverage report --------------------------------------------------------
+
+def classify_missing(prediction_text: str, category: str, year: int | None = None) -> str:
+    """Why a game/series prediction has no market odds — turns a silent empty into a
+    labelled reason so a coverage gap (a bug) is distinguishable from an expected miss.
+
+    Returns one of:
+      * "MISSED-FILL"   — odds *are* available but the field is empty (a real gap/bug)
+      * "no-market"     — matchup pins to a real NBA game/series but Polymarket has none
+                          (or no pregame price captured yet)
+      * "margin-claim"  — a point-margin claim; no market by design
+      * "no-NBA-matchup"— text names no resolvable NBA matchup (e.g. NCAA, one vague team)
+    Callers pass only rows whose stored market_prob is empty.
+    """
+    if _MARGIN_RE.search(prediction_text):
+        return "margin-claim"
+    if _resolve_matchup(prediction_text, load_cache()) is None:
+        return "no-NBA-matchup"
+    return "MISSED-FILL" if odds_for_text(prediction_text, category, year) else "no-market"
+
+
+def _report(year: int) -> None:
+    """Print a coverage audit of every game/series prediction missing market odds,
+    grouped by reason. MISSED-FILL rows are real gaps; the rest are expected.
+    """
+    if not PREDICTIONS_DB_PATH.exists():
+        print(f"No {PREDICTIONS_DB_PATH} — run ralph/sync.py first.")
+        return
+    con = sqlite3.connect(f"file:{PREDICTIONS_DB_PATH}?mode=ro", uri=True)
+    try:
+        rows = con.execute(
+            "SELECT prediction_id, category, prediction_text FROM predictions "
+            "WHERE category IN ('game','series') "
+            "AND (market_prob='' OR market_prob IS NULL) "
+            "ORDER BY prediction_id"
+        ).fetchall()
+    finally:
+        con.close()
+
+    buckets: dict[str, list[tuple[str, str]]] = {}
+    for pid, category, text in rows:
+        reason = classify_missing(text, category, year)
+        buckets.setdefault(reason, []).append((pid, text))
+
+    total = sum(len(v) for v in buckets.values())
+    print(f"Game/series predictions missing market odds: {total}\n")
+    # MISSED-FILL first — it's the only bucket that needs action.
+    for reason in ["MISSED-FILL", "no-market", "margin-claim", "no-NBA-matchup"]:
+        items = buckets.get(reason, [])
+        if not items:
+            continue
+        flag = "  <-- ACTION: odds exist, re-run fill-odds" if reason == "MISSED-FILL" else ""
+        print(f"[{reason}] {len(items)}{flag}")
+        for pid, text in items:
+            print(f"    {pid}  {text}")
+        print()
+    if not buckets.get("MISSED-FILL"):
+        print("No coverage gaps: every empty prediction has a known, expected reason.")
 
 
 # --- CLI --------------------------------------------------------------------
@@ -530,8 +644,13 @@ def main() -> None:
                         help="playoffs calendar year, e.g. 2026")
     parser.add_argument("--refresh", action="store_true",
                         help="OPTIONAL pre-warm the whole season's cache")
+    parser.add_argument("--report", action="store_true",
+                        help="audit which game/series predictions are missing odds and why")
     args = parser.parse_args()
 
+    if args.report:
+        _report(args.year)
+        return
     if args.refresh:
         _refresh(args.year)
         return
@@ -550,7 +669,7 @@ def main() -> None:
             parser.error("--odds-for-text requires --category")
         print(json.dumps(odds_for_text(args.odds_for_text, args.category, args.year), indent=2))
         return
-    parser.error("nothing to do — pass --game, --series, --odds-for-text, or --refresh")
+    parser.error("nothing to do — pass --game, --series, --odds-for-text, --report, or --refresh")
 
 
 if __name__ == "__main__":

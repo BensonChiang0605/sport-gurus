@@ -8,6 +8,1356 @@
       "SAS": 0.6398
     }
   },
+  "nba-atl-bos-2026-01-28": {
+    "captured_ts": "2026-01-29T00:20:15Z",
+    "date": "2026-01-28",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.345,
+      "BOS": 0.655
+    }
+  },
+  "nba-atl-cha-2026-02-11": {
+    "captured_ts": "2026-02-11T23:50:21Z",
+    "date": "2026-02-11",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.455,
+      "CHA": 0.545
+    }
+  },
+  "nba-atl-dal-2026-03-18": {
+    "captured_ts": "2026-03-19T00:20:31Z",
+    "date": "2026-03-18",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.745,
+      "DAL": 0.255
+    }
+  },
+  "nba-atl-den-2026-01-09": {
+    "captured_ts": "2026-01-10T01:50:14Z",
+    "date": "2026-01-09",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.565,
+      "DEN": 0.435
+    }
+  },
+  "nba-atl-gsw-2026-01-11": {
+    "captured_ts": "2026-01-12T01:20:09Z",
+    "date": "2026-01-11",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.29,
+      "GSW": 0.71
+    }
+  },
+  "nba-atl-hou-2026-03-20": {
+    "captured_ts": "2026-03-20T23:50:28Z",
+    "date": "2026-03-20",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.415,
+      "HOU": 0.585
+    }
+  },
+  "nba-atl-ind-2026-01-31": {
+    "captured_ts": "2026-01-31T23:50:19Z",
+    "date": "2026-01-31",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.515,
+      "IND": 0.485
+    }
+  },
+  "nba-atl-lal-2026-01-13": {
+    "captured_ts": "2026-01-14T03:20:18Z",
+    "date": "2026-01-13",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.485,
+      "LAL": 0.515
+    }
+  },
+  "nba-atl-mem-2026-01-21": {
+    "captured_ts": "2026-01-22T00:50:12Z",
+    "date": "2026-01-21",
+    "favored": "MEM",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.475,
+      "MEM": 0.525
+    }
+  },
+  "nba-atl-mia-2026-02-03": {
+    "captured_ts": "2026-02-04T00:20:18Z",
+    "date": "2026-02-03",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.475,
+      "MIA": 0.525
+    }
+  },
+  "nba-atl-mil-2026-03-04": {
+    "captured_ts": "2026-03-05T02:20:26Z",
+    "date": "2026-03-04",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.495,
+      "MIL": 0.505
+    }
+  },
+  "nba-atl-min-2026-02-09": {
+    "captured_ts": "2026-02-10T00:50:13Z",
+    "date": "2026-02-09",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.265,
+      "MIN": 0.735
+    }
+  },
+  "nba-atl-nyk-2026-01-02": {
+    "captured_ts": "2026-01-03T00:20:11Z",
+    "date": "2026-01-02",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.355,
+      "NYK": 0.645
+    }
+  },
+  "nba-atl-phi-2026-02-19": {
+    "captured_ts": "2026-02-19T23:50:18Z",
+    "date": "2026-02-19",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.495,
+      "PHI": 0.505
+    }
+  },
+  "nba-atl-por-2026-01-15": {
+    "captured_ts": "2026-01-16T02:50:16Z",
+    "date": "2026-01-15",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.605,
+      "POR": 0.395
+    }
+  },
+  "nba-atl-tor-2026-01-03": {
+    "captured_ts": "2026-01-04T00:20:17Z",
+    "date": "2026-01-03",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.365,
+      "TOR": 0.635
+    }
+  },
+  "nba-atl-tor-2026-01-05": {
+    "captured_ts": "2026-01-06T00:20:11Z",
+    "date": "2026-01-05",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.445,
+      "TOR": 0.555
+    }
+  },
+  "nba-bkn-bos-2026-02-27": {
+    "captured_ts": "2026-02-28T00:20:28Z",
+    "date": "2026-02-27",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.095,
+      "BOS": 0.905
+    }
+  },
+  "nba-bkn-chi-2026-01-18": {
+    "captured_ts": "2026-01-18T23:50:39Z",
+    "date": "2026-01-18",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.305,
+      "CHI": 0.695
+    }
+  },
+  "nba-bkn-cle-2026-02-19": {
+    "captured_ts": "2026-02-19T23:50:21Z",
+    "date": "2026-02-19",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.105,
+      "CLE": 0.895
+    }
+  },
+  "nba-bkn-dal-2026-01-12": {
+    "captured_ts": "2026-01-13T01:20:13Z",
+    "date": "2026-01-12",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.425,
+      "DAL": 0.575
+    }
+  },
+  "nba-bkn-den-2026-01-29": {
+    "captured_ts": "2026-01-30T01:50:15Z",
+    "date": "2026-01-29",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.305,
+      "DEN": 0.695
+    }
+  },
+  "nba-bkn-gsw-2026-03-25": {
+    "captured_ts": "2026-03-26T01:50:32Z",
+    "date": "2026-03-25",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.145,
+      "GSW": 0.855
+    }
+  },
+  "nba-bkn-lac-2026-01-25": {
+    "captured_ts": "2026-01-26T01:50:15Z",
+    "date": "2026-01-25",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.205,
+      "LAC": 0.795
+    }
+  },
+  "nba-bkn-lal-2026-03-27": {
+    "captured_ts": "2026-03-28T02:20:32Z",
+    "date": "2026-03-27",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.055,
+      "LAL": 0.945
+    }
+  },
+  "nba-bkn-mia-2026-03-03": {
+    "captured_ts": "2026-03-04T00:20:26Z",
+    "date": "2026-03-03",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.155,
+      "MIA": 0.845
+    }
+  },
+  "nba-bkn-mia-2026-03-05": {
+    "captured_ts": "2026-03-06T00:20:30Z",
+    "date": "2026-03-05",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.135,
+      "MIA": 0.865
+    }
+  },
+  "nba-bkn-nop-2026-01-14": {
+    "captured_ts": "2026-01-15T00:50:10Z",
+    "date": "2026-01-14",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.495,
+      "NOP": 0.505
+    }
+  },
+  "nba-bkn-nyk-2026-01-21": {
+    "captured_ts": "2026-01-22T00:20:13Z",
+    "date": "2026-01-21",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.155,
+      "NYK": 0.845
+    }
+  },
+  "nba-bkn-okc-2026-02-20": {
+    "captured_ts": "2026-02-21T00:50:21Z",
+    "date": "2026-02-20",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.115,
+      "OKC": 0.885
+    }
+  },
+  "nba-bkn-orl-2026-02-05": {
+    "captured_ts": "2026-02-05T23:50:23Z",
+    "date": "2026-02-05",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.235,
+      "ORL": 0.765
+    }
+  },
+  "nba-bkn-phx-2026-01-27": {
+    "captured_ts": "2026-01-28T01:50:15Z",
+    "date": "2026-01-27",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.265,
+      "PHX": 0.735
+    }
+  },
+  "nba-bkn-por-2026-03-23": {
+    "captured_ts": "2026-03-24T01:50:26Z",
+    "date": "2026-03-23",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.095,
+      "POR": 0.905
+    }
+  },
+  "nba-bkn-uta-2026-01-30": {
+    "captured_ts": "2026-01-31T02:20:20Z",
+    "date": "2026-01-30",
+    "favored": "UTA",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.405,
+      "UTA": 0.595
+    }
+  },
+  "nba-bkn-was-2026-01-02": {
+    "captured_ts": "2026-01-02T23:50:10Z",
+    "date": "2026-01-02",
+    "favored": "WAS",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.43,
+      "WAS": 0.57
+    }
+  },
+  "nba-bos-atl-2026-01-17": {
+    "captured_ts": "2026-01-18T00:20:11Z",
+    "date": "2026-01-17",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.395,
+      "BOS": 0.605
+    }
+  },
+  "nba-bos-bkn-2026-01-23": {
+    "captured_ts": "2026-01-24T00:20:13Z",
+    "date": "2026-01-23",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.245,
+      "BOS": 0.755
+    }
+  },
+  "nba-bos-chi-2026-01-24": {
+    "captured_ts": "2026-01-25T00:50:29Z",
+    "date": "2026-01-24",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.585,
+      "CHI": 0.415
+    }
+  },
+  "nba-bos-dal-2026-02-03": {
+    "captured_ts": "2026-02-04T00:50:15Z",
+    "date": "2026-02-03",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.695,
+      "DAL": 0.305
+    }
+  },
+  "nba-bos-den-2026-02-25": {
+    "captured_ts": "2026-02-26T02:50:24Z",
+    "date": "2026-02-25",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.425,
+      "DEN": 0.575
+    }
+  },
+  "nba-bos-det-2026-01-19": {
+    "captured_ts": "2026-01-20T00:50:11Z",
+    "date": "2026-01-19",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.445,
+      "DET": 0.555
+    }
+  },
+  "nba-bos-gsw-2026-02-19": {
+    "captured_ts": "2026-02-20T02:50:18Z",
+    "date": "2026-02-19",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.665,
+      "GSW": 0.335
+    }
+  },
+  "nba-bos-hou-2026-02-04": {
+    "captured_ts": "2026-02-05T00:50:12Z",
+    "date": "2026-02-04",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.285,
+      "HOU": 0.715
+    }
+  },
+  "nba-bos-ind-2026-01-12": {
+    "captured_ts": "2026-01-13T00:20:13Z",
+    "date": "2026-01-12",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.665,
+      "IND": 0.335
+    }
+  },
+  "nba-bos-lac-2026-01-03": {
+    "captured_ts": "2026-01-04T03:20:12Z",
+    "date": "2026-01-03",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.465,
+      "LAC": 0.535
+    }
+  },
+  "nba-bos-mem-2026-03-20": {
+    "captured_ts": "2026-03-20T23:50:30Z",
+    "date": "2026-03-20",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.895,
+      "MEM": 0.105
+    }
+  },
+  "nba-bos-mia-2026-01-15": {
+    "captured_ts": "2026-01-16T00:20:17Z",
+    "date": "2026-01-15",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.585,
+      "MIA": 0.415
+    }
+  },
+  "nba-bos-mil-2026-03-02": {
+    "captured_ts": "2026-03-03T00:20:27Z",
+    "date": "2026-03-02",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.565,
+      "MIL": 0.435
+    }
+  },
+  "nba-bos-mil-2026-04-03": {
+    "captured_ts": "2026-04-03T23:50:07Z",
+    "date": "2026-04-03",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.935,
+      "MIL": 0.065
+    }
+  },
+  "nba-bos-okc-2026-03-12": {
+    "captured_ts": "2026-03-13T01:20:25Z",
+    "date": "2026-03-12",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.245,
+      "OKC": 0.755
+    }
+  },
+  "nba-bos-phx-2026-02-24": {
+    "captured_ts": "2026-02-25T01:50:21Z",
+    "date": "2026-02-24",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.665,
+      "PHX": 0.335
+    }
+  },
+  "nba-bos-sac-2026-01-01": {
+    "captured_ts": "2026-01-02T02:50:25Z",
+    "date": "2026-01-01",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.805,
+      "SAC": 0.195
+    }
+  },
+  "nba-bos-sas-2026-03-10": {
+    "captured_ts": "2026-03-10T23:50:31Z",
+    "date": "2026-03-10",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.415,
+      "SAS": 0.585
+    }
+  },
+  "nba-cha-atl-2026-02-07": {
+    "captured_ts": "2026-02-08T00:20:15Z",
+    "date": "2026-02-07",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.475,
+      "CHA": 0.525
+    }
+  },
+  "nba-cha-bos-2026-03-04": {
+    "captured_ts": "2026-03-05T00:20:35Z",
+    "date": "2026-03-04",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.695,
+      "CHA": 0.305
+    }
+  },
+  "nba-cha-chi-2026-01-03": {
+    "captured_ts": "2026-01-04T00:50:09Z",
+    "date": "2026-01-03",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.465,
+      "CHI": 0.535
+    }
+  },
+  "nba-cha-chi-2026-02-24": {
+    "captured_ts": "2026-02-25T00:50:24Z",
+    "date": "2026-02-24",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.735,
+      "CHI": 0.265
+    }
+  },
+  "nba-cha-dal-2026-01-29": {
+    "captured_ts": "2026-01-30T01:20:19Z",
+    "date": "2026-01-29",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.58,
+      "DAL": 0.42
+    }
+  },
+  "nba-cha-den-2026-01-18": {
+    "captured_ts": "2026-01-19T00:50:14Z",
+    "date": "2026-01-18",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.555,
+      "DEN": 0.445
+    }
+  },
+  "nba-cha-gsw-2026-01-17": {
+    "captured_ts": "2026-01-18T01:20:14Z",
+    "date": "2026-01-17",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.285,
+      "GSW": 0.715
+    }
+  },
+  "nba-cha-hou-2026-02-05": {
+    "captured_ts": "2026-02-06T00:50:14Z",
+    "date": "2026-02-05",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.385,
+      "HOU": 0.615
+    }
+  },
+  "nba-cha-ind-2026-02-26": {
+    "captured_ts": "2026-02-26T23:50:25Z",
+    "date": "2026-02-26",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.845,
+      "IND": 0.155
+    }
+  },
+  "nba-cha-lac-2026-01-12": {
+    "captured_ts": "2026-01-13T03:20:12Z",
+    "date": "2026-01-12",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.365,
+      "LAC": 0.635
+    }
+  },
+  "nba-cha-lal-2026-01-15": {
+    "captured_ts": "2026-01-16T03:20:17Z",
+    "date": "2026-01-15",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.405,
+      "LAL": 0.595
+    }
+  },
+  "nba-cha-mem-2026-01-28": {
+    "captured_ts": "2026-01-29T00:50:17Z",
+    "date": "2026-01-28",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.545,
+      "MEM": 0.455
+    }
+  },
+  "nba-cha-mil-2026-01-02": {
+    "captured_ts": "2026-01-03T00:50:08Z",
+    "date": "2026-01-02",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.33,
+      "MIL": 0.67
+    }
+  },
+  "nba-cha-okc-2026-01-05": {
+    "captured_ts": "2026-01-06T00:50:15Z",
+    "date": "2026-01-05",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.115,
+      "OKC": 0.885
+    }
+  },
+  "nba-cha-orl-2026-01-22": {
+    "captured_ts": "2026-01-22T23:50:13Z",
+    "date": "2026-01-22",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.405,
+      "ORL": 0.595
+    }
+  },
+  "nba-cha-phx-2026-03-08": {
+    "captured_ts": "2026-03-09T01:50:20Z",
+    "date": "2026-03-08",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.635,
+      "PHX": 0.365
+    }
+  },
+  "nba-cha-por-2026-03-10": {
+    "captured_ts": "2026-03-11T01:50:38Z",
+    "date": "2026-03-10",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.575,
+      "POR": 0.425
+    }
+  },
+  "nba-cha-sac-2026-03-11": {
+    "captured_ts": "2026-03-12T01:50:29Z",
+    "date": "2026-03-11",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.875,
+      "SAC": 0.125
+    }
+  },
+  "nba-cha-uta-2026-01-10": {
+    "captured_ts": "2026-01-11T02:20:20Z",
+    "date": "2026-01-10",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.645,
+      "UTA": 0.355
+    }
+  },
+  "nba-chi-bkn-2026-01-16": {
+    "captured_ts": "2026-01-17T00:20:14Z",
+    "date": "2026-01-16",
+    "favored": "BKN",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.505,
+      "CHI": 0.495
+    }
+  },
+  "nba-chi-bkn-2026-02-09": {
+    "captured_ts": "2026-02-10T00:20:13Z",
+    "date": "2026-02-09",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.415,
+      "CHI": 0.585
+    }
+  },
+  "nba-chi-bos-2026-01-05": {
+    "captured_ts": "2026-01-06T00:20:12Z",
+    "date": "2026-01-05",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.795,
+      "CHI": 0.205
+    }
+  },
+  "nba-chi-bos-2026-02-11": {
+    "captured_ts": "2026-02-12T00:20:15Z",
+    "date": "2026-02-11",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.86,
+      "CHI": 0.14
+    }
+  },
+  "nba-chi-det-2026-01-07": {
+    "captured_ts": "2026-01-07T23:50:12Z",
+    "date": "2026-01-07",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.255,
+      "DET": 0.745
+    }
+  },
+  "nba-chi-gsw-2026-03-10": {
+    "captured_ts": "2026-03-11T01:50:45Z",
+    "date": "2026-03-10",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.325,
+      "GSW": 0.675
+    }
+  },
+  "nba-chi-hou-2026-01-13": {
+    "captured_ts": "2026-01-14T00:50:16Z",
+    "date": "2026-01-13",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.175,
+      "HOU": 0.825
+    }
+  },
+  "nba-chi-ind-2026-01-28": {
+    "captured_ts": "2026-01-28T23:50:19Z",
+    "date": "2026-01-28",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.545,
+      "IND": 0.455
+    }
+  },
+  "nba-chi-lac-2026-03-13": {
+    "captured_ts": "2026-03-14T02:20:29Z",
+    "date": "2026-03-13",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.135,
+      "LAC": 0.865
+    }
+  },
+  "nba-chi-lal-2026-03-12": {
+    "captured_ts": "2026-03-13T02:20:26Z",
+    "date": "2026-03-12",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.175,
+      "LAL": 0.825
+    }
+  },
+  "nba-chi-mem-2026-03-28": {
+    "captured_ts": "2026-03-28T23:50:33Z",
+    "date": "2026-03-28",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.645,
+      "MEM": 0.355
+    }
+  },
+  "nba-chi-mia-2026-01-30": {
+    "captured_ts": "2026-01-31T00:50:17Z",
+    "date": "2026-01-30",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.265,
+      "MIA": 0.735
+    }
+  },
+  "nba-chi-mia-2026-01-31": {
+    "captured_ts": "2026-02-01T00:50:30Z",
+    "date": "2026-01-31",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.345,
+      "MIA": 0.655
+    }
+  },
+  "nba-chi-mil-2026-02-03": {
+    "captured_ts": "2026-02-04T00:50:17Z",
+    "date": "2026-02-03",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.525,
+      "MIL": 0.475
+    }
+  },
+  "nba-chi-min-2026-01-22": {
+    "captured_ts": "2026-01-23T00:50:16Z",
+    "date": "2026-01-22",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.235,
+      "MIN": 0.765
+    }
+  },
+  "nba-chi-okc-2026-03-27": {
+    "captured_ts": "2026-03-27T23:50:40Z",
+    "date": "2026-03-27",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.045,
+      "OKC": 0.955
+    }
+  },
+  "nba-chi-phx-2026-03-05": {
+    "captured_ts": "2026-03-06T01:50:36Z",
+    "date": "2026-03-05",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.165,
+      "PHX": 0.835
+    }
+  },
+  "nba-chi-sac-2026-03-08": {
+    "captured_ts": "2026-03-09T00:50:21Z",
+    "date": "2026-03-08",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.635,
+      "SAC": 0.365
+    }
+  },
+  "nba-chi-sas-2026-03-30": {
+    "captured_ts": "2026-03-30T23:50:41Z",
+    "date": "2026-03-30",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.055,
+      "SAS": 0.945
+    }
+  },
+  "nba-chi-tor-2026-02-05": {
+    "captured_ts": "2026-02-06T00:20:19Z",
+    "date": "2026-02-05",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.275,
+      "TOR": 0.725
+    }
+  },
+  "nba-cle-cha-2026-01-21": {
+    "captured_ts": "2026-01-21T23:50:12Z",
+    "date": "2026-01-21",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.405,
+      "CLE": 0.595
+    }
+  },
+  "nba-cle-cha-2026-02-20": {
+    "captured_ts": "2026-02-20T23:50:20Z",
+    "date": "2026-02-20",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.345,
+      "CLE": 0.655
+    }
+  },
+  "nba-cle-chi-2026-03-19": {
+    "captured_ts": "2026-03-19T23:50:39Z",
+    "date": "2026-03-19",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.195,
+      "CLE": 0.805
+    }
+  },
+  "nba-cle-den-2026-02-09": {
+    "captured_ts": "2026-02-10T01:50:14Z",
+    "date": "2026-02-09",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.445,
+      "DEN": 0.555
+    }
+  },
+  "nba-cle-det-2026-02-27": {
+    "captured_ts": "2026-02-27T23:40:30Z",
+    "date": "2026-02-27",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.275,
+      "DET": 0.725
+    }
+  },
+  "nba-cle-gsw-2026-04-02": {
+    "captured_ts": "2026-04-03T01:50:41Z",
+    "date": "2026-04-02",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.795,
+      "GSW": 0.205
+    }
+  },
+  "nba-cle-ind-2026-01-06": {
+    "captured_ts": "2026-01-06T23:50:10Z",
+    "date": "2026-01-06",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.675,
+      "IND": 0.325
+    }
+  },
+  "nba-cle-lac-2026-02-04": {
+    "captured_ts": "2026-02-05T03:20:13Z",
+    "date": "2026-02-04",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.575,
+      "LAC": 0.425
+    }
+  },
+  "nba-cle-lal-2026-03-31": {
+    "captured_ts": "2026-04-01T02:20:37Z",
+    "date": "2026-03-31",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.445,
+      "LAL": 0.555
+    }
+  },
+  "nba-cle-mem-2026-04-06": {
+    "captured_ts": "2026-04-06T23:50:03Z",
+    "date": "2026-04-06",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.885,
+      "MEM": 0.115
+    }
+  },
+  "nba-cle-mil-2026-02-25": {
+    "captured_ts": "2026-02-26T00:50:31Z",
+    "date": "2026-02-25",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.575,
+      "MIL": 0.425
+    }
+  },
+  "nba-cle-mil-2026-03-17": {
+    "captured_ts": "2026-03-17T23:50:52Z",
+    "date": "2026-03-17",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.835,
+      "MIL": 0.165
+    }
+  },
+  "nba-cle-min-2026-01-08": {
+    "captured_ts": "2026-01-09T00:50:14Z",
+    "date": "2026-01-08",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.435,
+      "MIN": 0.565
+    }
+  },
+  "nba-cle-orl-2026-01-24": {
+    "captured_ts": "2026-01-24T23:50:13Z",
+    "date": "2026-01-24",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.485,
+      "ORL": 0.515
+    }
+  },
+  "nba-cle-phi-2026-01-14": {
+    "captured_ts": "2026-01-14T23:50:12Z",
+    "date": "2026-01-14",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.495,
+      "PHI": 0.505
+    }
+  },
+  "nba-cle-phi-2026-01-16": {
+    "captured_ts": "2026-01-16T23:50:17Z",
+    "date": "2026-01-16",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.445,
+      "PHI": 0.555
+    }
+  },
+  "nba-cle-phx-2026-01-30": {
+    "captured_ts": "2026-01-31T01:50:16Z",
+    "date": "2026-01-30",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.545,
+      "PHX": 0.455
+    }
+  },
+  "nba-cle-por-2026-02-01": {
+    "captured_ts": "2026-02-02T01:50:15Z",
+    "date": "2026-02-01",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.615,
+      "POR": 0.385
+    }
+  },
+  "nba-cle-sac-2026-02-07": {
+    "captured_ts": "2026-02-08T02:50:12Z",
+    "date": "2026-02-07",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.835,
+      "SAC": 0.165
+    }
+  },
+  "nba-cle-uta-2026-03-30": {
+    "captured_ts": "2026-03-31T00:50:46Z",
+    "date": "2026-03-30",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.915,
+      "UTA": 0.075
+    }
+  },
+  "nba-dal-bkn-2026-02-24": {
+    "captured_ts": "2026-02-25T00:20:18Z",
+    "date": "2026-02-24",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.475,
+      "DAL": 0.525
+    }
+  },
+  "nba-dal-bos-2026-03-06": {
+    "captured_ts": "2026-03-06T23:50:20Z",
+    "date": "2026-03-06",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.895,
+      "DAL": 0.105
+    }
+  },
+  "nba-dal-cha-2026-03-03": {
+    "captured_ts": "2026-03-03T23:50:29Z",
+    "date": "2026-03-03",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.855,
+      "DAL": 0.145
+    }
+  },
+  "nba-dal-chi-2026-01-10": {
+    "captured_ts": "2026-01-11T00:50:15Z",
+    "date": "2026-01-10",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.605,
+      "DAL": 0.395
+    }
+  },
+  "nba-dal-den-2026-03-25": {
+    "captured_ts": "2026-03-26T01:50:25Z",
+    "date": "2026-03-25",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.165,
+      "DEN": 0.835
+    }
+  },
+  "nba-dal-hou-2026-01-31": {
+    "captured_ts": "2026-02-01T01:20:13Z",
+    "date": "2026-01-31",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.215,
+      "HOU": 0.785
+    }
+  },
+  "nba-dal-lal-2026-02-12": {
+    "captured_ts": "2026-02-13T02:50:19Z",
+    "date": "2026-02-12",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.315,
+      "LAL": 0.685
+    }
+  },
+  "nba-dal-mem-2026-03-12": {
+    "captured_ts": "2026-03-12T23:50:27Z",
+    "date": "2026-03-12",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.655,
+      "MEM": 0.345
+    }
+  },
+  "nba-dal-min-2026-02-20": {
+    "captured_ts": "2026-02-21T00:20:18Z",
+    "date": "2026-02-20",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.145,
+      "MIN": 0.855
+    }
+  },
+  "nba-dal-nop-2026-03-16": {
+    "captured_ts": "2026-03-16T23:50:38Z",
+    "date": "2026-03-16",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.255,
+      "NOP": 0.745
+    }
+  },
+  "nba-dal-orl-2026-03-05": {
+    "captured_ts": "2026-03-05T23:50:28Z",
+    "date": "2026-03-05",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.255,
+      "ORL": 0.745
+    }
+  },
+  "nba-dal-phx-2026-02-10": {
+    "captured_ts": "2026-02-11T01:50:12Z",
+    "date": "2026-02-10",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.265,
+      "PHX": 0.735
+    }
+  },
+  "nba-dal-por-2026-03-27": {
+    "captured_ts": "2026-03-28T01:50:38Z",
+    "date": "2026-03-27",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.185,
+      "POR": 0.815
+    }
+  },
+  "nba-dal-sac-2026-01-06": {
+    "captured_ts": "2026-01-07T03:50:11Z",
+    "date": "2026-01-06",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.635,
+      "SAC": 0.365
+    }
+  },
+  "nba-dal-uta-2026-01-08": {
+    "captured_ts": "2026-01-09T01:50:14Z",
+    "date": "2026-01-08",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.635,
+      "UTA": 0.365
+    }
+  },
+  "nba-den-bos-2026-01-07": {
+    "captured_ts": "2026-01-07T23:50:10Z",
+    "date": "2026-01-07",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.765,
+      "DEN": 0.235
+    }
+  },
+  "nba-den-chi-2026-02-07": {
+    "captured_ts": "2026-02-08T00:50:31Z",
+    "date": "2026-02-07",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.245,
+      "DEN": 0.755
+    }
+  },
+  "nba-den-cle-2026-01-02": {
+    "captured_ts": "2026-01-03T00:20:09Z",
+    "date": "2026-01-02",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.855,
+      "DEN": 0.145
+    }
+  },
+  "nba-den-dal-2026-01-14": {
+    "captured_ts": "2026-01-15T02:20:10Z",
+    "date": "2026-01-14",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.515,
+      "DEN": 0.485
+    }
+  },
+  "nba-den-det-2026-02-03": {
+    "captured_ts": "2026-02-03T23:50:43Z",
+    "date": "2026-02-03",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.365,
+      "DET": 0.635
+    }
+  },
+  "nba-den-lac-2026-02-19": {
+    "captured_ts": "2026-02-20T03:20:23Z",
+    "date": "2026-02-19",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.623,
+      "LAC": 0.377
+    }
+  },
+  "nba-den-lal-2026-03-14": {
+    "captured_ts": "2026-03-15T00:20:30Z",
+    "date": "2026-03-14",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.53,
+      "LAL": 0.47
+    }
+  },
+  "nba-den-mil-2026-01-23": {
+    "captured_ts": "2026-01-24T02:20:14Z",
+    "date": "2026-01-23",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.275,
+      "MIL": 0.725
+    }
+  },
   "nba-den-min-2026-04-30": {
     "captured_ts": "2026-05-01T01:20:04Z",
     "date": "2026-04-30",
@@ -16,6 +1366,186 @@
     "probs": {
       "DEN": 0.725,
       "MIN": 0.275
+    }
+  },
+  "nba-den-nop-2026-01-13": {
+    "captured_ts": "2026-01-14T00:50:15Z",
+    "date": "2026-01-13",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.555,
+      "NOP": 0.445
+    }
+  },
+  "nba-den-nyk-2026-02-04": {
+    "captured_ts": "2026-02-04T23:50:12Z",
+    "date": "2026-02-04",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.365,
+      "NYK": 0.635
+    }
+  },
+  "nba-den-okc-2026-02-27": {
+    "captured_ts": "2026-02-28T02:20:30Z",
+    "date": "2026-02-27",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.305,
+      "OKC": 0.695
+    }
+  },
+  "nba-den-phi-2026-01-05": {
+    "captured_ts": "2026-01-06T01:20:11Z",
+    "date": "2026-01-05",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.125,
+      "PHI": 0.875
+    }
+  },
+  "nba-den-phx-2026-03-24": {
+    "captured_ts": "2026-03-25T02:50:30Z",
+    "date": "2026-03-24",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.685,
+      "PHX": 0.315
+    }
+  },
+  "nba-den-por-2026-02-20": {
+    "captured_ts": "2026-02-21T02:50:18Z",
+    "date": "2026-02-20",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.525,
+      "POR": 0.475
+    }
+  },
+  "nba-den-sas-2026-03-12": {
+    "captured_ts": "2026-03-13T00:50:24Z",
+    "date": "2026-03-12",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.425,
+      "SAS": 0.575
+    }
+  },
+  "nba-den-uta-2026-03-02": {
+    "captured_ts": "2026-03-03T01:50:26Z",
+    "date": "2026-03-02",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.84,
+      "UTA": 0.16
+    }
+  },
+  "nba-den-uta-2026-04-01": {
+    "captured_ts": "2026-04-02T00:50:58Z",
+    "date": "2026-04-01",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.925,
+      "UTA": 0.075
+    }
+  },
+  "nba-den-was-2026-01-22": {
+    "captured_ts": "2026-01-22T23:50:11Z",
+    "date": "2026-01-22",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.695,
+      "WAS": 0.305
+    }
+  },
+  "nba-det-cha-2026-02-09": {
+    "captured_ts": "2026-02-09T23:50:12Z",
+    "date": "2026-02-09",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.435,
+      "DET": 0.565
+    }
+  },
+  "nba-det-chi-2026-02-21": {
+    "captured_ts": "2026-02-22T00:50:18Z",
+    "date": "2026-02-21",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.185,
+      "DET": 0.815
+    }
+  },
+  "nba-det-cle-2026-03-03": {
+    "captured_ts": "2026-03-03T23:50:26Z",
+    "date": "2026-03-03",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.425,
+      "DET": 0.575
+    }
+  },
+  "nba-det-den-2026-01-27": {
+    "captured_ts": "2026-01-28T01:50:17Z",
+    "date": "2026-01-27",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.285,
+      "DET": 0.715
+    }
+  },
+  "nba-det-gsw-2026-01-30": {
+    "captured_ts": "2026-01-31T02:50:13Z",
+    "date": "2026-01-30",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "DET": 0.445,
+      "GSW": 0.555
+    }
+  },
+  "nba-det-nop-2026-01-21": {
+    "captured_ts": "2026-01-22T00:50:10Z",
+    "date": "2026-01-21",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.705,
+      "NOP": 0.295
+    }
+  },
+  "nba-det-nyk-2026-02-19": {
+    "captured_ts": "2026-02-20T00:20:24Z",
+    "date": "2026-02-19",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "DET": 0.405,
+      "NYK": 0.595
+    }
+  },
+  "nba-det-okc-2026-03-30": {
+    "captured_ts": "2026-03-31T01:20:40Z",
+    "date": "2026-03-30",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "DET": 0.155,
+      "OKC": 0.845
     }
   },
   "nba-det-orl-2026-04-27": {
@@ -28,6 +1558,96 @@
       "ORL": 0.405
     }
   },
+  "nba-det-phx-2026-01-29": {
+    "captured_ts": "2026-01-30T01:50:25Z",
+    "date": "2026-01-29",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.585,
+      "PHX": 0.415
+    }
+  },
+  "nba-det-sas-2026-03-05": {
+    "captured_ts": "2026-03-06T00:50:29Z",
+    "date": "2026-03-05",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "DET": 0.425,
+      "SAS": 0.575
+    }
+  },
+  "nba-det-tor-2026-02-11": {
+    "captured_ts": "2026-02-12T00:20:15Z",
+    "date": "2026-02-11",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.505,
+      "TOR": 0.495
+    }
+  },
+  "nba-gsw-atl-2026-03-21": {
+    "captured_ts": "2026-03-21T23:50:42Z",
+    "date": "2026-03-21",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.735,
+      "GSW": 0.265
+    }
+  },
+  "nba-gsw-dal-2026-01-22": {
+    "captured_ts": "2026-01-23T00:20:14Z",
+    "date": "2026-01-22",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.315,
+      "GSW": 0.685
+    }
+  },
+  "nba-gsw-dal-2026-03-23": {
+    "captured_ts": "2026-03-24T01:20:19Z",
+    "date": "2026-03-23",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.435,
+      "GSW": 0.565
+    }
+  },
+  "nba-gsw-den-2026-03-29": {
+    "captured_ts": "2026-03-30T01:50:38Z",
+    "date": "2026-03-29",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.835,
+      "GSW": 0.165
+    }
+  },
+  "nba-gsw-hou-2026-03-05": {
+    "captured_ts": "2026-03-06T00:20:31Z",
+    "date": "2026-03-05",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.215,
+      "HOU": 0.785
+    }
+  },
+  "nba-gsw-lac-2026-01-05": {
+    "captured_ts": "2026-01-06T02:50:11Z",
+    "date": "2026-01-05",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.595,
+      "LAC": 0.405
+    }
+  },
   "nba-gsw-lac-2026-04-15": {
     "captured_ts": "2026-04-16T01:50:49Z",
     "date": "2026-04-15",
@@ -36,6 +1656,1776 @@
     "probs": {
       "GSW": 0.335,
       "LAC": 0.665
+    }
+  },
+  "nba-gsw-lal-2026-02-07": {
+    "captured_ts": "2026-02-08T01:20:17Z",
+    "date": "2026-02-07",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.465,
+      "LAL": 0.535
+    }
+  },
+  "nba-gsw-mem-2026-02-25": {
+    "captured_ts": "2026-02-26T00:20:21Z",
+    "date": "2026-02-25",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.625,
+      "MEM": 0.375
+    }
+  },
+  "nba-gsw-min-2026-01-24": {
+    "captured_ts": "2026-01-24T22:20:21Z",
+    "date": "2026-01-23",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.365,
+      "MIN": 0.635
+    }
+  },
+  "nba-gsw-min-2026-01-26": {
+    "captured_ts": "2026-01-27T02:20:16Z",
+    "date": "2026-01-26",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.275,
+      "MIN": 0.725
+    }
+  },
+  "nba-gsw-nop-2026-02-24": {
+    "captured_ts": "2026-02-25T00:50:30Z",
+    "date": "2026-02-24",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.535,
+      "NOP": 0.465
+    }
+  },
+  "nba-gsw-nyk-2026-03-15": {
+    "captured_ts": "2026-03-15T23:50:32Z",
+    "date": "2026-03-15",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.125,
+      "NYK": 0.875
+    }
+  },
+  "nba-gsw-okc-2026-03-07": {
+    "captured_ts": "2026-03-08T01:20:24Z",
+    "date": "2026-03-07",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.165,
+      "OKC": 0.835
+    }
+  },
+  "nba-gsw-phx-2026-02-05": {
+    "captured_ts": "2026-02-06T02:50:20Z",
+    "date": "2026-02-05",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.345,
+      "PHX": 0.655
+    }
+  },
+  "nba-gsw-uta-2026-01-28": {
+    "captured_ts": "2026-01-29T01:50:16Z",
+    "date": "2026-01-28",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.725,
+      "UTA": 0.275
+    }
+  },
+  "nba-gsw-uta-2026-03-09": {
+    "captured_ts": "2026-03-10T00:50:22Z",
+    "date": "2026-03-09",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.705,
+      "UTA": 0.295
+    }
+  },
+  "nba-hou-atl-2026-01-29": {
+    "captured_ts": "2026-01-30T00:50:19Z",
+    "date": "2026-01-29",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.295,
+      "HOU": 0.705
+    }
+  },
+  "nba-hou-cha-2026-02-19": {
+    "captured_ts": "2026-02-19T23:50:27Z",
+    "date": "2026-02-19",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.375,
+      "HOU": 0.625
+    }
+  },
+  "nba-hou-chi-2026-03-23": {
+    "captured_ts": "2026-03-23T23:50:34Z",
+    "date": "2026-03-23",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.235,
+      "HOU": 0.765
+    }
+  },
+  "nba-hou-dal-2026-01-03": {
+    "captured_ts": "2026-01-04T01:20:13Z",
+    "date": "2026-01-03",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.265,
+      "HOU": 0.735
+    }
+  },
+  "nba-hou-den-2026-03-11": {
+    "captured_ts": "2026-03-12T01:50:22Z",
+    "date": "2026-03-11",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.695,
+      "HOU": 0.305
+    }
+  },
+  "nba-hou-det-2026-01-23": {
+    "captured_ts": "2026-01-23T23:50:11Z",
+    "date": "2026-01-23",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.615,
+      "HOU": 0.385
+    }
+  },
+  "nba-hou-gsw-2026-04-05": {
+    "captured_ts": "2026-04-06T01:50:39Z",
+    "date": "2026-04-05",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.395,
+      "HOU": 0.605
+    }
+  },
+  "nba-hou-ind-2026-02-02": {
+    "captured_ts": "2026-02-02T23:50:12Z",
+    "date": "2026-02-02",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.705,
+      "IND": 0.295
+    }
+  },
+  "nba-hou-mem-2026-03-27": {
+    "captured_ts": "2026-03-27T23:50:38Z",
+    "date": "2026-03-27",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.885,
+      "MEM": 0.115
+    }
+  },
+  "nba-hou-min-2026-03-25": {
+    "captured_ts": "2026-03-26T01:20:25Z",
+    "date": "2026-03-25",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.555,
+      "MIN": 0.445
+    }
+  },
+  "nba-hou-nyk-2026-02-21": {
+    "captured_ts": "2026-02-22T01:20:16Z",
+    "date": "2026-02-21",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.405,
+      "NYK": 0.595
+    }
+  },
+  "nba-hou-orl-2026-02-26": {
+    "captured_ts": "2026-02-27T00:20:26Z",
+    "date": "2026-02-26",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.565,
+      "ORL": 0.435
+    }
+  },
+  "nba-hou-phi-2026-01-22": {
+    "captured_ts": "2026-01-22T23:50:16Z",
+    "date": "2026-01-22",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.555,
+      "PHI": 0.445
+    }
+  },
+  "nba-hou-por-2026-01-07": {
+    "captured_ts": "2026-01-08T02:50:08Z",
+    "date": "2026-01-07",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.705,
+      "POR": 0.295
+    }
+  },
+  "nba-hou-por-2026-01-09": {
+    "captured_ts": "2026-01-10T02:50:12Z",
+    "date": "2026-01-09",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.685,
+      "POR": 0.315
+    }
+  },
+  "nba-hou-sac-2026-01-11": {
+    "captured_ts": "2026-01-12T01:50:10Z",
+    "date": "2026-01-11",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.855,
+      "SAC": 0.145
+    }
+  },
+  "nba-hou-sas-2026-03-08": {
+    "captured_ts": "2026-03-08T23:50:32Z",
+    "date": "2026-03-08",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.335,
+      "SAS": 0.665
+    }
+  },
+  "nba-hou-was-2026-03-02": {
+    "captured_ts": "2026-03-02T23:50:30Z",
+    "date": "2026-03-02",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.895,
+      "WAS": 0.105
+    }
+  },
+  "nba-ind-bkn-2026-02-11": {
+    "captured_ts": "2026-02-12T00:20:14Z",
+    "date": "2026-02-11",
+    "favored": "BKN",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.675,
+      "IND": 0.325
+    }
+  },
+  "nba-ind-bos-2026-01-21": {
+    "captured_ts": "2026-01-22T00:20:10Z",
+    "date": "2026-01-21",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.795,
+      "IND": 0.205
+    }
+  },
+  "nba-ind-cha-2026-01-08": {
+    "captured_ts": "2026-01-08T23:50:14Z",
+    "date": "2026-01-08",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.625,
+      "IND": 0.375
+    }
+  },
+  "nba-ind-chi-2026-04-01": {
+    "captured_ts": "2026-04-01T23:50:49Z",
+    "date": "2026-04-01",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.595,
+      "IND": 0.405
+    }
+  },
+  "nba-ind-det-2026-01-17": {
+    "captured_ts": "2026-01-18T00:20:12Z",
+    "date": "2026-01-17",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.875,
+      "IND": 0.125
+    }
+  },
+  "nba-ind-lac-2026-03-04": {
+    "captured_ts": "2026-03-05T03:20:19Z",
+    "date": "2026-03-04",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "IND": 0.165,
+      "LAC": 0.835
+    }
+  },
+  "nba-ind-lal-2026-03-06": {
+    "captured_ts": "2026-03-07T03:20:26Z",
+    "date": "2026-03-06",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "IND": 0.215,
+      "LAL": 0.785
+    }
+  },
+  "nba-ind-mil-2026-02-06": {
+    "captured_ts": "2026-02-07T00:50:16Z",
+    "date": "2026-02-06",
+    "favored": "IND",
+    "kind": "game",
+    "probs": {
+      "IND": 0.535,
+      "MIL": 0.465
+    }
+  },
+  "nba-ind-nyk-2026-02-10": {
+    "captured_ts": "2026-02-11T00:20:32Z",
+    "date": "2026-02-10",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "IND": 0.185,
+      "NYK": 0.815
+    }
+  },
+  "nba-ind-okc-2026-01-23": {
+    "captured_ts": "2026-01-24T00:50:13Z",
+    "date": "2026-01-23",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "IND": 0.125,
+      "OKC": 0.875
+    }
+  },
+  "nba-ind-phi-2026-01-19": {
+    "captured_ts": "2026-01-19T23:50:13Z",
+    "date": "2026-01-19",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "IND": 0.305,
+      "PHI": 0.695
+    }
+  },
+  "nba-ind-por-2026-03-08": {
+    "captured_ts": "2026-03-09T00:50:22Z",
+    "date": "2026-03-08",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "IND": 0.225,
+      "POR": 0.775
+    }
+  },
+  "nba-ind-sac-2026-03-10": {
+    "captured_ts": "2026-03-11T01:50:35Z",
+    "date": "2026-03-10",
+    "favored": "SAC",
+    "kind": "game",
+    "probs": {
+      "IND": 0.415,
+      "SAC": 0.585
+    }
+  },
+  "nba-ind-sas-2026-03-21": {
+    "captured_ts": "2026-03-21T23:50:48Z",
+    "date": "2026-03-21",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "IND": 0.085,
+      "SAS": 0.915
+    }
+  },
+  "nba-ind-was-2026-02-19": {
+    "captured_ts": "2026-02-19T23:50:21Z",
+    "date": "2026-02-19",
+    "favored": "IND",
+    "kind": "game",
+    "probs": {
+      "IND": 0.545,
+      "WAS": 0.455
+    }
+  },
+  "nba-ind-was-2026-02-20": {
+    "captured_ts": "2026-02-20T23:50:21Z",
+    "date": "2026-02-20",
+    "favored": "WAS",
+    "kind": "game",
+    "probs": {
+      "IND": 0.485,
+      "WAS": 0.515
+    }
+  },
+  "nba-lac-bkn-2026-01-09": {
+    "captured_ts": "2026-01-10T00:20:24Z",
+    "date": "2026-01-09",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.325,
+      "LAC": 0.675
+    }
+  },
+  "nba-lac-chi-2026-01-20": {
+    "captured_ts": "2026-01-21T00:50:16Z",
+    "date": "2026-01-20",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.575,
+      "LAC": 0.425
+    }
+  },
+  "nba-lac-dal-2026-03-21": {
+    "captured_ts": "2026-03-22T00:20:45Z",
+    "date": "2026-03-21",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.295,
+      "LAC": 0.705
+    }
+  },
+  "nba-lac-den-2026-01-30": {
+    "captured_ts": "2026-01-31T01:50:17Z",
+    "date": "2026-01-30",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.435,
+      "LAC": 0.565
+    }
+  },
+  "nba-lac-det-2026-01-10": {
+    "captured_ts": "2026-01-11T00:20:12Z",
+    "date": "2026-01-10",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.525,
+      "LAC": 0.475
+    }
+  },
+  "nba-lac-gsw-2026-03-02": {
+    "captured_ts": "2026-03-03T02:50:26Z",
+    "date": "2026-03-02",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.5,
+      "LAC": 0.5
+    }
+  },
+  "nba-lac-hou-2026-02-10": {
+    "captured_ts": "2026-02-11T00:50:15Z",
+    "date": "2026-02-10",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.735,
+      "LAC": 0.265
+    }
+  },
+  "nba-lac-hou-2026-02-11": {
+    "captured_ts": "2026-02-12T00:50:30Z",
+    "date": "2026-02-11",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.735,
+      "LAC": 0.265
+    }
+  },
+  "nba-lac-lal-2026-02-20": {
+    "captured_ts": "2026-02-21T02:50:21Z",
+    "date": "2026-02-20",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.305,
+      "LAL": 0.695
+    }
+  },
+  "nba-lac-mem-2026-03-07": {
+    "captured_ts": "2026-03-08T00:50:21Z",
+    "date": "2026-03-07",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.725,
+      "MEM": 0.275
+    }
+  },
+  "nba-lac-nop-2026-03-18": {
+    "captured_ts": "2026-03-18T23:50:53Z",
+    "date": "2026-03-18",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.555,
+      "NOP": 0.445
+    }
+  },
+  "nba-lac-nop-2026-03-19": {
+    "captured_ts": "2026-03-19T23:50:34Z",
+    "date": "2026-03-19",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.405,
+      "NOP": 0.595
+    }
+  },
+  "nba-lac-nyk-2026-01-07": {
+    "captured_ts": "2026-01-08T00:20:13Z",
+    "date": "2026-01-07",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.365,
+      "NYK": 0.635
+    }
+  },
+  "nba-lac-phx-2026-02-01": {
+    "captured_ts": "2026-02-02T00:50:12Z",
+    "date": "2026-02-01",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.415,
+      "PHX": 0.585
+    }
+  },
+  "nba-lac-sac-2026-02-06": {
+    "captured_ts": "2026-02-07T02:50:15Z",
+    "date": "2026-02-06",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.595,
+      "SAC": 0.405
+    }
+  },
+  "nba-lac-sac-2026-04-05": {
+    "captured_ts": "2026-04-06T00:50:51Z",
+    "date": "2026-04-05",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.865,
+      "SAC": 0.135
+    }
+  },
+  "nba-lac-sas-2026-03-06": {
+    "captured_ts": "2026-03-07T02:20:19Z",
+    "date": "2026-03-06",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.285,
+      "SAS": 0.715
+    }
+  },
+  "nba-lac-tor-2026-01-16": {
+    "captured_ts": "2026-01-17T00:20:16Z",
+    "date": "2026-01-16",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.445,
+      "TOR": 0.555
+    }
+  },
+  "nba-lac-uta-2026-01-27": {
+    "captured_ts": "2026-01-28T02:50:20Z",
+    "date": "2026-01-27",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.745,
+      "UTA": 0.255
+    }
+  },
+  "nba-lal-bkn-2026-02-03": {
+    "captured_ts": "2026-02-04T00:20:18Z",
+    "date": "2026-02-03",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.275,
+      "LAL": 0.725
+    }
+  },
+  "nba-lal-chi-2026-01-26": {
+    "captured_ts": "2026-01-27T00:50:15Z",
+    "date": "2026-01-26",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.475,
+      "LAL": 0.525
+    }
+  },
+  "nba-lal-cle-2026-01-28": {
+    "captured_ts": "2026-01-28T23:50:19Z",
+    "date": "2026-01-28",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.595,
+      "LAL": 0.405
+    }
+  },
+  "nba-lal-dal-2026-01-24": {
+    "captured_ts": "2026-01-25T01:20:15Z",
+    "date": "2026-01-24",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.395,
+      "LAL": 0.605
+    }
+  },
+  "nba-lal-den-2026-01-20": {
+    "captured_ts": "2026-01-21T02:50:15Z",
+    "date": "2026-01-20",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.415,
+      "LAL": 0.585
+    }
+  },
+  "nba-lal-den-2026-03-05": {
+    "captured_ts": "2026-03-06T02:50:39Z",
+    "date": "2026-03-05",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.605,
+      "LAL": 0.395
+    }
+  },
+  "nba-lal-gsw-2026-02-28": {
+    "captured_ts": "2026-03-01T01:20:25Z",
+    "date": "2026-02-28",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.405,
+      "LAL": 0.595
+    }
+  },
+  "nba-lal-hou-2026-03-16": {
+    "captured_ts": "2026-03-17T01:20:29Z",
+    "date": "2026-03-16",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.495,
+      "LAL": 0.505
+    }
+  },
+  "nba-lal-hou-2026-03-18": {
+    "captured_ts": "2026-03-19T01:20:34Z",
+    "date": "2026-03-18",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.545,
+      "LAL": 0.455
+    }
+  },
+  "nba-lal-lac-2026-01-22": {
+    "captured_ts": "2026-01-23T02:50:13Z",
+    "date": "2026-01-22",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.565,
+      "LAL": 0.435
+    }
+  },
+  "nba-lal-mia-2026-03-19": {
+    "captured_ts": "2026-03-19T23:50:36Z",
+    "date": "2026-03-19",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.415,
+      "MIA": 0.585
+    }
+  },
+  "nba-lal-nop-2026-01-06": {
+    "captured_ts": "2026-01-07T00:50:11Z",
+    "date": "2026-01-06",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.665,
+      "NOP": 0.335
+    }
+  },
+  "nba-lal-nyk-2026-02-01": {
+    "captured_ts": "2026-02-01T23:50:17Z",
+    "date": "2026-02-01",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.335,
+      "NYK": 0.665
+    }
+  },
+  "nba-lal-okc-2026-04-02": {
+    "captured_ts": "2026-04-03T01:20:43Z",
+    "date": "2026-04-02",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.235,
+      "OKC": 0.765
+    }
+  },
+  "nba-lal-phx-2026-02-26": {
+    "captured_ts": "2026-02-27T01:50:22Z",
+    "date": "2026-02-26",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.665,
+      "PHX": 0.335
+    }
+  },
+  "nba-lal-por-2026-01-17": {
+    "captured_ts": "2026-01-18T02:50:11Z",
+    "date": "2026-01-17",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.415,
+      "POR": 0.585
+    }
+  },
+  "nba-lal-sac-2026-01-12": {
+    "captured_ts": "2026-01-13T02:50:15Z",
+    "date": "2026-01-12",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.755,
+      "SAC": 0.245
+    }
+  },
+  "nba-lal-sas-2026-01-07": {
+    "captured_ts": "2026-01-08T02:20:13Z",
+    "date": "2026-01-07",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.27,
+      "SAS": 0.73
+    }
+  },
+  "nba-lal-was-2026-01-30": {
+    "captured_ts": "2026-01-30T23:50:22Z",
+    "date": "2026-01-30",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.815,
+      "WAS": 0.185
+    }
+  },
+  "nba-mem-chi-2026-03-16": {
+    "captured_ts": "2026-03-16T23:50:34Z",
+    "date": "2026-03-16",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.715,
+      "MEM": 0.285
+    }
+  },
+  "nba-mem-dal-2026-02-27": {
+    "captured_ts": "2026-02-28T01:20:26Z",
+    "date": "2026-02-27",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.635,
+      "MEM": 0.365
+    }
+  },
+  "nba-mem-den-2026-02-11": {
+    "captured_ts": "2026-02-12T01:50:17Z",
+    "date": "2026-02-11",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.845,
+      "MEM": 0.155
+    }
+  },
+  "nba-mem-gsw-2026-02-09": {
+    "captured_ts": "2026-02-10T02:50:18Z",
+    "date": "2026-02-09",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.735,
+      "MEM": 0.265
+    }
+  },
+  "nba-mem-hou-2026-01-26": {
+    "captured_ts": "2026-01-27T00:50:15Z",
+    "date": "2026-01-26",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.805,
+      "MEM": 0.195
+    }
+  },
+  "nba-mem-lal-2026-01-02": {
+    "captured_ts": "2026-01-03T03:20:18Z",
+    "date": "2026-01-02",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.645,
+      "MEM": 0.355
+    }
+  },
+  "nba-mem-lal-2026-01-04": {
+    "captured_ts": "2026-01-05T02:20:13Z",
+    "date": "2026-01-04",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.655,
+      "MEM": 0.345
+    }
+  },
+  "nba-mem-mia-2026-02-21": {
+    "captured_ts": "2026-02-22T00:50:24Z",
+    "date": "2026-02-21",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.185,
+      "MIA": 0.815
+    }
+  },
+  "nba-mem-min-2026-03-03": {
+    "captured_ts": "2026-03-04T00:50:26Z",
+    "date": "2026-03-03",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.145,
+      "MIN": 0.855
+    }
+  },
+  "nba-mem-nop-2026-01-30": {
+    "captured_ts": "2026-01-31T00:20:20Z",
+    "date": "2026-01-30",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.425,
+      "NOP": 0.575
+    }
+  },
+  "nba-mem-por-2026-02-06": {
+    "captured_ts": "2026-02-07T02:50:17Z",
+    "date": "2026-02-06",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.285,
+      "POR": 0.715
+    }
+  },
+  "nba-mem-por-2026-02-07": {
+    "captured_ts": "2026-02-08T02:50:13Z",
+    "date": "2026-02-07",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.275,
+      "POR": 0.725
+    }
+  },
+  "nba-mem-sac-2026-02-04": {
+    "captured_ts": "2026-02-05T02:50:15Z",
+    "date": "2026-02-04",
+    "favored": "SAC",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.435,
+      "SAC": 0.565
+    }
+  },
+  "nba-mia-atl-2026-02-20": {
+    "captured_ts": "2026-02-21T00:20:21Z",
+    "date": "2026-02-20",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.425,
+      "MIA": 0.575
+    }
+  },
+  "nba-mia-bos-2026-02-06": {
+    "captured_ts": "2026-02-07T00:20:16Z",
+    "date": "2026-02-06",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.675,
+      "MIA": 0.325
+    }
+  },
+  "nba-mia-cha-2026-03-06": {
+    "captured_ts": "2026-03-06T23:50:24Z",
+    "date": "2026-03-06",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.715,
+      "MIA": 0.285
+    }
+  },
+  "nba-mia-chi-2026-01-29": {
+    "captured_ts": "2026-01-30T00:50:16Z",
+    "date": "2026-01-29",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.455,
+      "MIA": 0.545
+    }
+  },
+  "nba-mia-det-2026-01-01": {
+    "captured_ts": "2026-01-01T23:50:07Z",
+    "date": "2026-01-01",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.635,
+      "MIA": 0.365
+    }
+  },
+  "nba-mia-gsw-2026-01-19": {
+    "captured_ts": "2026-01-20T02:50:13Z",
+    "date": "2026-01-19",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.635,
+      "MIA": 0.365
+    }
+  },
+  "nba-mia-hou-2026-03-21": {
+    "captured_ts": "2026-03-21T23:50:48Z",
+    "date": "2026-03-21",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.565,
+      "MIA": 0.435
+    }
+  },
+  "nba-mia-ind-2026-01-10": {
+    "captured_ts": "2026-01-10T23:50:09Z",
+    "date": "2026-01-10",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "IND": 0.315,
+      "MIA": 0.685
+    }
+  },
+  "nba-mia-mil-2026-02-24": {
+    "captured_ts": "2026-02-25T00:50:21Z",
+    "date": "2026-02-24",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.675,
+      "MIL": 0.325
+    }
+  },
+  "nba-mia-min-2026-01-06": {
+    "captured_ts": "2026-01-07T00:50:11Z",
+    "date": "2026-01-06",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.355,
+      "MIN": 0.645
+    }
+  },
+  "nba-mia-nop-2026-02-11": {
+    "captured_ts": "2026-02-12T00:50:29Z",
+    "date": "2026-02-11",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.475,
+      "NOP": 0.525
+    }
+  },
+  "nba-mia-okc-2026-01-11": {
+    "captured_ts": "2026-01-11T23:50:09Z",
+    "date": "2026-01-11",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.145,
+      "OKC": 0.855
+    }
+  },
+  "nba-mia-phi-2026-02-26": {
+    "captured_ts": "2026-02-26T23:50:19Z",
+    "date": "2026-02-26",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.455,
+      "PHI": 0.545
+    }
+  },
+  "nba-mia-phx-2026-01-25": {
+    "captured_ts": "2026-01-26T00:50:11Z",
+    "date": "2026-01-25",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.385,
+      "PHX": 0.615
+    }
+  },
+  "nba-mia-por-2026-01-22": {
+    "captured_ts": "2026-01-23T02:50:11Z",
+    "date": "2026-01-22",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.425,
+      "POR": 0.575
+    }
+  },
+  "nba-mia-sac-2026-01-20": {
+    "captured_ts": "2026-01-21T02:50:15Z",
+    "date": "2026-01-20",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.625,
+      "SAC": 0.375
+    }
+  },
+  "nba-mia-uta-2026-01-24": {
+    "captured_ts": "2026-01-25T02:20:17Z",
+    "date": "2026-01-24",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.705,
+      "UTA": 0.295
+    }
+  },
+  "nba-mil-den-2026-01-11": {
+    "captured_ts": "2026-01-12T00:50:11Z",
+    "date": "2026-01-11",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.365,
+      "MIL": 0.635
+    }
+  },
+  "nba-mil-gsw-2026-01-07": {
+    "captured_ts": "2026-01-08T02:50:13Z",
+    "date": "2026-01-07",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.705,
+      "MIL": 0.295
+    }
+  },
+  "nba-mil-hou-2026-04-01": {
+    "captured_ts": "2026-04-01T23:50:51Z",
+    "date": "2026-04-01",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.945,
+      "MIL": 0.055
+    }
+  },
+  "nba-mil-lac-2026-03-23": {
+    "captured_ts": "2026-03-24T02:20:28Z",
+    "date": "2026-03-23",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.875,
+      "MIL": 0.125
+    }
+  },
+  "nba-mil-lal-2026-01-09": {
+    "captured_ts": "2026-01-10T03:20:13Z",
+    "date": "2026-01-09",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.585,
+      "MIL": 0.415
+    }
+  },
+  "nba-mil-nop-2026-02-20": {
+    "captured_ts": "2026-02-21T00:50:19Z",
+    "date": "2026-02-20",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.38,
+      "NOP": 0.62
+    }
+  },
+  "nba-mil-okc-2026-02-12": {
+    "captured_ts": "2026-02-13T00:20:25Z",
+    "date": "2026-02-12",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.165,
+      "OKC": 0.835
+    }
+  },
+  "nba-mil-orl-2026-02-09": {
+    "captured_ts": "2026-02-10T00:20:12Z",
+    "date": "2026-02-09",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.225,
+      "ORL": 0.775
+    }
+  },
+  "nba-mil-orl-2026-02-11": {
+    "captured_ts": "2026-02-11T23:50:23Z",
+    "date": "2026-02-11",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.195,
+      "ORL": 0.805
+    }
+  },
+  "nba-mil-phi-2026-01-27": {
+    "captured_ts": "2026-01-28T00:50:11Z",
+    "date": "2026-01-27",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.235,
+      "PHI": 0.765
+    }
+  },
+  "nba-mil-phx-2026-03-21": {
+    "captured_ts": "2026-03-22T01:50:24Z",
+    "date": "2026-03-21",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.16,
+      "PHX": 0.84
+    }
+  },
+  "nba-mil-por-2026-03-25": {
+    "captured_ts": "2026-03-26T01:50:35Z",
+    "date": "2026-03-25",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.11,
+      "POR": 0.89
+    }
+  },
+  "nba-mil-sac-2026-01-04": {
+    "captured_ts": "2026-01-05T01:50:11Z",
+    "date": "2026-01-04",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.685,
+      "SAC": 0.315
+    }
+  },
+  "nba-mil-sas-2026-01-15": {
+    "captured_ts": "2026-01-16T00:50:18Z",
+    "date": "2026-01-15",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.315,
+      "SAS": 0.685
+    }
+  },
+  "nba-mil-uta-2026-03-19": {
+    "captured_ts": "2026-03-20T00:40:29Z",
+    "date": "2026-03-19",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.685,
+      "UTA": 0.315
+    }
+  },
+  "nba-mil-was-2026-01-29": {
+    "captured_ts": "2026-01-29T23:50:16Z",
+    "date": "2026-01-29",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.545,
+      "WAS": 0.455
+    }
+  },
+  "nba-min-bos-2026-03-22": {
+    "captured_ts": "2026-03-22T23:50:28Z",
+    "date": "2026-03-22",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.795,
+      "MIN": 0.205
+    }
+  },
+  "nba-min-dal-2026-01-28": {
+    "captured_ts": "2026-01-29T01:20:16Z",
+    "date": "2026-01-28",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.265,
+      "MIN": 0.735
+    }
+  },
+  "nba-min-dal-2026-03-30": {
+    "captured_ts": "2026-03-31T00:20:39Z",
+    "date": "2026-03-30",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.245,
+      "MIN": 0.755
+    }
+  },
+  "nba-min-gsw-2026-03-13": {
+    "captured_ts": "2026-03-14T01:50:31Z",
+    "date": "2026-03-13",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.355,
+      "MIN": 0.645
+    }
+  },
+  "nba-min-hou-2026-01-16": {
+    "captured_ts": "2026-01-17T02:20:15Z",
+    "date": "2026-01-16",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.595,
+      "MIN": 0.405
+    }
+  },
+  "nba-min-lac-2026-02-26": {
+    "captured_ts": "2026-02-27T02:50:23Z",
+    "date": "2026-02-26",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.255,
+      "MIN": 0.745
+    }
+  },
+  "nba-min-lac-2026-03-11": {
+    "captured_ts": "2026-03-12T02:20:24Z",
+    "date": "2026-03-11",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.535,
+      "MIN": 0.465
+    }
+  },
+  "nba-min-lal-2026-03-10": {
+    "captured_ts": "2026-03-11T02:50:24Z",
+    "date": "2026-03-10",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.435,
+      "MIN": 0.565
+    }
+  },
+  "nba-min-mem-2026-01-31": {
+    "captured_ts": "2026-02-01T00:50:31Z",
+    "date": "2026-01-31",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.195,
+      "MIN": 0.805
+    }
+  },
+  "nba-min-mem-2026-02-02": {
+    "captured_ts": "2026-02-03T00:20:14Z",
+    "date": "2026-02-02",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.275,
+      "MIN": 0.725
+    }
+  },
+  "nba-min-mil-2026-01-13": {
+    "captured_ts": "2026-01-14T00:50:13Z",
+    "date": "2026-01-13",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.525,
+      "MIN": 0.475
+    }
+  },
+  "nba-min-por-2026-02-24": {
+    "captured_ts": "2026-02-25T03:50:23Z",
+    "date": "2026-02-24",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.825,
+      "POR": 0.175
+    }
+  },
+  "nba-min-sas-2026-01-17": {
+    "captured_ts": "2026-01-18T00:50:10Z",
+    "date": "2026-01-17",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.355,
+      "SAS": 0.645
+    }
+  },
+  "nba-min-tor-2026-02-04": {
+    "captured_ts": "2026-02-05T00:20:14Z",
+    "date": "2026-02-04",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.565,
+      "TOR": 0.435
+    }
+  },
+  "nba-min-uta-2026-01-20": {
+    "captured_ts": "2026-01-21T01:50:14Z",
+    "date": "2026-01-20",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.855,
+      "UTA": 0.145
+    }
+  },
+  "nba-nop-atl-2026-01-07": {
+    "captured_ts": "2026-01-08T00:20:11Z",
+    "date": "2026-01-07",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.785,
+      "NOP": 0.215
+    }
+  },
+  "nba-nop-cha-2026-02-02": {
+    "captured_ts": "2026-02-02T23:50:16Z",
+    "date": "2026-02-02",
+    "favored": "CHA",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.9995,
+      "NOP": 0.0005
+    }
+  },
+  "nba-nop-hou-2026-01-18": {
+    "captured_ts": "2026-01-18T23:50:13Z",
+    "date": "2026-01-18",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.865,
+      "NOP": 0.135
+    }
+  },
+  "nba-nop-hou-2026-03-13": {
+    "captured_ts": "2026-03-13T23:50:28Z",
+    "date": "2026-03-13",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.685,
+      "NOP": 0.315
+    }
+  },
+  "nba-nop-ind-2026-01-16": {
+    "captured_ts": "2026-01-16T23:50:17Z",
+    "date": "2026-01-16",
+    "favored": "IND",
+    "kind": "game",
+    "probs": {
+      "IND": 0.625,
+      "NOP": 0.375
+    }
+  },
+  "nba-nop-lac-2026-03-01": {
+    "captured_ts": "2026-03-02T01:50:23Z",
+    "date": "2026-03-01",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.745,
+      "NOP": 0.255
+    }
+  },
+  "nba-nop-lal-2026-03-03": {
+    "captured_ts": "2026-03-04T03:20:32Z",
+    "date": "2026-03-03",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.755,
+      "NOP": 0.245
+    }
+  },
+  "nba-nop-mem-2026-01-23": {
+    "captured_ts": "2026-01-24T00:50:16Z",
+    "date": "2026-01-23",
+    "favored": "MEM",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.635,
+      "NOP": 0.365
+    }
+  },
+  "nba-nop-mil-2026-02-04": {
+    "captured_ts": "2026-02-05T00:50:19Z",
+    "date": "2026-02-04",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.375,
+      "NOP": 0.625
+    }
+  },
+  "nba-nop-min-2026-02-06": {
+    "captured_ts": "2026-02-07T00:50:15Z",
+    "date": "2026-02-06",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.745,
+      "NOP": 0.255
+    }
+  },
+  "nba-nop-okc-2026-01-27": {
+    "captured_ts": "2026-01-28T00:50:14Z",
+    "date": "2026-01-27",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.145,
+      "OKC": 0.855
+    }
+  },
+  "nba-nop-phi-2026-01-31": {
+    "captured_ts": "2026-02-01T00:20:18Z",
+    "date": "2026-01-31",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.325,
+      "PHI": 0.675
+    }
+  },
+  "nba-nop-phx-2026-03-06": {
+    "captured_ts": "2026-03-07T01:50:26Z",
+    "date": "2026-03-06",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.375,
+      "PHX": 0.625
+    }
+  },
+  "nba-nop-por-2026-04-02": {
+    "captured_ts": "2026-04-03T01:50:47Z",
+    "date": "2026-04-02",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.315,
+      "POR": 0.685
+    }
+  },
+  "nba-nop-sac-2026-03-05": {
+    "captured_ts": "2026-03-06T02:50:34Z",
+    "date": "2026-03-05",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.695,
+      "SAC": 0.305
+    }
+  },
+  "nba-nop-sac-2026-04-03": {
+    "captured_ts": "2026-04-04T01:50:56Z",
+    "date": "2026-04-03",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.675,
+      "SAC": 0.325
+    }
+  },
+  "nba-nop-sas-2026-01-25": {
+    "captured_ts": "2026-01-25T23:50:12Z",
+    "date": "2026-01-25",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.185,
+      "SAS": 0.815
+    }
+  },
+  "nba-nop-tor-2026-03-27": {
+    "captured_ts": "2026-03-28T00:20:29Z",
+    "date": "2026-03-27",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.255,
+      "TOR": 0.745
+    }
+  },
+  "nba-nop-uta-2026-02-26": {
+    "captured_ts": "2026-02-27T01:50:27Z",
+    "date": "2026-02-26",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.685,
+      "UTA": 0.315
+    }
+  },
+  "nba-nop-uta-2026-02-28": {
+    "captured_ts": "2026-03-01T02:20:28Z",
+    "date": "2026-02-28",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.675,
+      "UTA": 0.325
+    }
+  },
+  "nba-nop-was-2026-01-09": {
+    "captured_ts": "2026-01-09T23:50:11Z",
+    "date": "2026-01-09",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.565,
+      "WAS": 0.435
+    }
+  },
+  "nba-nyk-chi-2026-02-22": {
+    "captured_ts": "2026-02-23T00:50:16Z",
+    "date": "2026-02-22",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.225,
+      "NYK": 0.775
+    }
+  },
+  "nba-nyk-cle-2026-02-24": {
+    "captured_ts": "2026-02-25T00:20:19Z",
+    "date": "2026-02-24",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.61,
+      "NYK": 0.39
+    }
+  },
+  "nba-nyk-den-2026-03-06": {
+    "captured_ts": "2026-03-07T01:50:24Z",
+    "date": "2026-03-06",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.525,
+      "NYK": 0.475
+    }
+  },
+  "nba-nyk-det-2026-01-05": {
+    "captured_ts": "2026-01-05T23:50:10Z",
+    "date": "2026-01-05",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "DET": 0.455,
+      "NYK": 0.545
+    }
+  },
+  "nba-nyk-det-2026-02-06": {
+    "captured_ts": "2026-02-07T00:20:17Z",
+    "date": "2026-02-06",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.655,
+      "NYK": 0.345
+    }
+  },
+  "nba-nyk-gsw-2026-01-15": {
+    "captured_ts": "2026-01-16T02:50:15Z",
+    "date": "2026-01-15",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.695,
+      "NYK": 0.305
+    }
+  },
+  "nba-nyk-hou-2026-03-31": {
+    "captured_ts": "2026-03-31T23:50:45Z",
+    "date": "2026-03-31",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.495,
+      "NYK": 0.505
+    }
+  },
+  "nba-nyk-lac-2026-03-09": {
+    "captured_ts": "2026-03-10T01:50:22Z",
+    "date": "2026-03-09",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.465,
+      "NYK": 0.535
+    }
+  },
+  "nba-nyk-mem-2026-04-01": {
+    "captured_ts": "2026-04-01T23:50:50Z",
+    "date": "2026-04-01",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.125,
+      "NYK": 0.875
+    }
+  },
+  "nba-nyk-mil-2026-02-27": {
+    "captured_ts": "2026-02-28T00:50:23Z",
+    "date": "2026-02-27",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.275,
+      "NYK": 0.725
+    }
+  },
+  "nba-nyk-phi-2026-02-11": {
+    "captured_ts": "2026-02-12T00:20:16Z",
+    "date": "2026-02-11",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.555,
+      "PHI": 0.445
+    }
+  },
+  "nba-nyk-phx-2026-01-09": {
+    "captured_ts": "2026-01-10T01:50:12Z",
+    "date": "2026-01-09",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.515,
+      "PHX": 0.485
+    }
+  },
+  "nba-nyk-sac-2026-01-14": {
+    "captured_ts": "2026-01-15T02:50:15Z",
+    "date": "2026-01-14",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.795,
+      "SAC": 0.205
     }
   },
   "nba-nyk-sas-2026-06-03": {
@@ -58,6 +3448,436 @@
       "SAS": 0.635
     }
   },
+  "nba-nyk-tor-2026-01-28": {
+    "captured_ts": "2026-01-29T00:20:14Z",
+    "date": "2026-01-28",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.475,
+      "TOR": 0.525
+    }
+  },
+  "nba-nyk-tor-2026-03-03": {
+    "captured_ts": "2026-03-04T00:20:28Z",
+    "date": "2026-03-03",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.555,
+      "TOR": 0.445
+    }
+  },
+  "nba-nyk-uta-2026-03-11": {
+    "captured_ts": "2026-03-12T00:50:26Z",
+    "date": "2026-03-11",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.885,
+      "UTA": 0.115
+    }
+  },
+  "nba-nyk-was-2026-02-03": {
+    "captured_ts": "2026-02-03T23:50:12Z",
+    "date": "2026-02-03",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.835,
+      "WAS": 0.165
+    }
+  },
+  "nba-okc-chi-2026-03-03": {
+    "captured_ts": "2026-03-04T00:50:32Z",
+    "date": "2026-03-03",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.23,
+      "OKC": 0.77
+    }
+  },
+  "nba-okc-dal-2026-03-01": {
+    "captured_ts": "2026-03-02T00:50:30Z",
+    "date": "2026-03-01",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.105,
+      "OKC": 0.895
+    }
+  },
+  "nba-okc-den-2026-02-01": {
+    "captured_ts": "2026-02-02T02:20:14Z",
+    "date": "2026-02-01",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.315,
+      "OKC": 0.685
+    }
+  },
+  "nba-okc-det-2026-02-25": {
+    "captured_ts": "2026-02-26T00:20:19Z",
+    "date": "2026-02-25",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.795,
+      "OKC": 0.205
+    }
+  },
+  "nba-okc-gsw-2026-01-02": {
+    "captured_ts": "2026-01-03T02:50:11Z",
+    "date": "2026-01-02",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.145,
+      "OKC": 0.855
+    }
+  },
+  "nba-okc-hou-2026-01-15": {
+    "captured_ts": "2026-01-16T00:20:19Z",
+    "date": "2026-01-15",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.395,
+      "OKC": 0.605
+    }
+  },
+  "nba-okc-lal-2026-02-09": {
+    "captured_ts": "2026-02-10T02:50:19Z",
+    "date": "2026-02-09",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.315,
+      "OKC": 0.685
+    }
+  },
+  "nba-okc-mem-2026-01-09": {
+    "captured_ts": "2026-01-10T00:50:09Z",
+    "date": "2026-01-09",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.335,
+      "OKC": 0.665
+    }
+  },
+  "nba-okc-mia-2026-01-17": {
+    "captured_ts": "2026-01-18T00:50:15Z",
+    "date": "2026-01-17",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.195,
+      "OKC": 0.805
+    }
+  },
+  "nba-okc-mil-2026-01-21": {
+    "captured_ts": "2026-01-22T02:20:15Z",
+    "date": "2026-01-21",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.175,
+      "OKC": 0.825
+    }
+  },
+  "nba-okc-min-2026-01-29": {
+    "captured_ts": "2026-01-30T02:20:12Z",
+    "date": "2026-01-29",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.355,
+      "OKC": 0.645
+    }
+  },
+  "nba-okc-nyk-2026-03-04": {
+    "captured_ts": "2026-03-04T23:50:23Z",
+    "date": "2026-03-04",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.385,
+      "OKC": 0.615
+    }
+  },
+  "nba-okc-phx-2026-01-04": {
+    "captured_ts": "2026-01-05T00:50:10Z",
+    "date": "2026-01-04",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.775,
+      "PHX": 0.225
+    }
+  },
+  "nba-okc-phx-2026-02-11": {
+    "captured_ts": "2026-02-12T01:50:13Z",
+    "date": "2026-02-11",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.705,
+      "PHX": 0.295
+    }
+  },
+  "nba-okc-sas-2026-02-04": {
+    "captured_ts": "2026-02-05T02:20:16Z",
+    "date": "2026-02-04",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.225,
+      "SAS": 0.775
+    }
+  },
+  "nba-okc-tor-2026-02-24": {
+    "captured_ts": "2026-02-25T00:20:21Z",
+    "date": "2026-02-24",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.495,
+      "TOR": 0.505
+    }
+  },
+  "nba-orl-bkn-2026-01-07": {
+    "captured_ts": "2026-01-08T00:20:14Z",
+    "date": "2026-01-07",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.465,
+      "ORL": 0.535
+    }
+  },
+  "nba-orl-chi-2026-01-02": {
+    "captured_ts": "2026-01-03T00:50:12Z",
+    "date": "2026-01-02",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.36,
+      "ORL": 0.64
+    }
+  },
+  "nba-orl-cle-2026-01-26": {
+    "captured_ts": "2026-01-26T23:50:23Z",
+    "date": "2026-01-26",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.655,
+      "ORL": 0.345
+    }
+  },
+  "nba-orl-cle-2026-03-24": {
+    "captured_ts": "2026-03-24T23:50:26Z",
+    "date": "2026-03-24",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.805,
+      "ORL": 0.195
+    }
+  },
+  "nba-orl-dal-2026-04-03": {
+    "captured_ts": "2026-04-04T00:20:54Z",
+    "date": "2026-04-03",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.295,
+      "ORL": 0.705
+    }
+  },
+  "nba-orl-lac-2026-02-22": {
+    "captured_ts": "2026-02-23T01:50:23Z",
+    "date": "2026-02-22",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.625,
+      "ORL": 0.375
+    }
+  },
+  "nba-orl-lal-2026-02-24": {
+    "captured_ts": "2026-02-25T03:20:17Z",
+    "date": "2026-02-24",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.685,
+      "ORL": 0.315
+    }
+  },
+  "nba-orl-mia-2026-01-28": {
+    "captured_ts": "2026-01-29T00:20:14Z",
+    "date": "2026-01-28",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.585,
+      "ORL": 0.415
+    }
+  },
+  "nba-orl-mia-2026-03-14": {
+    "captured_ts": "2026-03-14T23:50:28Z",
+    "date": "2026-03-14",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.625,
+      "ORL": 0.375
+    }
+  },
+  "nba-orl-mil-2026-03-08": {
+    "captured_ts": "2026-03-08T23:50:21Z",
+    "date": "2026-03-08",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.345,
+      "ORL": 0.655
+    }
+  },
+  "nba-orl-okc-2026-02-03": {
+    "captured_ts": "2026-02-04T00:50:15Z",
+    "date": "2026-02-03",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.81,
+      "ORL": 0.19
+    }
+  },
+  "nba-orl-sac-2026-02-19": {
+    "captured_ts": "2026-02-20T02:50:16Z",
+    "date": "2026-02-19",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.7585,
+      "SAC": 0.2415
+    }
+  },
+  "nba-orl-was-2026-01-06": {
+    "captured_ts": "2026-01-06T23:50:13Z",
+    "date": "2026-01-06",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.715,
+      "WAS": 0.285
+    }
+  },
+  "nba-phi-bos-2026-03-01": {
+    "captured_ts": "2026-03-02T00:50:24Z",
+    "date": "2026-03-01",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.745,
+      "PHI": 0.255
+    }
+  },
+  "nba-phi-dal-2026-01-01": {
+    "captured_ts": "2026-01-02T01:20:11Z",
+    "date": "2026-01-01",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.435,
+      "PHI": 0.565
+    }
+  },
+  "nba-phi-den-2026-03-17": {
+    "captured_ts": "2026-03-18T01:50:27Z",
+    "date": "2026-03-17",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.895,
+      "PHI": 0.105
+    }
+  },
+  "nba-phi-gsw-2026-02-03": {
+    "captured_ts": "2026-02-04T02:50:17Z",
+    "date": "2026-02-03",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.635,
+      "PHI": 0.365
+    }
+  },
+  "nba-phi-ind-2026-02-24": {
+    "captured_ts": "2026-02-24T23:50:19Z",
+    "date": "2026-02-24",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "IND": 0.185,
+      "PHI": 0.815
+    }
+  },
+  "nba-phi-lac-2026-02-02": {
+    "captured_ts": "2026-02-03T02:50:15Z",
+    "date": "2026-02-02",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.495,
+      "PHI": 0.505
+    }
+  },
+  "nba-phi-lal-2026-02-05": {
+    "captured_ts": "2026-02-06T02:50:13Z",
+    "date": "2026-02-05",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.555,
+      "PHI": 0.445
+    }
+  },
+  "nba-phi-min-2026-02-22": {
+    "captured_ts": "2026-02-22T23:50:24Z",
+    "date": "2026-02-22",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.755,
+      "PHI": 0.245
+    }
+  },
+  "nba-phi-nop-2026-02-21": {
+    "captured_ts": "2026-02-21T23:50:33Z",
+    "date": "2026-02-21",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.395,
+      "PHI": 0.605
+    }
+  },
+  "nba-phi-nyk-2026-01-03": {
+    "captured_ts": "2026-01-04T00:20:13Z",
+    "date": "2026-01-03",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.605,
+      "PHI": 0.395
+    }
+  },
   "nba-phi-nyk-2026-05-06": {
     "captured_ts": "2026-05-06T22:50:06Z",
     "date": "2026-05-05",
@@ -66,6 +3886,216 @@
     "probs": {
       "NYK": 0.795,
       "PHI": 0.205
+    }
+  },
+  "nba-phi-orl-2026-01-09": {
+    "captured_ts": "2026-01-09T23:50:10Z",
+    "date": "2026-01-09",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.405,
+      "PHI": 0.595
+    }
+  },
+  "nba-phi-phx-2026-02-07": {
+    "captured_ts": "2026-02-08T01:50:14Z",
+    "date": "2026-02-07",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.445,
+      "PHX": 0.555
+    }
+  },
+  "nba-phi-por-2026-02-09": {
+    "captured_ts": "2026-02-10T02:50:17Z",
+    "date": "2026-02-09",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.415,
+      "POR": 0.585
+    }
+  },
+  "nba-phi-sac-2026-03-19": {
+    "captured_ts": "2026-03-20T01:50:33Z",
+    "date": "2026-03-19",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.585,
+      "SAC": 0.415
+    }
+  },
+  "nba-phi-sas-2026-04-06": {
+    "captured_ts": "2026-04-06T23:50:04Z",
+    "date": "2026-04-06",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.235,
+      "SAS": 0.765
+    }
+  },
+  "nba-phi-tor-2026-01-12": {
+    "captured_ts": "2026-01-13T00:20:12Z",
+    "date": "2026-01-12",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.565,
+      "TOR": 0.435
+    }
+  },
+  "nba-phi-uta-2026-03-21": {
+    "captured_ts": "2026-03-22T01:20:26Z",
+    "date": "2026-03-21",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.695,
+      "UTA": 0.305
+    }
+  },
+  "nba-phx-atl-2026-01-23": {
+    "captured_ts": "2026-01-24T00:20:14Z",
+    "date": "2026-01-23",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.415,
+      "PHX": 0.585
+    }
+  },
+  "nba-phx-bkn-2026-01-19": {
+    "captured_ts": "2026-01-20T00:20:16Z",
+    "date": "2026-01-19",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.215,
+      "PHX": 0.785
+    }
+  },
+  "nba-phx-det-2026-01-15": {
+    "captured_ts": "2026-01-15T23:50:13Z",
+    "date": "2026-01-15",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.705,
+      "PHX": 0.295
+    }
+  },
+  "nba-phx-hou-2026-01-05": {
+    "captured_ts": "2026-01-06T00:50:17Z",
+    "date": "2026-01-05",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.725,
+      "PHX": 0.275
+    }
+  },
+  "nba-phx-mem-2026-01-07": {
+    "captured_ts": "2026-01-08T00:50:14Z",
+    "date": "2026-01-07",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.345,
+      "PHX": 0.655
+    }
+  },
+  "nba-phx-mem-2026-03-30": {
+    "captured_ts": "2026-03-30T23:50:44Z",
+    "date": "2026-03-30",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.135,
+      "PHX": 0.865
+    }
+  },
+  "nba-phx-mia-2026-01-13": {
+    "captured_ts": "2026-01-14T00:20:11Z",
+    "date": "2026-01-13",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.515,
+      "PHX": 0.485
+    }
+  },
+  "nba-phx-mil-2026-03-10": {
+    "captured_ts": "2026-03-10T23:50:25Z",
+    "date": "2026-03-10",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.455,
+      "PHX": 0.545
+    }
+  },
+  "nba-phx-min-2026-03-17": {
+    "captured_ts": "2026-03-17T23:50:53Z",
+    "date": "2026-03-17",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.595,
+      "PHX": 0.405
+    }
+  },
+  "nba-phx-nyk-2026-01-17": {
+    "captured_ts": "2026-01-18T00:20:10Z",
+    "date": "2026-01-17",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.525,
+      "PHX": 0.475
+    }
+  },
+  "nba-phx-phi-2026-01-20": {
+    "captured_ts": "2026-01-20T23:50:15Z",
+    "date": "2026-01-20",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.435,
+      "PHX": 0.565
+    }
+  },
+  "nba-phx-por-2026-02-03": {
+    "captured_ts": "2026-02-04T03:50:10Z",
+    "date": "2026-02-03",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.595,
+      "POR": 0.405
+    }
+  },
+  "nba-phx-sac-2026-03-03": {
+    "captured_ts": "2026-03-04T03:50:30Z",
+    "date": "2026-03-03",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.765,
+      "SAC": 0.235
+    }
+  },
+  "nba-phx-sas-2026-02-19": {
+    "captured_ts": "2026-02-20T01:20:21Z",
+    "date": "2026-02-19",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.285,
+      "SAS": 0.715
     }
   },
   "nba-playoffs-76ers-vs-celtics-total-games-ou-4pt5": {
@@ -106,6 +4136,12 @@
     "kind": "series-total-games",
     "line": 5.5,
     "over_prob": 0.61
+  },
+  "nba-playoffs-pistons-vs-magic-total-games-ou-5pt5": {
+    "captured_ts": "2026-04-19T23:20:43Z",
+    "kind": "series-total-games",
+    "line": 5.5,
+    "over_prob": 0.48
   },
   "nba-playoffs-rockets-vs-lakers-total-games-ou-5pt5": {
     "captured_ts": "2026-04-18T23:20:50Z",
@@ -197,6 +4233,24 @@
       "LAL": 0.195
     }
   },
+  "nba-playoffs-who-will-win-series-pistons-vs-magic": {
+    "captured_ts": "2026-04-19T23:20:44Z",
+    "favored": "DET",
+    "kind": "series-winner",
+    "probs": {
+      "DET": 0.79,
+      "ORL": 0.21
+    }
+  },
+  "nba-playoffs-who-will-win-series-raptors-vs-cavaliers": {
+    "captured_ts": "2026-04-18T23:20:56Z",
+    "favored": "CAVS",
+    "kind": "series-winner",
+    "probs": {
+      "CAVS": 0.9,
+      "TOR": 0.1
+    }
+  },
   "nba-playoffs-who-will-win-series-spurs-vs-timberwolves": {
     "captured_ts": "2026-05-04T23:20:08Z",
     "favored": "SAS",
@@ -242,6 +4296,466 @@
       "WOLVES": 0.16
     }
   },
+  "nba-por-bos-2026-01-26": {
+    "captured_ts": "2026-01-27T00:50:13Z",
+    "date": "2026-01-26",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.745,
+      "POR": 0.255
+    }
+  },
+  "nba-por-chi-2026-02-26": {
+    "captured_ts": "2026-02-27T00:50:22Z",
+    "date": "2026-02-26",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.405,
+      "POR": 0.595
+    }
+  },
+  "nba-por-den-2026-04-06": {
+    "captured_ts": "2026-04-07T00:50:44Z",
+    "date": "2026-04-06",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.725,
+      "POR": 0.275
+    }
+  },
+  "nba-por-gsw-2026-01-13": {
+    "captured_ts": "2026-01-14T03:50:14Z",
+    "date": "2026-01-13",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.805,
+      "POR": 0.195
+    }
+  },
+  "nba-por-hou-2026-03-06": {
+    "captured_ts": "2026-03-07T00:50:28Z",
+    "date": "2026-03-06",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.705,
+      "POR": 0.295
+    }
+  },
+  "nba-por-lac-2026-03-31": {
+    "captured_ts": "2026-04-01T02:50:42Z",
+    "date": "2026-03-31",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.635,
+      "POR": 0.365
+    }
+  },
+  "nba-por-mem-2026-03-04": {
+    "captured_ts": "2026-03-05T00:50:33Z",
+    "date": "2026-03-04",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.245,
+      "POR": 0.755
+    }
+  },
+  "nba-por-min-2026-02-11": {
+    "captured_ts": "2026-02-12T00:50:30Z",
+    "date": "2026-02-11",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.715,
+      "POR": 0.285
+    }
+  },
+  "nba-por-min-2026-03-20": {
+    "captured_ts": "2026-03-20T23:50:36Z",
+    "date": "2026-03-20",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.495,
+      "POR": 0.505
+    }
+  },
+  "nba-por-nop-2026-01-02": {
+    "captured_ts": "2026-01-03T00:50:08Z",
+    "date": "2026-01-02",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.405,
+      "POR": 0.595
+    }
+  },
+  "nba-por-nyk-2026-01-30": {
+    "captured_ts": "2026-01-31T00:20:21Z",
+    "date": "2026-01-30",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.695,
+      "POR": 0.305
+    }
+  },
+  "nba-por-phx-2026-02-22": {
+    "captured_ts": "2026-02-23T00:50:20Z",
+    "date": "2026-02-22",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.405,
+      "POR": 0.595
+    }
+  },
+  "nba-por-sac-2026-01-18": {
+    "captured_ts": "2026-01-19T01:50:16Z",
+    "date": "2026-01-18",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.515,
+      "SAC": 0.485
+    }
+  },
+  "nba-por-sas-2026-01-03": {
+    "captured_ts": "2026-01-04T00:50:10Z",
+    "date": "2026-01-03",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "POR": 0.255,
+      "SAS": 0.745
+    }
+  },
+  "nba-por-uta-2026-02-12": {
+    "captured_ts": "2026-02-13T01:50:16Z",
+    "date": "2026-02-12",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.675,
+      "UTA": 0.325
+    }
+  },
+  "nba-por-was-2026-01-27": {
+    "captured_ts": "2026-01-27T23:50:12Z",
+    "date": "2026-01-27",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.695,
+      "WAS": 0.305
+    }
+  },
+  "nba-sac-bos-2026-01-30": {
+    "captured_ts": "2026-01-31T00:20:21Z",
+    "date": "2026-01-30",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.815,
+      "SAC": 0.185
+    }
+  },
+  "nba-sac-cle-2026-01-23": {
+    "captured_ts": "2026-01-24T00:20:14Z",
+    "date": "2026-01-23",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.835,
+      "SAC": 0.165
+    }
+  },
+  "nba-sac-dal-2026-02-26": {
+    "captured_ts": "2026-02-27T01:20:27Z",
+    "date": "2026-02-26",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.735,
+      "SAC": 0.265
+    }
+  },
+  "nba-sac-gsw-2026-01-09": {
+    "captured_ts": "2026-01-10T02:50:13Z",
+    "date": "2026-01-09",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.855,
+      "SAC": 0.145
+    }
+  },
+  "nba-sac-hou-2026-02-25": {
+    "captured_ts": "2026-02-26T00:50:21Z",
+    "date": "2026-02-25",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.865,
+      "SAC": 0.135
+    }
+  },
+  "nba-sac-lac-2026-03-14": {
+    "captured_ts": "2026-03-15T02:20:21Z",
+    "date": "2026-03-14",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.895,
+      "SAC": 0.105
+    }
+  },
+  "nba-sac-lal-2026-03-01": {
+    "captured_ts": "2026-03-02T02:20:30Z",
+    "date": "2026-03-01",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.865,
+      "SAC": 0.135
+    }
+  },
+  "nba-sac-mem-2026-02-23": {
+    "captured_ts": "2026-02-24T00:50:21Z",
+    "date": "2026-02-23",
+    "favored": "MEM",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.575,
+      "SAC": 0.425
+    }
+  },
+  "nba-sac-nop-2026-02-09": {
+    "captured_ts": "2026-02-10T00:50:15Z",
+    "date": "2026-02-09",
+    "favored": "NOP",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.765,
+      "SAC": 0.235
+    }
+  },
+  "nba-sac-nyk-2026-01-27": {
+    "captured_ts": "2026-01-28T00:20:12Z",
+    "date": "2026-01-27",
+    "favored": "NYK",
+    "kind": "game",
+    "probs": {
+      "NYK": 0.865,
+      "SAC": 0.135
+    }
+  },
+  "nba-sac-phi-2026-01-29": {
+    "captured_ts": "2026-01-29T23:50:17Z",
+    "date": "2026-01-29",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.775,
+      "SAC": 0.225
+    }
+  },
+  "nba-sac-phx-2026-01-02": {
+    "captured_ts": "2026-01-03T01:50:27Z",
+    "date": "2026-01-02",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.855,
+      "SAC": 0.145
+    }
+  },
+  "nba-sac-sas-2026-02-21": {
+    "captured_ts": "2026-02-22T00:50:23Z",
+    "date": "2026-02-21",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.085,
+      "SAS": 0.915
+    }
+  },
+  "nba-sac-tor-2026-04-01": {
+    "captured_ts": "2026-04-01T23:50:46Z",
+    "date": "2026-04-01",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.135,
+      "TOR": 0.865
+    }
+  },
+  "nba-sac-uta-2026-02-11": {
+    "captured_ts": "2026-02-12T01:50:18Z",
+    "date": "2026-02-11",
+    "favored": "UTA",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.345,
+      "UTA": 0.655
+    }
+  },
+  "nba-sas-bkn-2026-02-26": {
+    "captured_ts": "2026-02-27T00:20:20Z",
+    "date": "2026-02-26",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "BKN": 0.175,
+      "SAS": 0.825
+    }
+  },
+  "nba-sas-bos-2026-01-10": {
+    "captured_ts": "2026-01-11T00:50:10Z",
+    "date": "2026-01-10",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.495,
+      "SAS": 0.505
+    }
+  },
+  "nba-sas-dal-2026-02-05": {
+    "captured_ts": "2026-02-06T01:20:13Z",
+    "date": "2026-02-05",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.275,
+      "SAS": 0.725
+    }
+  },
+  "nba-sas-det-2026-02-23": {
+    "captured_ts": "2026-02-23T23:50:19Z",
+    "date": "2026-02-23",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.525,
+      "SAS": 0.475
+    }
+  },
+  "nba-sas-gsw-2026-02-11": {
+    "captured_ts": "2026-02-12T02:50:20Z",
+    "date": "2026-02-11",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.325,
+      "SAS": 0.675
+    }
+  },
+  "nba-sas-gsw-2026-04-01": {
+    "captured_ts": "2026-04-02T01:50:58Z",
+    "date": "2026-04-01",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.105,
+      "SAS": 0.895
+    }
+  },
+  "nba-sas-hou-2026-01-20": {
+    "captured_ts": "2026-01-21T00:50:16Z",
+    "date": "2026-01-20",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.615,
+      "SAS": 0.385
+    }
+  },
+  "nba-sas-hou-2026-01-28": {
+    "captured_ts": "2026-01-29T02:20:17Z",
+    "date": "2026-01-28",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.565,
+      "SAS": 0.435
+    }
+  },
+  "nba-sas-ind-2026-01-02": {
+    "captured_ts": "2026-01-02T23:50:09Z",
+    "date": "2026-01-02",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "IND": 0.345,
+      "SAS": 0.655
+    }
+  },
+  "nba-sas-lac-2026-03-16": {
+    "captured_ts": "2026-03-17T01:50:29Z",
+    "date": "2026-03-16",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.255,
+      "SAS": 0.745
+    }
+  },
+  "nba-sas-lac-2026-04-02": {
+    "captured_ts": "2026-04-03T02:20:47Z",
+    "date": "2026-04-02",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.565,
+      "SAS": 0.435
+    }
+  },
+  "nba-sas-lal-2026-02-10": {
+    "captured_ts": "2026-02-11T03:20:12Z",
+    "date": "2026-02-10",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.155,
+      "SAS": 0.845
+    }
+  },
+  "nba-sas-mem-2026-01-06": {
+    "captured_ts": "2026-01-07T00:50:08Z",
+    "date": "2026-01-06",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.325,
+      "SAS": 0.675
+    }
+  },
+  "nba-sas-mem-2026-03-25": {
+    "captured_ts": "2026-03-25T23:50:32Z",
+    "date": "2026-03-25",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.075,
+      "SAS": 0.925
+    }
+  },
+  "nba-sas-min-2026-01-11": {
+    "captured_ts": "2026-01-11T23:50:10Z",
+    "date": "2026-01-11",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.555,
+      "SAS": 0.445
+    }
+  },
   "nba-sas-nyk-2026-06-08": {
     "captured_ts": "2026-06-09T00:20:03Z",
     "date": "2026-06-08",
@@ -252,6 +4766,96 @@
       "SAS": 0.465
     }
   },
+  "nba-sas-okc-2026-01-13": {
+    "captured_ts": "2026-01-14T00:50:11Z",
+    "date": "2026-01-13",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.73,
+      "SAS": 0.27
+    }
+  },
+  "nba-sas-phi-2026-03-03": {
+    "captured_ts": "2026-03-04T00:50:30Z",
+    "date": "2026-03-03",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.265,
+      "SAS": 0.735
+    }
+  },
+  "nba-sas-sac-2026-03-17": {
+    "captured_ts": "2026-03-18T01:50:27Z",
+    "date": "2026-03-17",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.135,
+      "SAS": 0.865
+    }
+  },
+  "nba-sas-tor-2026-02-25": {
+    "captured_ts": "2026-02-26T00:20:20Z",
+    "date": "2026-02-25",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "SAS": 0.655,
+      "TOR": 0.345
+    }
+  },
+  "nba-sas-uta-2026-01-22": {
+    "captured_ts": "2026-01-23T01:50:12Z",
+    "date": "2026-01-22",
+    "favored": "SAS",
+    "kind": "game",
+    "probs": {
+      "SAS": 0.825,
+      "UTA": 0.175
+    }
+  },
+  "nba-tor-bos-2026-01-09": {
+    "captured_ts": "2026-01-09T23:50:13Z",
+    "date": "2026-01-09",
+    "favored": "BOS",
+    "kind": "game",
+    "probs": {
+      "BOS": 0.765,
+      "TOR": 0.235
+    }
+  },
+  "nba-tor-cha-2026-01-07": {
+    "captured_ts": "2026-01-07T23:50:10Z",
+    "date": "2026-01-07",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "CHA": 0.435,
+      "TOR": 0.565
+    }
+  },
+  "nba-tor-chi-2026-02-19": {
+    "captured_ts": "2026-02-20T00:50:24Z",
+    "date": "2026-02-19",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.335,
+      "TOR": 0.665
+    }
+  },
+  "nba-tor-chi-2026-03-18": {
+    "captured_ts": "2026-03-18T23:50:43Z",
+    "date": "2026-03-18",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.265,
+      "TOR": 0.735
+    }
+  },
   "nba-tor-cle-2026-04-29": {
     "captured_ts": "2026-04-29T23:20:04Z",
     "date": "2026-04-28",
@@ -260,6 +4864,526 @@
     "probs": {
       "CLE": 0.775,
       "TOR": 0.225
+    }
+  },
+  "nba-tor-den-2026-03-20": {
+    "captured_ts": "2026-03-21T00:50:27Z",
+    "date": "2026-03-20",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.695,
+      "TOR": 0.305
+    }
+  },
+  "nba-tor-det-2026-03-31": {
+    "captured_ts": "2026-03-31T23:50:43Z",
+    "date": "2026-03-31",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.585,
+      "TOR": 0.415
+    }
+  },
+  "nba-tor-gsw-2026-01-20": {
+    "captured_ts": "2026-01-21T02:50:13Z",
+    "date": "2026-01-20",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.61,
+      "TOR": 0.39
+    }
+  },
+  "nba-tor-hou-2026-03-10": {
+    "captured_ts": "2026-03-10T23:50:28Z",
+    "date": "2026-03-10",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.645,
+      "TOR": 0.355
+    }
+  },
+  "nba-tor-ind-2026-01-14": {
+    "captured_ts": "2026-01-14T23:50:17Z",
+    "date": "2026-01-14",
+    "favored": "IND",
+    "kind": "game",
+    "probs": {
+      "IND": 0.535,
+      "TOR": 0.465
+    }
+  },
+  "nba-tor-lac-2026-03-25": {
+    "captured_ts": "2026-03-26T02:20:30Z",
+    "date": "2026-03-25",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.605,
+      "TOR": 0.395
+    }
+  },
+  "nba-tor-lal-2026-01-18": {
+    "captured_ts": "2026-01-19T02:20:15Z",
+    "date": "2026-01-18",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.545,
+      "TOR": 0.455
+    }
+  },
+  "nba-tor-mem-2026-04-03": {
+    "captured_ts": "2026-04-03T23:50:00Z",
+    "date": "2026-04-03",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.105,
+      "TOR": 0.895
+    }
+  },
+  "nba-tor-min-2026-03-05": {
+    "captured_ts": "2026-03-06T00:50:29Z",
+    "date": "2026-03-05",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.655,
+      "TOR": 0.345
+    }
+  },
+  "nba-tor-nop-2026-03-11": {
+    "captured_ts": "2026-03-11T23:50:35Z",
+    "date": "2026-03-11",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "NOP": 0.445,
+      "TOR": 0.555
+    }
+  },
+  "nba-tor-okc-2026-01-25": {
+    "captured_ts": "2026-01-25T23:50:14Z",
+    "date": "2026-01-25",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.805,
+      "TOR": 0.195
+    }
+  },
+  "nba-tor-orl-2026-01-30": {
+    "captured_ts": "2026-01-30T23:50:17Z",
+    "date": "2026-01-30",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.555,
+      "TOR": 0.445
+    }
+  },
+  "nba-tor-phx-2026-03-22": {
+    "captured_ts": "2026-03-23T00:50:24Z",
+    "date": "2026-03-22",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.385,
+      "TOR": 0.615
+    }
+  },
+  "nba-tor-por-2026-01-23": {
+    "captured_ts": "2026-01-24T02:50:26Z",
+    "date": "2026-01-23",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.395,
+      "TOR": 0.605
+    }
+  },
+  "nba-tor-sac-2026-01-21": {
+    "captured_ts": "2026-01-22T02:50:25Z",
+    "date": "2026-01-21",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.355,
+      "TOR": 0.645
+    }
+  },
+  "nba-tor-uta-2026-03-23": {
+    "captured_ts": "2026-03-24T00:50:20Z",
+    "date": "2026-03-23",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "TOR": 0.805,
+      "UTA": 0.195
+    }
+  },
+  "nba-tor-was-2026-02-28": {
+    "captured_ts": "2026-02-28T23:50:28Z",
+    "date": "2026-02-28",
+    "favored": "TOR",
+    "kind": "game",
+    "probs": {
+      "TOR": 0.875,
+      "WAS": 0.125
+    }
+  },
+  "nba-uta-atl-2026-02-05": {
+    "captured_ts": "2026-02-06T00:20:17Z",
+    "date": "2026-02-05",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.735,
+      "UTA": 0.265
+    }
+  },
+  "nba-uta-chi-2026-01-14": {
+    "captured_ts": "2026-01-15T00:50:11Z",
+    "date": "2026-01-14",
+    "favored": "CHI",
+    "kind": "game",
+    "probs": {
+      "CHI": 0.675,
+      "UTA": 0.325
+    }
+  },
+  "nba-uta-cle-2026-01-12": {
+    "captured_ts": "2026-01-12T23:50:14Z",
+    "date": "2026-01-12",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.825,
+      "UTA": 0.175
+    }
+  },
+  "nba-uta-dal-2026-01-15": {
+    "captured_ts": "2026-01-16T01:20:13Z",
+    "date": "2026-01-15",
+    "favored": "DAL",
+    "kind": "game",
+    "probs": {
+      "DAL": 0.555,
+      "UTA": 0.445
+    }
+  },
+  "nba-uta-den-2026-03-27": {
+    "captured_ts": "2026-03-28T00:50:27Z",
+    "date": "2026-03-27",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.945,
+      "UTA": 0.055
+    }
+  },
+  "nba-uta-gsw-2026-01-03": {
+    "captured_ts": "2026-01-04T02:50:09Z",
+    "date": "2026-01-03",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.825,
+      "UTA": 0.175
+    }
+  },
+  "nba-uta-hou-2026-02-23": {
+    "captured_ts": "2026-02-24T02:20:33Z",
+    "date": "2026-02-23",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.865,
+      "UTA": 0.135
+    }
+  },
+  "nba-uta-hou-2026-04-03": {
+    "captured_ts": "2026-04-03T23:50:00Z",
+    "date": "2026-04-03",
+    "favored": "HOU",
+    "kind": "game",
+    "probs": {
+      "HOU": 0.925,
+      "UTA": 0.075
+    }
+  },
+  "nba-uta-ind-2026-02-03": {
+    "captured_ts": "2026-02-03T23:50:25Z",
+    "date": "2026-02-03",
+    "favored": "UTA",
+    "kind": "game",
+    "probs": {
+      "IND": 0.425,
+      "UTA": 0.575
+    }
+  },
+  "nba-uta-lac-2026-01-01": {
+    "captured_ts": "2026-01-02T03:20:08Z",
+    "date": "2026-01-01",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.855,
+      "UTA": 0.145
+    }
+  },
+  "nba-uta-mem-2026-02-20": {
+    "captured_ts": "2026-02-20T23:50:21Z",
+    "date": "2026-02-20",
+    "favored": "MEM",
+    "kind": "game",
+    "probs": {
+      "MEM": 0.565,
+      "UTA": 0.435
+    }
+  },
+  "nba-uta-mia-2026-02-09": {
+    "captured_ts": "2026-02-10T00:20:12Z",
+    "date": "2026-02-09",
+    "favored": "MIA",
+    "kind": "game",
+    "probs": {
+      "MIA": 0.695,
+      "UTA": 0.305
+    }
+  },
+  "nba-uta-mil-2026-03-07": {
+    "captured_ts": "2026-03-08T00:50:25Z",
+    "date": "2026-03-07",
+    "favored": "MIL",
+    "kind": "game",
+    "probs": {
+      "MIL": 0.795,
+      "UTA": 0.205
+    }
+  },
+  "nba-uta-min-2026-03-18": {
+    "captured_ts": "2026-03-18T23:50:55Z",
+    "date": "2026-03-18",
+    "favored": "MIN",
+    "kind": "game",
+    "probs": {
+      "MIN": 0.865,
+      "UTA": 0.135
+    }
+  },
+  "nba-uta-okc-2026-01-07": {
+    "captured_ts": "2026-01-08T00:50:14Z",
+    "date": "2026-01-07",
+    "favored": "OKC",
+    "kind": "game",
+    "probs": {
+      "OKC": 0.895,
+      "UTA": 0.105
+    }
+  },
+  "nba-uta-orl-2026-02-07": {
+    "captured_ts": "2026-02-07T23:50:13Z",
+    "date": "2026-02-07",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.715,
+      "UTA": 0.285
+    }
+  },
+  "nba-uta-phi-2026-03-04": {
+    "captured_ts": "2026-03-05T00:20:37Z",
+    "date": "2026-03-04",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.735,
+      "UTA": 0.265
+    }
+  },
+  "nba-uta-phx-2026-03-28": {
+    "captured_ts": "2026-03-29T01:50:33Z",
+    "date": "2026-03-28",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.925,
+      "UTA": 0.075
+    }
+  },
+  "nba-uta-por-2026-01-05": {
+    "captured_ts": "2026-01-06T02:50:08Z",
+    "date": "2026-01-05",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.665,
+      "UTA": 0.335
+    }
+  },
+  "nba-uta-por-2026-03-13": {
+    "captured_ts": "2026-03-14T01:50:30Z",
+    "date": "2026-03-13",
+    "favored": "POR",
+    "kind": "game",
+    "probs": {
+      "POR": 0.895,
+      "UTA": 0.105
+    }
+  },
+  "nba-uta-sac-2026-03-15": {
+    "captured_ts": "2026-03-16T01:50:26Z",
+    "date": "2026-03-15",
+    "favored": "SAC",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.585,
+      "UTA": 0.415
+    }
+  },
+  "nba-uta-was-2026-03-05": {
+    "captured_ts": "2026-03-05T23:50:20Z",
+    "date": "2026-03-05",
+    "favored": "WAS",
+    "kind": "game",
+    "probs": {
+      "UTA": 0.395,
+      "WAS": 0.605
+    }
+  },
+  "nba-was-atl-2026-02-24": {
+    "captured_ts": "2026-02-25T00:20:20Z",
+    "date": "2026-02-24",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.855,
+      "WAS": 0.145
+    }
+  },
+  "nba-was-atl-2026-02-26": {
+    "captured_ts": "2026-02-27T00:20:24Z",
+    "date": "2026-02-26",
+    "favored": "ATL",
+    "kind": "game",
+    "probs": {
+      "ATL": 0.815,
+      "WAS": 0.185
+    }
+  },
+  "nba-was-cle-2026-02-11": {
+    "captured_ts": "2026-02-11T23:50:23Z",
+    "date": "2026-02-11",
+    "favored": "CLE",
+    "kind": "game",
+    "probs": {
+      "CLE": 0.905,
+      "WAS": 0.095
+    }
+  },
+  "nba-was-den-2026-01-17": {
+    "captured_ts": "2026-01-18T01:50:14Z",
+    "date": "2026-01-17",
+    "favored": "DEN",
+    "kind": "game",
+    "probs": {
+      "DEN": 0.795,
+      "WAS": 0.205
+    }
+  },
+  "nba-was-det-2026-02-05": {
+    "captured_ts": "2026-02-05T23:50:16Z",
+    "date": "2026-02-05",
+    "favored": "DET",
+    "kind": "game",
+    "probs": {
+      "DET": 0.895,
+      "WAS": 0.105
+    }
+  },
+  "nba-was-gsw-2026-03-27": {
+    "captured_ts": "2026-03-28T01:50:29Z",
+    "date": "2026-03-27",
+    "favored": "GSW",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.865,
+      "WAS": 0.135
+    }
+  },
+  "nba-was-lac-2026-01-14": {
+    "captured_ts": "2026-01-15T03:20:12Z",
+    "date": "2026-01-14",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "LAC": 0.815,
+      "WAS": 0.185
+    }
+  },
+  "nba-was-lal-2026-03-30": {
+    "captured_ts": "2026-03-31T01:50:46Z",
+    "date": "2026-03-30",
+    "favored": "LAL",
+    "kind": "game",
+    "probs": {
+      "LAL": 0.915,
+      "WAS": 0.085
+    }
+  },
+  "nba-was-orl-2026-03-03": {
+    "captured_ts": "2026-03-03T23:50:23Z",
+    "date": "2026-03-03",
+    "favored": "ORL",
+    "kind": "game",
+    "probs": {
+      "ORL": 0.905,
+      "WAS": 0.095
+    }
+  },
+  "nba-was-phi-2026-01-07": {
+    "captured_ts": "2026-01-07T23:50:13Z",
+    "date": "2026-01-07",
+    "favored": "PHI",
+    "kind": "game",
+    "probs": {
+      "PHI": 0.865,
+      "WAS": 0.135
+    }
+  },
+  "nba-was-phx-2026-01-11": {
+    "captured_ts": "2026-01-12T00:50:14Z",
+    "date": "2026-01-11",
+    "favored": "PHX",
+    "kind": "game",
+    "probs": {
+      "PHX": 0.875,
+      "WAS": 0.125
+    }
+  },
+  "nba-was-sac-2026-01-16": {
+    "captured_ts": "2026-01-17T02:50:16Z",
+    "date": "2026-01-16",
+    "favored": "SAC",
+    "kind": "game",
+    "probs": {
+      "SAC": 0.695,
+      "WAS": 0.305
+    }
+  },
+  "nba-was-uta-2026-03-25": {
+    "captured_ts": "2026-03-26T00:50:26Z",
+    "date": "2026-03-25",
+    "favored": "UTA",
+    "kind": "game",
+    "probs": {
+      "UTA": 0.595,
+      "WAS": 0.405
     }
   }
 }

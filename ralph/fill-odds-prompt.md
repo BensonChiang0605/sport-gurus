@@ -30,9 +30,20 @@ team name in the prediction text to its abbreviation, use the canonical codes in
    folder name contains its `video_id` (under `podcasts/`). Locate that file and the object
    whose `prediction_id` matches.
 
-2. **Read which team the prediction backs** from `prediction_text` — the team it asserts
-   will win the game / win the series. (For a negated or compound claim, this is still the
-   team the claim is *about winning*, e.g. "OKC sweep PHX 4-0" backs OKC.)
+2. **Read which side the prediction backs** from `prediction_text`. The benchmark you route
+   must be the market's probability of **the literal claim coming true** — so identify the
+   team whose winning makes the claim true:
+   - Plain win claim ("BOS beat PHI", "OKC win the series") → that team.
+   - **Negated** win claim ("MIN will *not* close out DEN in Game 6", "PHX do not win another
+     game") → the claim is true when the **opponent** wins, so back the **opponent** (DEN, the
+     team that wins the game if the claim holds). Route the opponent's win probability.
+   - Compound claim with a winner ("OKC sweep PHX 4-0") still backs the winning team (OKC).
+
+   **Point-margin / margin-of-victory / vague-magnitude claims have no market — skip them.**
+   If the claim is about *how much* a team wins by rather than *whether* it wins — e.g. "win by
+   40 points", "by double digits", "blow out", "dominate", a specific final score — there is no
+   Polymarket benchmark for a margin. **Set all six fields to `""` and stop**, regardless of the
+   provided odds (the game moneyline is *not* a valid stand-in for a margin claim).
 
 3. **Route the market benchmark into the fields — no judgement on any number.** Every number
    comes **straight from the provided "Market odds" JSON**; you never invent or estimate one.

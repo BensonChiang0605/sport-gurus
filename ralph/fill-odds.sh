@@ -83,5 +83,13 @@ done <<< "$predictions"
 
 # Re-sync the DB from the edited predictions.json files and commit.
 python3 ralph/sync.py
+
+# Coverage audit — classify any game/series prediction still missing odds so a real
+# gap (MISSED-FILL: odds exist but weren't routed, e.g. an LLM/API hiccup this pass)
+# is visible instead of silently looking like the expected NCAA/margin/no-market misses.
+echo
+echo "=== Coverage report (game/series odds) ==="
+uv run scripts/polymarket_odds.py --report || true
+
 git add -A
 git diff --staged --quiet || git commit -m "fill market odds onto game/series predictions"
