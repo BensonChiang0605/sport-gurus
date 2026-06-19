@@ -64,8 +64,15 @@ verifiable prediction, using exactly these keys:
   the same labels, one sentence per clause. Use `""` only if the speaker gave no
   rationale.
 
-**Only log claims that can be objectively settled true/false.** Discard subjective takes,
-opinions, and vibes. If there are no verifiable predictions, write `[]`.
+**Only log a claim if a specific result settles it true/false** — a game/series winner, a
+final standing, an award, a signing, or a stat crossing a stated number. Discard:
+- **Subjective / vague-magnitude** claims — "dominate", "struggle", "carry the team", "have a
+  breakout". *How well* someone plays has no settleable threshold.
+- **Vague-quantity** claims — "miss a good portion of the season", "out for a while". With no
+  specific number (games missed, a stat line, a date) there is nothing to check.
+- Opinions and vibes.
+Litmus test: could two people disagree on whether it came true after seeing the result? If
+yes, drop it. If there are no qualifying predictions, write `[]`.
 
 **Team abbreviations:** whenever you refer to a team by a 3-letter abbreviation (in any
 field), use the canonical code from `docs/team-abbreviations.md` verbatim — never invent
