@@ -586,10 +586,15 @@ def _report(year: int) -> None:
         return
     con = sqlite3.connect(f"file:{PREDICTIONS_DB_PATH}?mode=ro", uri=True)
     try:
+        # "Missing odds" = no benchmark in *any* field. A series is still covered when
+        # only the exact triple is empty (e.g. a game-count claim with no total_games
+        # market) as long as market_prob_general carries the series-winner odds — so
+        # require both the exact and general probability to be empty.
         rows = con.execute(
             "SELECT prediction_id, category, prediction_text FROM predictions "
             "WHERE category IN ('game','series') "
             "AND (market_prob='' OR market_prob IS NULL) "
+            "AND (market_prob_general='' OR market_prob_general IS NULL) "
             "ORDER BY prediction_id"
         ).fetchall()
     finally:
