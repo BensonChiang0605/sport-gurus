@@ -47,7 +47,7 @@ if [ "$all" = false ]; then
     where="$where AND (market_prob='' OR market_prob IS NULL)"
 fi
 predictions=$(sqlite3 -separator $'\t' predictions.db \
-    "SELECT prediction_id, video_id, category, prediction_text FROM predictions WHERE $where")
+    "SELECT prediction_id, video_id, category, episode_datetime, prediction_text FROM predictions WHERE $where")
 
 if [ -z "$predictions" ]; then
     echo "No game/series predictions to fill."
@@ -57,13 +57,16 @@ fi
 prompt=$(cat ralph/fill-odds-prompt.md)
 
 # Route one prediction at a time, each with odds scoped to its matchup.
-while IFS=$'\t' read -r pid vid category ptext; do
+while IFS=$'\t' read -r pid vid category episode_datetime ptext; do
     [ -z "$pid" ] && continue
     echo "Filling odds for $pid ..."
 
     # Deterministic market benchmark — lazy Polymarket odds cache (fills on first use,
     # fail-soft to {} so the pass never blocks). The LLM only routes a number, see prompt.
-    odds=$(uv run scripts/polymarket_odds.py --odds-for-text "$ptext" --category "$category" || true)
+    # --as-of snapshots the market as of when the episode aired (the moment the prediction
+    # was made), falling back to pregame when no price existed then.
+    odds=$(uv run scripts/polymarket_odds.py --odds-for-text "$ptext" --category "$category" \
+        --as-of "$episode_datetime" || true)
 
     # No market matched -> nothing to route. The fields stay empty; skip the LLM call.
     if [ -z "$odds" ] || [ "$odds" = "{}" ]; then
@@ -71,7 +74,7 @@ while IFS=$'\t' read -r pid vid category ptext; do
         continue
     fi
 
-    run_llm "Market odds (Polymarket, pregame): $odds
+    run_llm "Market odds (Polymarket, as of the episode datetime; pregame fallback): $odds
 
 Prediction to grade (TSV: prediction_id, video_id, category, prediction_text):
 $pid	$vid	$category	$ptext

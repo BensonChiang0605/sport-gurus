@@ -7,9 +7,10 @@ which team the prediction backs, so you can copy the number for that side.
 
 ## Inputs (passed in your instructions)
 
-- **"Market odds (Polymarket, pregame):"** — JSON with the prediction-market-implied
-  probability *at the start of the game/series*, already fetched for you (deterministic).
-  Shapes:
+- **"Market odds (Polymarket, as of the episode datetime; pregame fallback):"** — JSON with
+  the prediction-market-implied probability *as of when the episode aired* (the moment the
+  prediction was made), falling back to *the start of the game/series* when no market price
+  existed yet at episode time. Already fetched for you (deterministic). Shapes:
   - `game` → `{probs: {ABBR: p, ABBR: p}, favored, source_slug, ...}`.
   - `series` → `{winner: {probs: {ABBR: p, ...}, favored, source_slug},
     total_games: {line, over_prob, under_prob, source_slug}, ...}`. The `total_games`

@@ -8,6 +8,15 @@
       "SAS": 0.6398
     }
   },
+  "2026-nba-champion@2026-06-03T14:30:25Z": {
+    "captured_ts": "2026-06-03T14:30:05Z",
+    "favored": "SAS",
+    "kind": "series-winner",
+    "probs": {
+      "NYK": 0.3531,
+      "SAS": 0.6469
+    }
+  },
   "nba-atl-bos-2026-01-28": {
     "captured_ts": "2026-01-29T00:20:15Z",
     "date": "2026-01-28",
@@ -1650,6 +1659,16 @@
   },
   "nba-gsw-lac-2026-04-15": {
     "captured_ts": "2026-04-16T01:50:49Z",
+    "date": "2026-04-15",
+    "favored": "LAC",
+    "kind": "game",
+    "probs": {
+      "GSW": 0.335,
+      "LAC": 0.665
+    }
+  },
+  "nba-gsw-lac-2026-04-15@2026-04-15T15:17:48Z": {
+    "captured_ts": "2026-04-15T15:10:47Z",
     "date": "2026-04-15",
     "favored": "LAC",
     "kind": "game",
