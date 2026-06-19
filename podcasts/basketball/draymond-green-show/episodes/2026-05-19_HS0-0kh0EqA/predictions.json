@@ -14,10 +14,10 @@
     "status_general": "correct",
     "grade_note_general": "NYK beat CLE 4-0, so the Knicks did win the conference finals series.",
     "episode_datetime": "2026-05-19T06:30:03+08:00",
-    "market_prob": "0.61",
+    "market_prob": "0.575",
     "market_favorite": "over",
     "market_source": "nba-playoffs-knicks-vs-cavaliers-total-games-ou-5pt5",
-    "market_prob_general": "0.705",
+    "market_prob_general": "0.7079",
     "market_favorite_general": "NYK",
     "market_source_general": "nba-playoffs-eastern-conference-champion"
   },
@@ -36,10 +36,10 @@
     "status_general": "incorrect",
     "grade_note_general": "SAS beat OKC 4-3, so the Thunder did not win the conference finals series.",
     "episode_datetime": "2026-05-19T06:30:03+08:00",
-    "market_prob": "0.6902",
+    "market_prob": "0.6895",
     "market_favorite": "OKC",
     "market_source": "nba-playoffs-western-conference-champion",
-    "market_prob_general": "0.6902",
+    "market_prob_general": "0.6895",
     "market_favorite_general": "OKC",
     "market_source_general": "nba-playoffs-western-conference-champion"
   }

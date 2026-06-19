@@ -14,10 +14,10 @@
     "status_general": "incorrect",
     "grade_note_general": "SAS beat OKC 4-3, so OKC did not win the series.",
     "episode_datetime": "2026-05-31T00:00:51+08:00",
-    "market_prob": "0.64",
+    "market_prob": "0.9995",
     "market_favorite": "over",
     "market_source": "nba-playoffs-thunder-vs-spurs-total-games-ou-5pt5",
-    "market_prob_general": "0.6902",
+    "market_prob_general": "0.5781",
     "market_favorite_general": "OKC",
     "market_source_general": "nba-playoffs-western-conference-champion"
   }
