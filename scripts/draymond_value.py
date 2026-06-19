@@ -22,7 +22,8 @@ def fetch_rows(speaker):
     db = sqlite3.connect(DB)
     db.row_factory = sqlite3.Row
     return db.execute(
-        "SELECT * FROM predictions WHERE speaker = ? AND category IN ('game', 'series')",
+        "SELECT * FROM predictions WHERE speaker = ? AND category IN "
+        "('game', 'series', 'award', 'season')",
         (speaker,),
     ).fetchall()
 
@@ -54,7 +55,7 @@ def build_picks(rows):
     twice."""
     picks = []
     for row in rows:
-        if row["category"] == "game":
+        if row["category"] in ("game", "award", "season"):
             p = _pick(row, "status", "market_prob", "exact")
             if p:
                 picks.append(p)
