@@ -30,7 +30,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.95",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-03",
@@ -43,7 +45,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.994",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-04",
@@ -56,7 +60,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.35",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-05",
@@ -69,7 +75,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.004",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-06",
@@ -82,7 +90,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.90",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-07",
@@ -95,7 +105,9 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.93",
+    "market_source": "manual"
   },
   {
     "prediction_id": "foRJR0lrMxE-08",
@@ -108,6 +120,8 @@
     "verifiable": "manual",
     "status": "pending",
     "argument": "",
-    "episode_datetime": "2026-04-15T23:17:48+08:00"
+    "episode_datetime": "2026-04-15T23:17:48+08:00",
+    "market_prob": "0.97",
+    "market_source": "manual"
   }
 ]
